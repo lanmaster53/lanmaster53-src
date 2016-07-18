@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ site.title }}{% if title %} - {{ title }}{% endif %}</title>
+        <meta name="author" content="{{ site.author.name }}">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/skeleton.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('pygments_css') }}">
+        <link rel="shortcut icon" href="http://www.gravatar.com/avatar/0a6d9b1ad59ad436bf9d9d16b2a7133e?s=16" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="four columns meta">
+                    <ul>
+                        <li><a href="{{ url_for('home') }}"><img src="{{ site.author.gravatar }}?s=128" class="avatar" /></a></li>
+                    {% for meta in site.author.meta %}
+                        <li><a href="{{ site.author.meta[meta].url }}{{ site.author.meta[meta].username }}" target="_blank"><img src="{{ url_for('static', filename='images/meta/'+meta+'.png') }}" /></a></li>
+                    {% endfor %}
+                        <li><a href="{{ url_for('page', name='contact') }}"><img src="{{ url_for('static', filename='images/meta/email.png') }}"></a></li>
+                    </ul>
+                </div>
+                <div class="eight columns nav">
+                    <ul>
+                    {% for name in site.navigation %}
+                        <li><a href="{{ url_for('page', name=name) }}">{{ name.capitalize() }}</a>{% if not loop.last %} | {% endif %}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <!-- hr style="margin-top: 0;" -->
+            <div class="row">
+                <div class="twelve columns">
+                    {% block banner %}{% endblock %}
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="twelve columns">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="twelve columns">
+                    <footer>
+                        <p>
+                            &copy; {{ date.year }} {{ site.author.name }}
+                            <span style="float: right;">
+                                powered by
+                                <a href="http://flask.pocoo.org/" target="_blank" title="Flask: Python Web Development Microframework">Flask</a>
+                                and <a href="http://getskeleton.com/" target="_blank" title="Skeleton CSS">Skeleton</a>
+                            </span>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        {% include "analytics.html" %}
+    </body>
+</html>

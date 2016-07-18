@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% set title = title or page.title %}
+
+{% block banner %}
+<h1>{{ title }}</h1>
+{% endblock %}
+
+{% block content %}
+    {% if page %}
+        {{ page.html|safe }}
+    {% else %}
+        {% block html %}{% endblock %}
+    {% endif %}
+{% endblock %}

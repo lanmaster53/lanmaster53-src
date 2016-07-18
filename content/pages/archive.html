@@ -1,0 +1,32 @@
+{% extends "page.html" %}
+{% set title = 'Archive' %}
+{% block html %}
+{% for post in site.posts %}
+    {% set this_year = post.date.strftime("%Y") %}
+    {% set this_month = post.date.strftime("%B") %}
+    {% if loop.first %}
+        <h2>{{ this_year }}</h2>
+        <h5>{{ this_month }}</h5>
+        <ul>
+    {% endif %}
+    <li><span>{{ post.date.strftime("%B %e, %Y") }}</span> &raquo; <a href="{{ url_for('post', year=post.meta['date'].year, month=post.meta['date'].month, name=post.path.replace('posts/', '')) }}">{{ post.title }}</a></li>
+    {% if loop.last %}
+        </ul>
+    {% else %}
+        {% set next_year = site.posts[loop.index0+1].date.strftime("%Y") %}
+        {% set next_month = site.posts[loop.index0+1].date.strftime("%B") %}
+        {% if this_year != next_year %}
+            </ul>
+            <h2>{{ next_year }}</h2>
+            <h5>{{ next_month }}</h5>
+            <ul>
+        {% else %}    
+            {% if this_month != next_month %}
+                </ul>
+                <h5>{{ next_month }}</h5>
+                <ul>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+{% endblock %}

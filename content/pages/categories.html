@@ -1,0 +1,19 @@
+{% extends "page.html" %}
+{% set title = 'Categories' %}
+{% block html %}
+<ul class="tag_box inline">
+{% for category in site.categories %} 
+    <li><a href="#{{ category }}-ref">
+        {{ category }} <span>{{ site.categories[category]|length }}</span>
+    </a></li>
+{% endfor %}
+</ul>
+{% for category in site.categories %} 
+    <h2 id="{{ category }}-ref">{{ category }}</h2>
+    <ul>
+    {% for post in site.categories[category] %}
+        <li><a href="{{ url_for('post', year=post.meta['date'].year, month=post.meta['date'].month, name=post.path.replace('posts/', '')) }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% endfor %}
+{% endblock %}
