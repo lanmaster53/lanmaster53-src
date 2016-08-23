@@ -101,7 +101,7 @@ def burp_visual_aids():
     return redirect(url_for('page', name='burp-visual-aids'))
 
 # post rendering view
-@app.route('/<int:year>/<int:month>/<string:name>/')
+@app.route('/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<string:name>/')
 def post(year, month, name):
     path = os.path.join(POST_DIR, name)
     post = flatpages.get_or_404(path)
