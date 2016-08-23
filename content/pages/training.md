@@ -12,8 +12,8 @@ Above all, training gives me an opportunity to share my passion for application 
 
 ### Upcoming Classes
 
-* PWAPT (Standard Edition) - OWASP Boston, Waltham, MA (Boston), 18-19 July, 2016 ([register](https://www.regonline.com/Register/Checkin.aspx?EventID=1844420))
 * PWAPT (Standard Edition) - DerbyCon 6.0, Louisville, KY, 21-25 September, 2016 ([register](https://www.derbycon.com/training-courses/#webapp)) ([waiting list](https://docs.google.com/forms/d/1DqOYVYB3kVpUfLqCVO8k1adrF_wT3nzv1PVljW8Hs6A/viewform?c=0&w=1))
+* PWAPT (Developer Edition) - OWASP Boston, Waltham, MA (Boston), 25-27 January, 2016 (coming soon!)
 * [Contact](/contact/) me for on-site and remote training opportunities.
 
 ### Practical Web Application Penetration Testing - PWAPT
