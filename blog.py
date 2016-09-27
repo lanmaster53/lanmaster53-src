@@ -19,7 +19,7 @@ PAGE_DIR = 'pages'
 POST_DIR = 'posts'
 SITE = {
     'title': 'lanmaster53.com',
-    'tagline': 'A hacker looking out for people thru (<span style="color: orange;">working</span>|<span style="color: blue;">coding</span>|<span style="color: red;">teaching</span>|<span style="color: green;">sharing</span>).',
+    'tagline': 'A hacker serving others by (<span style="color: orange;">working</span>|<span style="color: blue;">coding</span>|<span style="color: red;">teaching</span>|<span style="color: green;">sharing</span>).',
     'author': {
         'name': 'Tim Tomes',
         'email': 'timothy.tomes@gmail.com',
