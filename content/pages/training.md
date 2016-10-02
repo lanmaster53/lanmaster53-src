@@ -12,8 +12,12 @@ Above all, training gives me an opportunity to share my passion for application 
 
 ### Upcoming Classes
 
-* PWAPT (Developer Edition) - OWASP Boston, Waltham, MA (Boston), 25-27 January, 2016 (coming soon!)
-* [Contact](/contact/) me for on-site and remote training opportunities.
+| Dates | Class | Host | Location | Registration |
+|:---:|:---:|:---:|:---:|:---:|
+| Jan 25-27, 2016 | PWAPT (Developer Edition) | OWASP Boston | Waltham, MA (Boston) | [register](https://regonline.com/owaspbostontraining) |
+| Q1, 2016 | PWAPT (Standard Edition) | OWASP NoVA | TBD | TBD |
+
+[Contact](/contact/) me for on-site training opportunities.
 
 ### Practical Web Application Penetration Testing - PWAPT
 
