@@ -14,8 +14,8 @@ Above all, training gives me an opportunity to share my passion for application 
 
 | Dates | Class | Host | Location | Registration |
 |:---:|:---:|:---:|:---:|:---:|
-| Jan 25-27, 2016 | PWAPT (Developer Edition) | OWASP Boston | Waltham, MA (Boston) | [register](https://regonline.com/owaspbostontraining) |
-| Q1, 2016 | PWAPT (Standard Edition) | OWASP NoVA | TBD | TBD |
+| Jan 25-27, 2017 | PWAPT (Developer Edition) | OWASP Boston | Waltham, MA (Boston) | [register](https://regonline.com/owaspbostontraining) |
+| Q1, 2017 | PWAPT (Standard Edition) | OWASP NoVA | TBD | TBD |
 
 [Contact](/contact/) me for on-site training opportunities.
 
