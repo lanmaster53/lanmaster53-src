@@ -29,7 +29,13 @@ The majority of the course will be spent performing an instructor led, hands-on 
 
 This course has an available Developer Edition that contains the same content as the original PWAPT course (Standard Edition), but adds a full day of code remediation lecture and exercises. The code remediation content includes discussions on the proper techniques for mitigating vulnerabilities, and exercises where the instructor and students will modify the application's source code to implement mitigating controls and test them for effectiveness.
 
-PWAPT is a PortSwigger preferred [Burp Suite Training course](https://portswigger.net/training/). PWAPT students will learn basic and advanced usage techniques for Burp Suite Pro, as well as discover obscure functionality hidden within the vast capabilities of the tool. Students will also receive a 2 week trial license for Burp Suite Pro to use during the course.
+PWAPT is a PortSwigger preferred [Burp Suite Training course](https://portswigger.net/training/). PWAPT students will learn basic and advanced usage techniques for Burp Suite Pro, as well as discover obscure functionality hidden within the vast capabilities of the tool. Students will also receive a ~2 week trial license for Burp Suite Pro to use during and after the course.
+
+For additional insight into the origin, mission, and benefits of PWAPT, listen to my interview with [Timothy De Block](https://twitter.com/TimothyDeBlock) for the [Exploring Information Security podcast](http://www.timothydeblock.com/eis/54) on the topic of "What is Practical Web Application Penetration Testing?"
+
+<audio controls>
+    <source src="/downloads/EIS-ep54-PWAPT.mp3" type="audio/mpeg">
+</audio>
 
 #### Outline
 
