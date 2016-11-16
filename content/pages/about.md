@@ -19,12 +19,14 @@ Christian, father, husband, veteran, code slinger, aspiring difference-maker and
 
 ### Public Speaking
 
+- [Ermahgerd Werb Verlns - Upstate SC ISSA 2016](https://speakerdeck.com/lanmaster53/ermahgerd-werb-verlns)
+- [Ermahgerd Werb Verlns - Church IT Network Conference 2016](https://speakerdeck.com/lanmaster53/ermahgerd-werb-verlns)
 - OSINT for AppSec: Recon-ng and Beyond - Upstate SC ISSA 2015
-- [OSINT for AppSec: Recon-ng and Beyond - DerbyCon 2015](http://youtu.be/zgz6QYpdzT8) | [slides](https://speakerdeck.com/lanmaster53/osint-for-appsec-recon-ng-and-beyond)
+- [OSINT for AppSec: Recon-ng and Beyond - DerbyCon 2015](http://youtu.be/zgz6QYpdzT8) ([slides](https://speakerdeck.com/lanmaster53/osint-for-appsec-recon-ng-and-beyond))
 - [OSINT for AppSec: Recon-ng and Beyond - BSides Augusta 2015](http://youtu.be/hWgxvb2Se78)
 - [Ball and Chain: A New Paradigm in Stored Password Security - DerbyCon 2014](http://youtu.be/GfyM8lFkjo8)
 - [Stored Password Security: The Adobe Guide to Keyless Decryption - BSides Augusta 2014](http://youtu.be/C1UqwC0SZ7c)
-- Look Ma, No Exploits! - The Recon-ng Framework - Upstate SC ISSA 2013 | [slides](https://speakerdeck.com/lanmaster53/look-ma-no-exploits-the-recon-ng-framework)
+- [Look Ma, No Exploits! - The Recon-ng Framework - Upstate SC ISSA 2013](https://speakerdeck.com/lanmaster53/look-ma-no-exploits-the-recon-ng-framework)
 - [Look Ma, No Exploits! - The Recon-ng Framework - DerbyCon 2013](http://youtu.be/vkmNTNl6urw)
 - [Look Ma, No Exploits! - The Recon-ng Framework - BSides Augusta 2013](http://youtu.be/DtaucOTXfZY)
 - Look Ma, No Exploits! The Next Generation of Open Source Reconnaissance – Boise ISSA Conference 2013

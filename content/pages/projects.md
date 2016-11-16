@@ -8,6 +8,12 @@ Full-featured Web Reconnaissance framework for conducting open source reconnaiss
 
 [http://recon-ng.com/](http://recon-ng.com/)
 
+### HoneyBadger v2
+
+Framework for targeted geolocation and tracking.
+
+[https://github.com/lanmaster53/honeybadger/](https://github.com/lanmaster53/honeybadger/)
+
 ### Burp Suite Visual Aids
 
 Series of annotated images depicting usage tips for Burp Suite.
@@ -41,12 +47,6 @@ Tool for quickly analyzing large quantities of web interfaces.
 Python library for analyzing and manipulating the 2013 Adobe breach data.
 
 [https://bitbucket.org/LaNMaSteR53/adobepw](https://bitbucket.org/LaNMaSteR53/adobepw)
-
-### Honey Badger
-
-Framework for targeted geolocation and tracking.
-
-[https://bitbucket.org/LaNMaSteR53/honeybadger/](https://bitbucket.org/LaNMaSteR53/honeybadger/)
 
 ### VSSOwn
 
