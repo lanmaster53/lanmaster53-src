@@ -20,12 +20,6 @@ Series of annotated images depicting usage tips for Burp Suite.
 
 [/burp-visual-aids/](/burp-visual-aids/)
 
-### SharePass
-
-Safe(r) way to quickly share passwords when traditional encryption methods are unavailable.
-
-[https://sharepass.pw/](https://sharepass.pw/)
-
 ---
 
 ## Inactive
@@ -41,6 +35,12 @@ Proximity alert system based on Wi-Fi probe requests.
 Tool for quickly analyzing large quantities of web interfaces.
 
 [https://bitbucket.org/LaNMaSteR53/peepingtom/](https://bitbucket.org/LaNMaSteR53/peepingtom/)
+
+### SharePass
+
+Safe(r) way to quickly share passwords when traditional encryption methods are unavailable.
+
+[https://github.com/lanmaster53/sharepass](https://github.com/lanmaster53/sharepass)
 
 ### AdobePW
 
