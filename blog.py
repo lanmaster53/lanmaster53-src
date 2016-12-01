@@ -17,6 +17,7 @@ FREEZER_DESTINATION_IGNORE = ['.git/', 'CNAME']
 PYGMENTS_STYLE = 'tango'
 PAGE_DIR = 'pages'
 POST_DIR = 'posts'
+DRAFT_DIR = 'drafts'
 SITE = {
     'title': 'lanmaster53.com',
     'tagline': '',
@@ -59,6 +60,17 @@ app.config.from_object(__name__)
 def error_handlers():
     yield "/404.html"
 
+# create the unlinked drafts page
+@freezer.register_generator
+def page():
+    yield {'name': 'drafts'}
+
+# create the unlinked drafts
+@freezer.register_generator
+def draft():
+    for _draft in app.config['SITE']['drafts']:
+        yield {'name': _draft.path[len(DRAFT_DIR)+1:]}
+
 # custom loader to look for template-based pages
 custom_loader = jinja2.ChoiceLoader([
     app.jinja_loader,
@@ -73,6 +85,11 @@ app.jinja_loader = custom_loader
 _posts = [p for p in flatpages if p.path.startswith(POST_DIR)]
 _posts.sort(key=lambda item:item['date'], reverse=True)
 app.config['SITE']['posts'] = _posts
+
+# add drafts to the site config item
+_drafts = [p for p in flatpages if p.path.startswith(DRAFT_DIR)]
+_drafts.sort(key=lambda item:item['date'], reverse=True)
+app.config['SITE']['drafts'] = _drafts
 
 # add categories to the site config item
 _categories = {}
@@ -104,6 +121,13 @@ def burp_visual_aids():
 @app.route('/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<string:name>/')
 def post(year, month, name):
     path = os.path.join(POST_DIR, name)
+    post = flatpages.get_or_404(path)
+    return render_template('post.html', post=post)
+
+# draft rendering view
+@app.route('/drafts/<string:name>/')
+def draft(name):
+    path = os.path.join(DRAFT_DIR, name)
     post = flatpages.get_or_404(path)
     return render_template('post.html', post=post)
 
