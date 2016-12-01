@@ -48,4 +48,10 @@ Did you know that Burp has a filter for what is displayed in the Targets, HTTP h
 
 Prevent leaking client information to 3rd parties.
 
-[![](/images/posts/burp_privacy.png)](/images/posts/burp_privacy.png)
+Keep in mind that disabling performance feedback will prevent Portswigger from helping determine the reason for a crash, and fixing any issues that may have caused it.
+
+[![](/images/posts/burp_privacy_1.png)](/images/posts/burp_privacy_1.png)
+
+Burp Collaborator provides some awesome functionality, but it uses Portswigger's servers by default. This can be problematic for professional use. I highly recommend standing up your own Collaborator server (it's free afterall). Otherwise, disable it.
+
+[![](/images/posts/burp_privacy_2.png)](/images/posts/burp_privacy_2.png)
