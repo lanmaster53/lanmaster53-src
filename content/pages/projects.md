@@ -20,6 +20,12 @@ Series of annotated images depicting usage tips for Burp Suite.
 
 [/burp-visual-aids/](/burp-visual-aids/)
 
+### RESTmail.net Web Interface
+
+React driven web interface for the restmail.net API
+
+[/restmail/](/restmail/)
+
 ---
 
 ## Inactive

@@ -60,10 +60,11 @@ app.config.from_object(__name__)
 def error_handlers():
     yield "/404.html"
 
-# create the unlinked drafts page
+# create pages not linked with url_for
 @freezer.register_generator
 def page():
-    yield {'name': 'drafts'}
+    for p in ('drafts', 'restmail'):
+        yield {'name': p}
 
 # create the unlinked drafts
 @freezer.register_generator
