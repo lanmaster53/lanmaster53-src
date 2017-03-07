@@ -8,8 +8,7 @@ Christian, father, husband, veteran, code slinger, aspiring difference-maker and
 
 - Managing Consultant at [nVisium](https://www.nvisium.com).
 - [Independent](/training/) Application Security Instructor
-- Occassional SANS and Black Hat Instructor
-- Certified: GWAPT, GPEN, CISSP, CISA, CEH, CCNA Security, MCSA, Comptia A+ and Network+, blah, blah, why are you still reading this?
+- Certified: CISSP, CISA, GWAPT (expired), GPEN (expired), CEH (expired), CCNA Security (expired), MCSA (2003), Comptia A+ and Network+, blah, blah, why are you still reading this?
 
 ### Play
 

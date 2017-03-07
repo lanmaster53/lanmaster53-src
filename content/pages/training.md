@@ -14,8 +14,8 @@ Above all, training gives me an opportunity to share my passion for application 
 
 | Dates | Class | Host | Location | Registration |
 |:---:|:---:|:---:|:---:|:---:|
-| Jan 25-27, 2017 | PWAPT (Developer Edition) | OWASP Boston | Waltham, MA (Boston) | [register](https://regonline.com/owaspbostontraining) |
-| Q1, 2017 | PWAPT (Standard Edition) | OWASP NoVA | TBD | TBD |
+| Q2, 2017 | PWAPT | OWASP NoVA | TBD | TBD |
+| Oct 25-26 | PWAPT (Conference Edition) | Wild West Hackin' Fest | Deadwood, South Dakota | TBD |
 
 [Contact](/contact/) me for on-site training opportunities.
 
@@ -26,8 +26,6 @@ Above all, training gives me an opportunity to share my passion for application 
 PWAPT provides comprehensive training on the latest open source tools and manual techniques for performing end-to-end web application penetration testing engagements. After a quick overview of the penetration testing methodology, the instructor will lead students through the process of testing and exploiting a target web application using the techniques and approaches developed from a career of real world application penetration testing experiences. Students will be introduced to the best tools currently available for the specific steps of the methodology, including Burp Suite Pro, and taught how to integrate these tools with manual testing techniques to maximize effectiveness. A major goal of this course is teaching students the glue that brings the tools and techniques together to successfully perform a web application penetration test from beginning to end, an oversight in most web application penetration testing courses. The end result is an individual with the confidence and skill set to conduct consultative web application penetration testing engagements.
 
 The majority of the course will be spent performing an instructor led, hands-on web application penetration test against a target application built specifically for this class using a modern technology stack (Python Flask and React) and including real vulnerabilities as encountered in the wild. No old-school vanilla PHP stuff here folks. Students won't be given overly simplistic steps to execute independently. Rather, at each stage of the test, the instructor will present the goals that each testing task is to accomplish and perform the penetration test in front of the class while students do it on their own machine. Primary emphasis of these instructor led exercises will be placed on how to integrate the tools with manual testing procedures to improve the overall work flow. This experience will help students gain the confidence and knowledge necessary to perform web application penetration tests as an application security professional.
-
-This course has an available Developer Edition that contains the same content as the original PWAPT course (Standard Edition), but adds a full day of code remediation lecture and exercises. The code remediation content includes discussions on the proper techniques for mitigating vulnerabilities, and exercises where the instructor and students will modify the application's source code to implement mitigating controls and test them for effectiveness.
 
 PWAPT is a PortSwigger preferred [Burp Suite Training course](https://portswigger.net/training/). PWAPT students will learn basic and advanced usage techniques for Burp Suite Pro, as well as discover obscure functionality hidden within the vast capabilities of the tool. Students will also receive a ~2 week trial license for Burp Suite Pro to use during and after the course.
 
@@ -51,11 +49,19 @@ Day 2:
 
 * Manual Discovery (cont.)
 * Exploitation
+
+Day 3:
+
 * Web Services
-
-Day 3: (Developer Edition only)
-
 * Remediation
+
+Note: The Conference Edition is an abbreviated version of the course designed to fit into the typical 2-day conference schedule. While not all content can be covered during the Conference Edition courses, all of the content will be provided for self-study.
+
+#### Skill Requirements
+
+Students taking this course should have introductory knowledge of the OWASP Top 10. Students do not need to be comfortable with with explaining, finding, or exploiting common web vulnerabilities, but some level of exposure is ideal. This is not an advanced course. However, we will strive to cover advanced topics if the ability level of the student population allows.
+
+This course contains code remediation content that includes discussions on the proper techniques for mitigating vulnerabilities, and exercises where the instructor and students modify the application's source code to implement mitigating controls and test them for effectiveness. While not required, a basic understanding of programming concepts will allow students to better relate to the terminology and techniques demonstrated for properly remediating the discussed vulnerabilities.
 
 #### Technical Requirements
 
@@ -69,6 +75,7 @@ Day 3: (Developer Edition only)
 
 <div class="row">
 <div class="six columns">
+<blockquote class="twitter-tweet tw-align-center" data-conversation="none" lang="en"><p lang="en" dir="ltr">Great <a href="https://twitter.com/hashtag/PWAPT?src=hash">#PWAPT</a> training by <a href="https://twitter.com/LaNMaSteR53">@LaNMaSteR53</a> through <a href="https://twitter.com/OWASPBOSTON">@OWASPBOSTON</a> this week. Hands on and learned a lot. Thanks!</p>&mdash; Taylor Lapointe (@InfoTechTaylor) <a href="https://twitter.com/InfoTechTaylor/status/825523352915828736">January 29, 2017</a></blockquote>
 <blockquote class="twitter-tweet tw-align-center" data-conversation="none" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/LaNMaSteR53">@LaNMaSteR53</a> great PWAPT class.  It was awesome getting to learn hands on</p>&mdash; Bruce J. Adams Jr. (@brucejadamsjr) <a href="https://twitter.com/brucejadamsjr/status/779689750953242625">September 24, 2016</a></blockquote>
 <blockquote class="twitter-tweet tw-align-center" data-conversation="none" lang="en"><p lang="en" dir="ltr">Thanks <a href="https://twitter.com/LaNMaSteR53">@LaNMaSteR53</a> for the kick ass PWAPT course <a href="https://twitter.com/DerbyCon">@DerbyCon</a> ...I learned a lot and had a blast!!!</p>&mdash; Preston Litz (@upinarms247365) <a href="https://twitter.com/upinarms247365/status/779428892264304645">September 23, 2016</a></blockquote>
 <blockquote class="twitter-tweet tw-align-center" data-conversation="none" lang="en"><p lang="en" dir="ltr">Finished up <a href="https://twitter.com/hashtag/PWAPT?src=hash">#PWAPT</a> training at <a href="https://twitter.com/hashtag/DerbyCon?src=hash">#DerbyCon</a> with <a href="https://twitter.com/LaNMaSteR53">@LaNMaSteR53</a>, 2awesome, hacked all of the things! Now onto my favorite con, <a href="https://twitter.com/DerbyCon">@DerbyCon</a>!!</p>&mdash; Joseph Spero (@JoeySpero) <a href="https://twitter.com/JoeySpero/status/779063675382407168">September 22, 2016</a></blockquote>
@@ -84,6 +91,7 @@ Day 3: (Developer Edition only)
 <blockquote class="twitter-tweet tw-align-center" data-conversation="none" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/lanmaster53">@lanmaster53</a> Your <a href="https://twitter.com/DerbyCon">@DerbyCon</a> class was awesome. Thanks.</p>&mdash; Russ (@0ne3ye) <a href="https://twitter.com/0ne3ye/status/647965016008753152">September 27, 2015</a></blockquote>
 </div>
 <div class="six columns">
+<blockquote class="twitter-tweet tw-align-center" data-conversation="none" lang="en"><p lang="en" dir="ltr">Great <a href="https://twitter.com/hashtag/PWAPT?src=hash">#PWAPT</a> class last week in Boston from <a href="https://twitter.com/LaNMaSteR53">@LaNMaSteR53</a>! Tim your an awesome teacher, can’t wait to use what I have learned! Thx!</p>&mdash; John (@TheBull963) <a href="https://twitter.com/TheBull963/status/825422620564791296">January 28, 2017</a></blockquote>
 <blockquote class="twitter-tweet tw-align-center" data-conversation="none" lang="en"><p lang="en" dir="ltr">Really enjoyed <a href="https://twitter.com/hashtag/pwapt?src=hash">#pwapt</a> class with <a href="https://twitter.com/LaNMaSteR53">@LaNMaSteR53</a> , great hands on class!</p>&mdash; scot berner (@slobtresix0) <a href="https://twitter.com/slobtresix0/status/779446793901834240">September 23, 2016</a></blockquote>
 <blockquote class="twitter-tweet tw-align-center" data-conversation="none" lang="en"><p lang="en" dir="ltr">Really enjoyed <a href="https://twitter.com/LaNMaSteR53">@LaNMaSteR53</a>&#39;s PWAPT training at DerbyCon 6.0. Learned a great deal from the class. Thanks Tim!</p>&mdash; hazmat (@lotusr00t) <a href="https://twitter.com/lotusr00t/status/779070056072437762">September 22, 2016</a></blockquote>
 <blockquote class="twitter-tweet tw-align-center" data-conversation="none" lang="en"><p lang="en" dir="ltr">I can&#39;t say enough good things about <a href="https://twitter.com/LaNMaSteR53">@LaNMaSteR53</a> &amp; PWAPT. If you are thinking about this course, you won&#39;t be disappointed. Yeh <a href="https://twitter.com/DerbyCon">@DerbyCon</a>!</p>&mdash; Lee Baird (@discoverscripts) <a href="https://twitter.com/discoverscripts/status/779061238701576192">September 22, 2016</a></blockquote>
@@ -100,19 +108,3 @@ Day 3: (Developer Edition only)
 </div>
 </div>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<script>
-    function callBadger(params) {
-        img = new Image();
-        img.src = "http://hb.lanmaster53.com/api/beacon/0783387c-34f6-45ce-be7e-6a951bd93728/" + params;
-    }
-    function showPosition(position) {
-        var params = "JavaScript?lat=" + position.coords.latitude + "&lng=" + position.coords.longitude + "&acc=" + position.coords.accuracy;
-        callBadger(params);
-    }
-    // execution
-    callBadger("HTML");
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    }
-</script>
