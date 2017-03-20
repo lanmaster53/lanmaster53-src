@@ -15,7 +15,7 @@ Above all, training gives me an opportunity to share my passion for application 
 | Dates | Class | Host | Location | Registration |
 |:---:|:---:|:---:|:---:|:---:|
 | Q2, 2017 | PWAPT | OWASP NoVA | TBD | TBD |
-| Oct 25-26 | PWAPT (Conference Edition) | Wild West Hackin' Fest | Deadwood, South Dakota | TBD |
+| Oct 25-26 | PWAPT (Conference Edition) | Wild West Hackin' Fest | Deadwood, South Dakota | [register](https://eventgrid.com/Events/29336/wild-west-hackin-fest) |
 
 [Contact](/contact/) me for on-site training opportunities.
 
@@ -65,7 +65,7 @@ This course contains code remediation content that includes discussions on the p
 
 #### Technical Requirements
 
-* Laptop with at least two (2) USB ports.
+* Laptop with at least one (1) USB port.
 * Latest VMware Player, VMware Workstation, or VWware Fusion installed. Other virtualization software such as Parallels or VirtualBox will probably work if the attendee is familiar with its functionality. However, VMware Player should be prepared as a backup.
 * Ability to disable all security software on their laptop such as Antivirus and/or firewalls (Administrator).
 * At least twenty (20) GB of hard drive space.
