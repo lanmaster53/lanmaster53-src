@@ -8,6 +8,22 @@ for post in posts:
     os.rename(post, new)
 
 '''
+import os
+import re
+
+pat = "date: (.*)"
+mydir = '.'
+for arch in os.listdir(mydir):
+    if arch.endswith('.md'):
+        with open(arch) as f:
+            txt = f.read()
+        s = re.search(pat, txt)
+        date = s.group(1)
+        newpath = '-'.join((date, arch))
+        print arch, newpath
+        os.rename(arch, newpath)
+
+
 os.chdir('content/posts')
 posts = os.listdir('.')
 for post in posts:

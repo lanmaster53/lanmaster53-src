@@ -9,7 +9,7 @@
         <h5>{{ this_month }}</h5>
         <ul>
     {% endif %}
-    <li><span>{{ post.date.strftime("%B %e, %Y") }}</span> &raquo; <a href="{{ url_for('post', year=post.meta['date'].strftime('%Y'), month=post.meta['date'].strftime('%m'), name=post.path.replace('posts/', '')) }}">{{ post.title }}</a></li>
+    <li><span>{{ post.date.strftime("%B %e, %Y") }}</span> &raquo; <a href="{{ url_for('post', year=post.date.strftime('%Y'), month=post.date.strftime('%m'), day=post.date.strftime('%d'), name=post.name) }}">{{ post.title }}</a></li>
     {% if loop.last %}
         </ul>
     {% else %}

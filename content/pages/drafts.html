@@ -3,7 +3,7 @@
 {% block html %}
 {% for draft in site.drafts %}
     <p>
-        <a href="{{ url_for('draft', name=draft.path.replace('drafts/', '')) }}">{{ draft.title }}</a><br>
+        <a href="{{ url_for('post', year=draft.date.strftime('%Y'), month=draft.date.strftime('%m'), day=draft.date.strftime('%d'), name=draft.name) }}">{{ draft.title }}</a><br>
         {{ draft.date.strftime("%B %e, %Y") }}<br>
         Tags: {{ ', '.join(draft.categories) }}
     </p>

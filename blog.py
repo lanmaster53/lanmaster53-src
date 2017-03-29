@@ -5,6 +5,7 @@ from collections import OrderedDict
 from datetime import datetime
 import jinja2
 import os
+import re
 import sys
 
 DEBUG = True
@@ -17,7 +18,6 @@ FREEZER_DESTINATION_IGNORE = ['.git/', 'CNAME']
 PYGMENTS_STYLE = 'tango'
 PAGE_DIR = 'pages'
 POST_DIR = 'posts'
-DRAFT_DIR = 'drafts'
 SITE = {
     'title': 'lanmaster53.com',
     'tagline': '',
@@ -48,12 +48,43 @@ SITE = {
             'property_name' : 'lanmaster53.com',
         },
     },
+    'posts': [],
+    'drafts': [],
 }
 
 app = Flask(__name__, static_url_path='')
 flatpages = FlatPages(app)
 freezer = Freezer(app)
 app.config.from_object(__name__)
+
+# custom loader to look for template-based pages
+custom_loader = jinja2.ChoiceLoader([
+    app.jinja_loader,
+    jinja2.FileSystemLoader([
+        os.path.join(FLATPAGES_ROOT, PAGE_DIR),
+        '/templates'
+    ]),
+])
+app.jinja_loader = custom_loader
+
+def parse_date_from_path(s):
+    date_str = '-'.join(s.split(os.path.sep)[-1].split('-')[:3])
+    return datetime.strptime(date_str, '%Y-%m-%d')
+
+def parse_name_from_path(s):
+    return '-'.join(s.split(os.path.sep)[-1].split('-')[3:])
+
+# add posts to the site config item
+_posts = [p for p in flatpages if p.path.startswith(POST_DIR)]
+for _post in _posts:
+    _post.meta['date'] = parse_date_from_path(_post.path)
+    _post.meta['name'] = parse_name_from_path(_post.path)
+_posts.sort(key=lambda item:item['date'], reverse=True)
+for _post in _posts:
+    if _post['publish'] is True:
+        app.config['SITE']['posts'].append(_post)
+    else:
+        app.config['SITE']['drafts'].append(_post)
 
 # create the 404 page for GH Pages
 @freezer.register_generator
@@ -66,36 +97,20 @@ def page():
     for p in ('drafts', 'restmail'):
         yield {'name': p}
 
-# create the unlinked drafts
+# create pages not linked with url_for
 @freezer.register_generator
-def draft():
-    for _draft in app.config['SITE']['drafts']:
-        yield {'name': _draft.path[len(DRAFT_DIR)+1:]}
-
-# custom loader to look for template-based pages
-custom_loader = jinja2.ChoiceLoader([
-    app.jinja_loader,
-    jinja2.FileSystemLoader([
-        os.path.join(FLATPAGES_ROOT, PAGE_DIR),
-        '/templates'
-    ]),
-])
-app.jinja_loader = custom_loader
-
-# add posts to the site config item
-_posts = [p for p in flatpages if p.path.startswith(POST_DIR)]
-_posts.sort(key=lambda item:item['date'], reverse=True)
-app.config['SITE']['posts'] = _posts
-
-# add drafts to the site config item
-_drafts = [p for p in flatpages if p.path.startswith(DRAFT_DIR)]
-_drafts.sort(key=lambda item:item['date'], reverse=True)
-app.config['SITE']['drafts'] = _drafts
+def old_post():
+    for p in app.config['SITE']['posts']:
+        yield {
+            'year': p['date'].year,
+            'month': p['date'].month,
+            'name': p['name'],
+        }
 
 # add categories to the site config item
 _categories = {}
-for _post in _posts:
-    for _category in _post.meta['categories']:
+for _post in app.config['SITE']['posts']:
+    for _category in _post['categories']:
         if _category not in _categories:
             _categories[_category] = []
         _categories[_category].append(_post)
@@ -118,17 +133,25 @@ def home():
 def burp_visual_aids():
     return redirect(url_for('page', name='burp-visual-aids'))
 
-# post rendering view
+# support for old links to posts without the day
 @app.route('/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<string:name>/')
-def post(year, month, name):
-    path = os.path.join(POST_DIR, name)
-    post = flatpages.get_or_404(path)
-    return render_template('post.html', post=post)
+def old_post(year, month, name):
+    # regex pattern to find a filename that includes the day
+    regex = '\d{4}\-\d{2}\-(\d{2})\-' + re.escape(name) + '\.md'
+    for root, dirs, files in os.walk(os.path.sep.join((FLATPAGES_ROOT, POST_DIR))):
+        for file in files:
+            match = re.search(regex, file)
+            if match:
+                day = match.group(1)
+                return redirect(url_for('post', year=year, month=month, day=day, name=name))
+    abort(404)
 
-# draft rendering view
-@app.route('/drafts/<string:name>/')
-def draft(name):
-    path = os.path.join(DRAFT_DIR, name)
+# post rendering view
+@app.route('/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<int(fixed_digits=2):day>/<string:name>/')
+def post(year, month, day, name):
+    # flatpages index is the relative file path without the extension
+    name = '{:04d}-{:02d}-{:02d}-{}'.format(year, month, day, name)
+    path = os.path.join(POST_DIR, name)
     post = flatpages.get_or_404(path)
     return render_template('post.html', post=post)
 
