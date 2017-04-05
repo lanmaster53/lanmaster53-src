@@ -18,13 +18,13 @@ A co-worker and I were struggling through configuring Privoxy on a recent test w
 2. Shut down the VM and add a second network adapter to the VM.
 3. Configure network adapter 1 (original) as bridged mode.
 4. Configure network adapter 2 (new) as host-only mode.
-5. Start the VM and install Burp Suite Free. I prefer the installer to the stand alone jar file, as it seems to be more stable and doesn't require a separate Java install.
-6. Configure the Burp proxy to listen on all interfaces.
-7. Configure the Burp Proxy to pass through SSL. This is fine, as we're not doing anything here but proxying traffic. We don't want this instance of Burp terminating TLS.
-8. Configure the Burp Proxy to not record any traffic. We definitely don't need to waste resources on storing traffic we'll never use.
-7. Note the IP address of the host-only interface on the VM.
-8. Connect to the VPN on the VM.
-9. Configure Burp on the host with the host-only interface as an upstream proxy.
-10. Profit. Man I hate it when people say this.
+5. Start the VM and install Burp Suite Free. I prefer the installer to the stand-alone jar file, as it seems to be more stable and doesn't require a separate Java install.
+6. Configure the VM's Burp proxy to listen on all interfaces.
+7. Configure the VM's Burp Proxy to pass through SSL. This is fine, as we're not doing anything here but forwarding the Host OS's traffic to the VPN. We don't want this instance of Burp terminating TLS.
+8. Configure the VM's Burp Proxy to not record any traffic. We definitely don't need to waste resources by storing traffic we'll never use.
+9. Note the IP address of the host-only interface on the VM.
+10. Connect to the VPN on the VM.
+11. Configure Burp on the host with the host-only interface as an upstream proxy (IP address from step 9 and port from step 6).
+12. Profit. Man I hate it when people say this.
 
 See the [Burp Suite Visual Aids project page](/burp-visual-aids/) for a picture of what this configuration looks like.
