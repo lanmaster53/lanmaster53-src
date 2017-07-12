@@ -14,6 +14,8 @@ So...
 
 I attended a BSides Augusta presentation by Tim Fowler ([@roobixx](https://twitter.com/roobixx)) called [When Zombies take to the Airwaves](https://www.youtube.com/watch?v=DySBqlsIs5A). During the talk, Tim discusses some really innovative ways that humanity could use Wi-Fi to track zombie population movement and communicate emergency instructions in a post apocalyptic environment. As Tim was speaking about using Wi-Fi probe requests to track infected cell phone carriers, the guy next to me, Ryan Wilson ([@RyanWilson57](https://twitter.com/RyanWilson57)), says something along the lines of, "You could use that same concept to alert you when zombies were approaching your house." And the idea for WUDS was born. Ryan also later named the tool. Thanks Ryan!
 
+<!-- READMORE -->
+
 ### Technical Approach
 
 Wi-Fi probe requests are a great source of information from which to detect the proximity of Personal Electronic Device (PED) users. Just about everyone nowadays carries a mobile phone, which is essentially a handheld computer with multiple means of data transmission. One means of transmission, which is enabled by default and rarely ever disabled, is Wi-Fi. Most of my readers are aware of this, but many people don't know that when a Wi-Fi connected device user walks out of range of a connected Access Point (AP), the device's Wi-Fi adapter begins to make probe requests, looking for APs that have been previously connected.

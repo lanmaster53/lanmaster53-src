@@ -4,6 +4,8 @@ categories: [network security]
 
 This article is more for future reference than anything else, but here's the deal. While doing an assessment, I encountered a public facing LDAP server. Not a huge deal, except that this LDAP server allowed empty base objects and NULL BINDs. Basically, this means that any anonymous Internet user could extract information from the LDAP server. This LDAP server was also tied directly into the internal Windows Active Directory infrastructure. Oops.
 
+<!-- READMORE -->
+
 I tried a bunch of tools to assist me in enumerating information from the server. LdapMiner, LDAP Explorer, ldapsearch, and JXplorer to name a few. The only tool that properly leveraged the empty base object and NULL BIND vulnerabilities to produce useful results was [JXplorer](http://jxplorer.org/).
 
 The LDAP server administrator did do one thing right. He limited the responses to all LDAP queries to 25 results. Whether or not it was intentional, I don't know, but it made it painful to extract large chunks of data. Basically, it forced attackers to use many alphabetical queries with wildcards to enumerate all entries, much like exploiting a blind SQL Injection vulnerability.

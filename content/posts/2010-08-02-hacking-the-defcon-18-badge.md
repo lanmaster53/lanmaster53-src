@@ -4,6 +4,8 @@ categories: [hacking]
 
 Here's the official write up for the [DEFCON 18 Badge](http://www.grandideastudio.com/portfolio/defcon-18-badge/).
 
+<!-- READMORE -->
+
 I took a little bit of time to solve 2 of the puzzles.
 
 ### Puzzle #1: QR Code

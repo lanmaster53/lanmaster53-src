@@ -4,6 +4,8 @@ categories: [projects]
 
 Recon-ng v4.6.0 is the largest single framework commit to date. Most of the changes are behind the scenes and won't effect the average user's experience. Below is a summary of the important changes, including the one change that will affect everyone: dependencies.
 
+<!-- READMORE -->
+
 ### Dependencies
 
 Starting with Recon-ng v4.6.0, the framework no longer includes dependencies within the code base. Rather, the framework requires users to install dependencies before the dependent modules can be used. I know, I know. I've been quite public about how much I dislike requiring the installation of 3rd party libraries for my tools to function. However, I recently came to the realization that managing the integration of other software packages within my own was a waste of time and effort. Package managers exist for a reason. So I elected to go against my own personal preference and enforce 3rd party dependency installation. For Kali users, this is seamless, as dependencies are installed alongside the framework. For those not using Kali, you'll want to use the Python Package Index (PyPI or PIP) to install the dependencies listed in the REQUIREMENTS file. Follow the guidance on the Recon-ng Wiki [Usage Guide](https://bitbucket.org/LaNMaSteR53/recon-ng/wiki/Usage%20Guide) for installation instructions. I recommend using virtual environments (virtualenv) to install the required packages and prevent clutter in your local Python instance.

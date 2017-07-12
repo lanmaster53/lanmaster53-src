@@ -4,6 +4,8 @@ categories: [projects]
 
 For those that have been following on social media, I have been referencing the "next verson of Recon-ng" for quite some time. I've made claims to new features, new modules, and increased usefullness. All of these promises come to fruition in the release of Recon-ng v4.0.0.
 
+<!-- READMORE -->
+
 The sweeping changes of this revision come as a result of the revelation that the Metasploit Framework model of data storage and manipulaton dosen't fit well into the reconaissance methodology. Therefore, Recon-ng's approach to reconnaisance has changed, and users will notice that Recon-ng has begun to move away from feel of the Metasploit Framework to a structure and system that better fits the demands of a solid reconnassaince framework. Below is a summary of the changes users can expect to see in the new version of the Recon-ng framework.
 
 ### Global Option Changes

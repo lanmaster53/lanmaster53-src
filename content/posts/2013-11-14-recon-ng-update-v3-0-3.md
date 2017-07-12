@@ -4,6 +4,8 @@ categories: [projects]
 
 I’ve been working on some really nice features for the Recon-ng framework that I was finally able to push up to the master branch of the repo last night. Below is a quick round-up of the new features, migration requirements, and information about how the changes will effect user experience.
 
+<!-- READMORE -->
+
 ### Home Folder Migration
 
 To this point, all user generated data has been saved within the Recon-ng directory structure. While this worked fine in situations where users have root privileges, the framework was unusable in restricted user environments. Therefore, I decided to standardize the framework according best practices and make use of "home" folders. Using the "home" folder provides several key advantages. It avoids write errors in restricted user environments and allows for segregated multi-user environments. I began the "home" folder migration several weeks ago by adding the ability to build a separate module tree underneath a user’s "home" directory for custom modules (see wiki for details). As of today, the migration is complete.

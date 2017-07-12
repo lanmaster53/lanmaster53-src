@@ -4,6 +4,8 @@ categories: [hacking]
 
 I have run an ESPN Fantasy Football League every year since the software was available and am a huge fan of the ESPN Fantasy Football experience. However, last year I came across a series of vulnerabilities in the FFB software which basically give an attacker full control of opponent, and other league, teams. Very few people know of the research I was conducting as I was beginning the disclosure process with ESPN.com's web developers. Today, to my complete surprise, I was made aware of these 2 articles:
 
+<!-- READMORE -->
+
 [http://www.theregister.co.uk/2010/09/22/espn_fantasy_football_cheating/](http://www.theregister.co.uk/2010/09/22/espn_fantasy_football_cheating/)  
 [http://xs-sniper.com/blog/2010/09/22/put-me-in-coach/comment-page-1/](http://xs-sniper.com/blog/2010/09/22/put-me-in-coach/comment-page-1/)
 

@@ -4,6 +4,8 @@ categories: [application security]
 
 A co-worker of mine, [Ethan Robish](https://twitter.com/EthanRobish), and I encountered several complicated CSRF situations for which he came up with a brilliant solution. A solution worthy of recording here for future reference.
 
+<!-- READMORE -->
+
 Let's say you encounter a situation where an attack requires multiple CSRFs in order to conduct some sort of undesirable action i.e. transfer funds between accounts or manipulate a forgot password system. This is easily accomplished if the target accepts GET requests. The attacker can set up a couple of dummy images and launch multiple CSRF requests with ease. However, what if the target application only accepts POST requests? While this complicates things, the attack can still be accomplished as long as the attacker doesn't mind engaging the target user once for each POST request. But what if the attacker has one opportunity to engage the target user? This is the situation that Ethan and I were faced with.
 
 Rather than blindly explain the technique, let's consider the following code that Ethan provides as a template for the attack:

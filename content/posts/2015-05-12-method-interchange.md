@@ -6,6 +6,8 @@ categories: [application security]
 
 When you think of the most prolific scorers in NBA history, you think of names like Kareem Abdul-Jabbar, Bill Russell, and Karl Malone. Most casual basketball fans aren't familiar with names like Oscar Robertson, Bob Cousy, or John Stockton, but without these men, the previously mentioned scorers would have been much less effective as an offensive threat. And thus is the life of the Method Interchange vulnerability.
 
+<!-- READMORE -->
+
 I've mentioned Method Interchange in several application security circles recently and have been greeted with strange looks and questions of "Method what?". Once I explained Method Interchange, the reaction changed from "huh?" to, "Oh my, I need to check for that from now on!" Quite simply, Method Interchange is the ability to send parameters via the URI query string or request payload and have them processed by the application regardless of which was originally intended. While seemingly benign, as we'll see later in the article, Method Interchange drastically increases the exploitability of other, more capable, attacks.
 
 ### GET and POST Methods

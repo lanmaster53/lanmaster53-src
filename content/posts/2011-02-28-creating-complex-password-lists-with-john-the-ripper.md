@@ -4,6 +4,8 @@ categories: [cracking]
 
 Complex password requirements. Those wonderful things which motivate users to write their passwords on sticky notes and place them under the keyboard, or store them in text files on their desktop. 2 uppercase, 2 lowercase, 2 numbers, 2 special characters, and a minimum length of 10. This is a complex standard used by many organizations as the minimum requirement for user passwords. What's the best way to crack these complex passwords? Brute forcing would be infeasible given a time limit, most word lists are full of patterns which don't meet the criteria, and none of JTR's built-in filters and rule sets are designed to specifically attack complex passwords. That was the discussion that [Mark Baggett](http://twitter.com/markbaggett) of [PaulDotCom](http://www.pauldotcom.com/) and I were having when we decided to write our own JTR filters to build word lists for cracking complex passwords. Props to Korelogic for their kick as "Crack Me If You Can" [password generation rules](https://contest.korelogic.com/rules.txt) which we used as our baseline. Here's how it went.
 
+<!-- READMORE -->
+
 First, Mark pulled a rule out of the Korelogic rule set and began to rebuild it to meet specs. He passed it on to me and I finished the particulars. Below is the resulting filter. We added it to the bottom of our john.conf file.
 
 ``` c

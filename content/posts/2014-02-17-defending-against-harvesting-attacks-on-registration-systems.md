@@ -4,6 +4,8 @@ categories: [application security]
 
 The most obvious challenge to preventing harvesting on registration systems is that the application must ask for a unique piece of information with which to identify the applicant. In most cases, this piece of information is the username. If we enforce this distinction during the traditional registration process and provide visual feedback, then we create the possibility for username harvesting.
 
+<!-- READMORE -->
+
 The typical user account registration system will ask for the applicant to provide all of the information required to create an account on a registration page. When the registration page is submitted, the application validates the uniqueness of the username. The application then responds with one of the following messages:
 
 - An account with matching data already exists.

@@ -4,6 +4,8 @@ categories: [application security]
 
 I've recently been approached by quite a few junior consultants having issues with understanding, discovering, and exploiting Session Fixation. Rather than continue to provide impromptu training, I decided to brain dump everything I know about Session Fixation into an article for reference.
 
+<!-- READMORE -->
+
 While not as sexy as many of the other vulnerabilities we deal with in Application Security, Session Fixation is quite common and exposes applications and users to substantial risk. I see Session Fixation behavior in approximately 60% of the applications I test, with it being exploitable in approximately a quarter of those instances.
 
 ### Session Fixation Defined

@@ -4,6 +4,8 @@ categories: [projects]
 
 Some users may have noticed an usually high number of bugs over the past couple of weeks. We've been making some sweeping changes to the guts of the framework during that time, and since the entire user population is the beta test community, you have been instrumental in helping spot and fix issues. For that I thank you. We've been trying to fix bugs as fast as they've been reported, so at this point, I believe most issues have been identified and resolved. However, please continue to report any strange behavior or bugs.
 
+<!-- READMORE -->
+
 Also taking place over the past several weeks was voting for the 2013 Toolsmith Tool of the Year and the ToolsWatch 2013 Top Security Tools competitions. Users voted the Recon-ng framework as the #1 2013 Toolsmith Tool of the Year and the #7 ToolsWatch Top Security Tools of 2013 (ahead of Metasploit, WOW!). This acknowledgment of the Recon-ng framework as a popular and useful addition to professional's toolsets across the industry validates the time that's been poured into its development. After all, the good of the industry and making an overall positive impact on security is the reason I do this.
 
 In appreciation of your votes, and because I just generally enjoy working on Recon-ng, quite a few new features have been added to the framework. Below is a quick round-up of the new features.

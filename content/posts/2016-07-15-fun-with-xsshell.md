@@ -4,6 +4,8 @@ categories: [application security]
 
 So this is kinda fun. With this page open, copy and paste one of the listener commands from below into a terminal window on your local machine. Then, paste `alert(42)` into the resulting shell and press "Enter". Once you recover from the initial shock of what you just witnessed, play with the following payloads and spend the next hour of life thoroughly enjoying yourself.
 
+<!-- READMORE -->
+
 ### Listeners
 
 #### Linux

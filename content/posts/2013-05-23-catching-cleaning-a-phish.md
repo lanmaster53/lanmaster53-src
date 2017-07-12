@@ -4,6 +4,8 @@ categories: [network security]
 
 This afternoon my wife looked up from her laptop and said to me, "You're gonna be proud of me. I just got phished (see image below). However, after clicking the link and seeing that it was asking me for my username and password, I logged into my Twitter account manually to see if the email was legit. It wasn't, so I deleted the email." While she thought that I should have been proud, I had obviously failed at explaining the risks of phishing attacks and it was time to dust off some incident response skills.
 
+<!-- READMORE -->
+
 My wife helps run her fathers company, so she handles most of the business email that the company receives. As a result, she received the following email.
 
 [![](/images/posts/tpwitter_phish.png)](/images/posts/tpwitter_phish.png)

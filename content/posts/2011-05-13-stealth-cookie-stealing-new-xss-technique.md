@@ -4,6 +4,8 @@ categories: [application security]
 
 Everyone knows what XSS is, right? Good, I'll spare you the definition. A common use for XSS is stealing cookies to hijack sessions and gain access to restricted web content. Cookie stealing is typically done by forcing a target's browser to issue some sort of GET request to a server controlled by the attacker which accepts the target's cookie as a parameter and processes it in some way. In most cases, when a cookie stealing XSS attack is successful, it generates a visual clue which can tip off the target. While it is too late at this point, stealth has been compromised, and could be the difference between the user keeping the session active, or clicking 'log out' and rendering your stolen cookie invalid.
 
+<!-- READMORE -->
+
 ![Good ole' fashion cookie stealin'](/images/posts/cookie_monster.jpg)
 
 About a year ago, I came up with a stealth technique for executing cookie stealing XSS attacks that I assumed was common knowledge. But after talking about the technique with several top web app security professionals, I realize that the technique may be more unique than I initially thought. Below is an example of the technique.

@@ -4,6 +4,8 @@ categories: [network security]
 
 Anyone that has been doing penetration tests for a reasonable amount of time has at some point encountered a restricted user environment. A restricted user environment is a locked down, and usually shared, environment which restricts users to very limited functionality. These configurations are commonly seen in public kiosks and shared terminal servers.
 
+<!-- READMORE -->
+
 The first instinct to achieve shell in one of these environments is to simply run "cmd.exe". In most cases, it's not that easy. Finding a means to run "cmd.exe" can be challenging. The typical routes such as the "Run" command, Windows Explorer, and "Programs" menu are usually disabled. But there are ways to do it. Below I cover one such technique I have been using for several years and have not seen documented elsewhere. It leverages Internet Explorer Developer Tools. Let me show you how it works.
 
 Most restricted user environments exist solely to provide functionality that is accessed via a web browser. Therefore, Internet Explorer is authorized in just about every restricted Windows environment. While not guaranteed, it has been available in every such environment that I have encountered to date. Built into Internet Explorer is the feature that we are going to leverage, a feature named Developer Tools.

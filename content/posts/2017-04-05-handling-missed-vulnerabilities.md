@@ -6,6 +6,8 @@ categories: [application security, network security, consulting, leadership]
 
 [Robin "digininja" Wood](https://twitter.com/digininja) wrote [this](https://digi.ninja/blog/missing_a_vuln.php) interesting article about the impact of missing vulnerabilities during security assessments. He makes a lot of good points, and the reality is, it's something we all deal with. Robin talks about how missing a vulnerability can be the end of one's career, or at least a large step backward. While this is true, his article only addresses the impact at a micro level. I'd like to expand on that.
 
+<!-- READMORE -->
+
 As the Managing Consultant of a growing Application Security Consulting practice, this issue takes on a much larger form. We are no longer talking about one person's career. We are talking about an entire organization on whom employees' livelihood rely. Missing a vulnerability at this level can have some major consequences that affect a lot more than the offending consultant.
 
 But it's going to happen. It's not a matter of if, but when. So it's important to be prepared when something like this does happen. As someone that has put a good bit of thought into this issue due to my position at nVisium, I've compiled my thoughts on the issue from prevention to reaction. These thoughts cover various hypothetical examples, attempt to identify the root problem, and discuss solutions to help rectify the situation.

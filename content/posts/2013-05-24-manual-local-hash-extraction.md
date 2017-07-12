@@ -4,6 +4,8 @@ categories: [network security]
 
 There has been enough interest around the topic of manual local hash extraction that I wanted to document all of the techniques I am aware of in one place.
 
+<!-- READMORE -->
+
 The SAM and SYSTEM hives hold the necessary information to acquire authentication hashes for all local users on a Windows operating system. Normally, these files are locked and inaccessible, even by the SYSTEM and Administrator accounts. The following techniques are ways to access the SAM and SYSTEM hives within a Windows operating system during normal operation. Be advised that these techniques require Administrator or SYSTEM level privileges.
 
 ### Volume Shadow Copy Service

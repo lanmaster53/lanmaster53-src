@@ -4,6 +4,8 @@ categories: [cracking, projects]
 
 As discussed on [PaulDotCom](http://pauldotcom.com/2011/04/eap-md5-offline-password-attac.html), [eapmd5crack.py](https://github.com/lanmaster53/ptscripts/blob/master/eapmd5crack.py) is a tool developed by myself and [Mark Baggett](http://www.indepthdefense.com/) which will crack an EAP-MD5 authentication exchange from a packet capture.
 
+<!-- READMORE -->
+
 Features:
 
 - Reads from pcap capture file.

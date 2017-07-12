@@ -4,6 +4,8 @@ categories: [automation]
 
 I tweeted a while back that I am using a Raspberry Pi and Pianobar to stream music to my whole-home audio system. I received a lot of requests to publish how I configured my system. At the time I didn't have any organized notes, so I didn't publish anything. However, the Pianobar developer changed some stuff recently that broke my old install, so I had to troubleshoot and rebuild. This time I took good notes and put this article together. The notes below are hastily thrown together and often use links in place of raw data, so if things seem confusing and you have questions, please hit me up on Twitter and I'll see what I can do to help.
 
+<!-- READMORE -->
+
 I'm more comfortable in Debian environments, so I use Raspbian with my Raspberry Pi. Here are a few resources I used to get mine up and running. Rather than one resource giving me everything I needed to get started, I found bits and pieces from the various resources worked best.
 
 - [http://www.dingleberrypi.com/2013/05/install-and-run-raspbian-from-a-usb-flash-drive/](http://www.dingleberrypi.com/2013/05/install-and-run-raspbian-from-a-usb-flash-drive/)

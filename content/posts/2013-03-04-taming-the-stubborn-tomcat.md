@@ -4,6 +4,8 @@ categories: [network security]
 
 Today I ran into a problem that most penetration testers will encounter at some point, and whose solution required a creative approach. Therefore, I'm writing this brief article as a reference for future encounters with stubborn Tomcat servers.
 
+<!-- READMORE -->
+
 I found an up-to-date Tomcat 7 server with easily guessable credentials and was able to access the Tomcat management console. At this point, compromising the server is usually a done deal. Typically, I would deploy a meterpreter shell via the Remote WAR deployment panel and proceed to pillage and pivot through the server using the SYSTEM level access that Tomcat granted me. However, this Tomcat was running on a fully patched and protected Windows Server 2008 R2 system which made this a bit more challenging.
 
 Once I gained access to a Tomcat management console, I took the standard approach and deployed a meterpreter WAR application to the Tomcat server, but something was preventing meterpreter from exfiltrating the network. Extensive analysis proved that the target network was filtering all egress traffic from the target web server and only allowing outbound traffic for stateful TCP connections. Ingress filtering was also in place, so neither bind nor reverse meterpreter shells were possible against this server.

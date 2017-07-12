@@ -4,6 +4,8 @@ categories: [network security]
 
 [Mark Baggett](http://www.indepthdefense.com/) of [PaulDotCom](http://www.pauldotcom.com/) and I were asked to conduct an insider pentest of a network using 802.1X for port security. Mark was not able to join me during the initial phases of the test, so I was left with the task of figuring out how to bypass the port security so we could attack local targets. As I began to put my plan together, I came up with the following 802.1X attack vectors:
 
+<!-- READMORE -->
+
 1. Use a hub to sniff traffic on the network. Information gathering.
 2. Spoof an authenticated supplicant off the hub. Allows for passing of UDP and ICMP traffic.
 3. Write/use a tool which acts as a layer 2 gateway to MitM the authenticated supplicant and ride the 802.1X session.

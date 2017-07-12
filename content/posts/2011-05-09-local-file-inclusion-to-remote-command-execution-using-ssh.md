@@ -4,6 +4,8 @@ categories: [application security]
 
 Log poisoning has been used for years to upgrade local file inclusion vulnerabilities to remote command execution. In most cases, web server logs are used to execute such an attack. Most admins have become wise to the technique and do a decent job of preventing this. However, an equal amount of attention is not always paid to authentication logs.
 
+<!-- READMORE -->
+
 I was recently attempting to exploit a LFI vulnerability on a pen test and was having no luck poisoning the web server logs. Previous scans of the target showed that an OpenSSH service was running. I took one last shot at the LFI vulnerability and below was the result. I was shocked to find that auth.log was world readable.
 
 ![](/images/posts/lfi_rce_orig_auth.png)

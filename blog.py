@@ -79,6 +79,10 @@ _posts = [p for p in flatpages if p.path.startswith(POST_DIR)]
 for _post in _posts:
     _post.meta['date'] = parse_date_from_path(_post.path)
     _post.meta['name'] = parse_name_from_path(_post.path)
+    # create intros for the home page
+    marker = '<!-- READMORE -->'
+    if marker in _post.html:
+        _post.meta['intro'] = _post.html[:_post.html.find(marker)]
 _posts.sort(key=lambda item:item['date'], reverse=True)
 for _post in _posts:
     if _post['publish'] is True:

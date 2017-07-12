@@ -6,11 +6,16 @@
 {% endblock %}
 
 {% block content %}
-{% for post in site.posts[:3] %}
+{% for post in site.posts[:7] %}
     <h2><a href="{{ url_for('post', year=post.date.strftime('%Y'), month=post.date.strftime('%m'), day=post.date.strftime('%d'), name=post.name) }}">{{ post.title }}</a></h2>
     <h5>{{ post.date.strftime("%A, %B %e, %Y") }}</h5>
     <div class="content">
+    {% if 'intro' in post.meta %}
+        {{ post.intro[:-5]|safe }} ... <a href="{{ url_for('post', year=post.date.strftime('%Y'), month=post.date.strftime('%m'), day=post.date.strftime('%d'), name=post.name) }}">more</a></p>
+    {% else %}
         {{ post.html|safe }}
+    {% endif %}
     </div>
+    {{ '<hr>'|safe if not loop.last }}
 {% endfor %}
 {% endblock %}

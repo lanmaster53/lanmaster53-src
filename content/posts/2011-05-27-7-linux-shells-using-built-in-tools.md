@@ -4,6 +4,8 @@ categories: [network security]
 
 There are many distributions of linux, and they all do things a little different regarding default security and built-in tool sets. Which means when engaging these different flavors during a pentest, what works against one linux target to get an interactive shell, may not work against another. Well, not to worry my friends, there are many techniques for spawning shells, specifically reverse shells, from linux, and one or more of these techniques is bound to be available no matter which distro you're looking at.
 
+<!-- READMORE -->
+
 The scenario is this: You have the ability to run a simple command, or cause a user to run a simple command, on the target system. Whether it be via a Remote Command Execution vulnerability in a website, or some sort of php injected XSS which causes a privileged user to run commands on the target system. There are many instances of this scenario. Starting from the easiest and most common, here are some of the techniques which can be used to gain reverse shell on the target system.
 
 ### #1. netcat
