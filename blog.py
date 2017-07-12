@@ -24,7 +24,7 @@ SITE = {
     'author': {
         'name': 'Tim Tomes',
         'email': 'timothy.tomes@gmail.com',
-        'gravatar': 'http://www.gravatar.com/avatar/0a6d9b1ad59ad436bf9d9d16b2a7133e.png',
+        'gravatar': 'https://www.gravatar.com/avatar/0a6d9b1ad59ad436bf9d9d16b2a7133e.png',
         'meta': {
             'bitbucket': {'username': 'lanmaster53', 'url': 'https://bitbucket.org/'},
             'github': {'username': 'lanmaster53', 'url': 'https://github.com/'},
