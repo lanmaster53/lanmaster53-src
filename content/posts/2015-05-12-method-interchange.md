@@ -43,7 +43,9 @@ Below is an abbreviated list of methods and objects from several popular develop
 | PHP | `$_REQUEST` | Array that contains `GET`, `POST`, and Cookie values. |
 | Rails | `match` | Routing method that allows for routing requests to multiple verbs e.g. `GET`, `POST`, etc. |
 | Django | `HttpRequest.REQUEST` | Dictionary that contains both `GET` and `POST` parameter values. |
+| Flask | `Request.values` | Dictionary that contains both `GET` and `POST` parameter values. |
 | Spring MVC | `HttpServletRequest.getParameter()` | Controller method that provides access to both `GET` and `POST` parameter values if the `@RequestMapping` annotation `method` paremeter is not set. |
+| .NET | `HttpRequest.Params` | Collection of `QueryString`, `Form`, `Cookies`, and `ServerVariables` items. |
 | .NET MVC | `public ActionResult <action>(<type> <name>)` | Configuration that binds parameters from all sources e.g. `GET`, `POST`, route, etc., to Action method parameters. |
 
 ### Discovery

@@ -6,7 +6,7 @@ Christian, father, husband, veteran, code slinger, aspiring difference-maker and
 
 ### Work
 
-- Managing Consultant at [nVisium](https://www.nvisium.com).
+- Director of Training at [nVisium](https://www.nvisium.com).
 - [Independent](/training/) Application Security Instructor
 - Certified: CISSP, CISA, GWAPT (expired), GPEN (expired), CEH (expired), CCNA Security (expired), MCSA (2003), Comptia A+ and Network+, blah, blah, why are you still reading this?
 
@@ -18,20 +18,21 @@ Christian, father, husband, veteran, code slinger, aspiring difference-maker and
 
 ### Public Speaking
 
+- Edge Cases in Web - DEF CON 25 (2017)
 - [Ermahgerd Werb Verlns - Upstate SC ISSA 2016](https://speakerdeck.com/lanmaster53/ermahgerd-werb-verlns)
 - [Ermahgerd Werb Verlns - Church IT Network Conference 2016](https://speakerdeck.com/lanmaster53/ermahgerd-werb-verlns)
 - OSINT for AppSec: Recon-ng and Beyond - Upstate SC ISSA 2015
-- [OSINT for AppSec: Recon-ng and Beyond - DerbyCon 2015](http://youtu.be/zgz6QYpdzT8) ([slides](https://speakerdeck.com/lanmaster53/osint-for-appsec-recon-ng-and-beyond))
+- [OSINT for AppSec: Recon-ng and Beyond - DerbyCon 5.0 (2015)](http://youtu.be/zgz6QYpdzT8) ([slides](https://speakerdeck.com/lanmaster53/osint-for-appsec-recon-ng-and-beyond))
 - [OSINT for AppSec: Recon-ng and Beyond - BSides Augusta 2015](http://youtu.be/hWgxvb2Se78)
-- [Ball and Chain: A New Paradigm in Stored Password Security - DerbyCon 2014](http://youtu.be/GfyM8lFkjo8)
+- [Ball and Chain: A New Paradigm in Stored Password Security - DerbyCon 4.0 (2014)](http://youtu.be/GfyM8lFkjo8)
 - [Stored Password Security: The Adobe Guide to Keyless Decryption - BSides Augusta 2014](http://youtu.be/C1UqwC0SZ7c)
 - [Look Ma, No Exploits! - The Recon-ng Framework - Upstate SC ISSA 2013](https://speakerdeck.com/lanmaster53/look-ma-no-exploits-the-recon-ng-framework)
-- [Look Ma, No Exploits! - The Recon-ng Framework - DerbyCon 2013](http://youtu.be/vkmNTNl6urw)
+- [Look Ma, No Exploits! - The Recon-ng Framework - DerbyCon 3.0 (2013)](http://youtu.be/vkmNTNl6urw)
 - [Look Ma, No Exploits! - The Recon-ng Framework - BSides Augusta 2013](http://youtu.be/DtaucOTXfZY)
 - Look Ma, No Exploits! The Next Generation of Open Source Reconnaissance – Boise ISSA Conference 2013
 - [Hide and Seek, Post-Exploitation Style – ShmooCon 2013](http://youtu.be/VJTrRMqHU5U)
 - [Next Generation Reconnaissance – Hack3rcon 2012](http://youtu.be/jsmiJQ2dbw4)
-- [Next Generation Reconnaissance – DerbyCon 2012](http://youtu.be/RCWZcEztNT8)
+- [Next Generation Reconnaissance – DerbyCon 2.0 (2012)](http://youtu.be/RCWZcEztNT8)
 - Web Recon for Penetration Testing and Network Defense – Colorado Springs ISSA Conference 2012 (Keynote)
 - Lurking in the Shadows – Augusta ISSA November 2011
 - [Lurking in the Shadows – Hack3rcon 2011](http://youtu.be/ant3ir9cRME)

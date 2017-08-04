@@ -49,7 +49,9 @@ Hello
 
 - Exploit
 
-`http://example.com?name=<script>alert(42)</script>`
+```
+http://example.com?name=<script>alert(42)</script>
+```
 
 - Result
 
@@ -75,7 +77,9 @@ Hello
 
 - Exploit
 
-`http://example.com?name=Tim#<script>alert(42)</script>`
+```
+http://example.com?name=Tim#<script>alert(42)</script>
+```
 
 - Result
 
