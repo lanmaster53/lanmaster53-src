@@ -2,7 +2,7 @@ title: 'Handling Missed Vulnerabilities'
 publish: True
 categories: [application security, network security, consulting, leadership]
 
-(Cross-posted from [https://nvisium.com/blog/2017/04/05/handling-missed-vulnerabilities/](https://nvisium.com/blog/2017/04/05/handling-missed-vulnerabilities/).)
+(Originally posted at [https://nvisium.com/blog/2017/04/05/handling-missed-vulnerabilities/](https://nvisium.com/blog/2017/04/05/handling-missed-vulnerabilities/).)
 
 [Robin "digininja" Wood](https://twitter.com/digininja) wrote [this](https://digi.ninja/blog/missing_a_vuln.php) interesting article about the impact of missing vulnerabilities during security assessments. He makes a lot of good points, and the reality is, it's something we all deal with. Robin talks about how missing a vulnerability can be the end of one's career, or at least a large step backward. While this is true, his article only addresses the impact at a micro level. I'd like to expand on that.
 

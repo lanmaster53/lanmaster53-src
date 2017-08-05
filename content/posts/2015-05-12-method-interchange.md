@@ -2,7 +2,7 @@ title: 'Method Interchange: The Forgotten Vulnerability'
 publish: True
 categories: [application security]
 
-(Originally posted [@nvisium](https://blog.nvisium.com/2015/05/method-interchange-forgotten.html).)
+(Originally posted at [https://nvisium.com/blog/2015/05/12/method-interchange-forgotten/](https://nvisium.com/blog/2015/05/12/method-interchange-forgotten/).)
 
 When you think of the most prolific scorers in NBA history, you think of names like Kareem Abdul-Jabbar, Bill Russell, and Karl Malone. Most casual basketball fans aren't familiar with names like Oscar Robertson, Bob Cousy, or John Stockton, but without these men, the previously mentioned scorers would have been much less effective as an offensive threat. And thus is the life of the Method Interchange vulnerability.
 
