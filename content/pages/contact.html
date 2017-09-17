@@ -6,10 +6,10 @@
 <form>
     <div>
         <label>
-            <input type="radio" name="from" id="from1" value="{{ site.author.email }}" checked> Personal
+            <input type="radio" name="from" id="from1" value="{{ site.author.emails.personal }}" checked> Personal
         </label>
         <label>
-            <input type="radio" name="from" id="from2" value="tim.tomes@nvisium.com"> nVisium
+            <input type="radio" name="from" id="from2" value="{{ site.author.emails.business }}"> Business
         </label>
     </div>
     <div>

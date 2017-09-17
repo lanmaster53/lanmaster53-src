@@ -6,18 +6,21 @@ Christian, father, husband, veteran, code slinger, aspiring difference-maker and
 
 ### Work
 
-- Director of Training at [nVisium](https://www.nvisium.com).
+- Freelance Consultant
+- Founder, Practical Security Services
 - [Independent](/training/) Application Security Instructor
 - Certified: CISSP, CISA, GWAPT (expired), GPEN (expired), CEH (expired), CCNA Security (expired), MCSA (2003), Comptia A+ and Network+, blah, blah, why are you still reading this?
 
 ### Play
 
 - Co-founder of Proverbs Hackers, a community of Christian Information Security professionals who share a common thread of faith, fellowship and pwning.
-- Security Blogger. Most of my recent stuff is posted here, but I spent some time writing for [SecurityWeekly](http://securityweekly.com/) as well. Regardless, links to all of my material can be found in the "Archive".
+- Security Blogger. Most of my recent stuff is posted here, but I spent some time writing for [SecurityWeekly](http://securityweekly.com/) as well. Regardless, links to all of my material can be found in the [Archive](/archive/).
 - Open source advocate. Creator and maintainer of the Recon-ng Framework amongst other things. See [Projects](/projects/) for more information.
+- Curator of the AppSec Watercooler Slack channel.
 
 ### Public Speaking
 
+- Burping for Joy and Financial Gain - BSides Augusta 2017
 - Edge Cases in Web - DEF CON 25 (2017)
 - [Ermahgerd Werb Verlns - Upstate SC ISSA 2016](https://speakerdeck.com/lanmaster53/ermahgerd-werb-verlns)
 - [Ermahgerd Werb Verlns - Church IT Network Conference 2016](https://speakerdeck.com/lanmaster53/ermahgerd-werb-verlns)

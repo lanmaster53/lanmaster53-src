@@ -23,7 +23,10 @@ SITE = {
     'tagline': '',
     'author': {
         'name': 'Tim Tomes',
-        'email': 'timothy.tomes@gmail.com',
+        'emails': {
+            'personal': 'timothy.tomes@gmail.com',
+            'business': 'tim.tomes@practicalsecurity.services',
+        },
         'gravatar': 'https://www.gravatar.com/avatar/0a6d9b1ad59ad436bf9d9d16b2a7133e.png',
         'meta': {
             'bitbucket': {'username': 'lanmaster53', 'url': 'https://bitbucket.org/'},
