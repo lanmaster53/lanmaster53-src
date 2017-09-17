@@ -15,10 +15,10 @@ Above all, training gives me an opportunity to share my passion for application 
 | Dates | Class | Host | Location | Registration |
 |:---:|:---:|:---:|:---:|:---:|
 | Sep 20-21 | PWAPT (Conference Edition) | DerbyCon 7.0 | Louisville, Kentucky | [register](https://www.derbycon.com/training-courses-2017/#PWAPT) |
-| Oct 11-13 | PWAPT | OWASP Boston | TBA | TBA |
+| Oct 11-13 | PWAPT | OWASP Boston | Boston, Massachusetts | [register](http://regonline.com/BASC2017) |
 | Oct 25-26 | PWAPT (Conference Edition) | Wild West Hackin' Fest | Deadwood, South Dakota | [register](https://eventgrid.com/Events/29336/wild-west-hackin-fest) |
 
-[Contact](/contact/) me for on-site training opportunities.
+[Contact me](/contact/) for on-site training opportunities.
 
 ### Practical Web Application Penetration Testing - PWAPT
 
