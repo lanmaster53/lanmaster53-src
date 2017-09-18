@@ -20,31 +20,31 @@ Christian, father, husband, veteran, code slinger, aspiring difference-maker and
 
 ### Public Speaking
 
-- Burping for Joy and Financial Gain - BSides Augusta 2017
+- [Burping for Joy and Financial Gain - BSides Augusta 2017](https://youtu.be/nJ5Zw5LyqV0)
 - Edge Cases in Web - DEF CON 25 (2017)
 - [Ermahgerd Werb Verlns - Upstate SC ISSA 2016](https://speakerdeck.com/lanmaster53/ermahgerd-werb-verlns)
 - [Ermahgerd Werb Verlns - Church IT Network Conference 2016](https://speakerdeck.com/lanmaster53/ermahgerd-werb-verlns)
 - OSINT for AppSec: Recon-ng and Beyond - Upstate SC ISSA 2015
-- [OSINT for AppSec: Recon-ng and Beyond - DerbyCon 5.0 (2015)](http://youtu.be/zgz6QYpdzT8) ([slides](https://speakerdeck.com/lanmaster53/osint-for-appsec-recon-ng-and-beyond))
-- [OSINT for AppSec: Recon-ng and Beyond - BSides Augusta 2015](http://youtu.be/hWgxvb2Se78)
-- [Ball and Chain: A New Paradigm in Stored Password Security - DerbyCon 4.0 (2014)](http://youtu.be/GfyM8lFkjo8)
-- [Stored Password Security: The Adobe Guide to Keyless Decryption - BSides Augusta 2014](http://youtu.be/C1UqwC0SZ7c)
+- [OSINT for AppSec: Recon-ng and Beyond - DerbyCon 5.0 (2015)](https://youtu.be/zgz6QYpdzT8) ([slides](https://speakerdeck.com/lanmaster53/osint-for-appsec-recon-ng-and-beyond))
+- [OSINT for AppSec: Recon-ng and Beyond - BSides Augusta 2015](https://youtu.be/hWgxvb2Se78)
+- [Ball and Chain: A New Paradigm in Stored Password Security - DerbyCon 4.0 (2014)](https://youtu.be/GfyM8lFkjo8)
+- [Stored Password Security: The Adobe Guide to Keyless Decryption - BSides Augusta 2014](https://youtu.be/C1UqwC0SZ7c)
 - [Look Ma, No Exploits! - The Recon-ng Framework - Upstate SC ISSA 2013](https://speakerdeck.com/lanmaster53/look-ma-no-exploits-the-recon-ng-framework)
-- [Look Ma, No Exploits! - The Recon-ng Framework - DerbyCon 3.0 (2013)](http://youtu.be/vkmNTNl6urw)
-- [Look Ma, No Exploits! - The Recon-ng Framework - BSides Augusta 2013](http://youtu.be/DtaucOTXfZY)
+- [Look Ma, No Exploits! - The Recon-ng Framework - DerbyCon 3.0 (2013)](https://youtu.be/vkmNTNl6urw)
+- [Look Ma, No Exploits! - The Recon-ng Framework - BSides Augusta 2013](https://youtu.be/DtaucOTXfZY)
 - Look Ma, No Exploits! The Next Generation of Open Source Reconnaissance – Boise ISSA Conference 2013
-- [Hide and Seek, Post-Exploitation Style – ShmooCon 2013](http://youtu.be/VJTrRMqHU5U)
-- [Next Generation Reconnaissance – Hack3rcon 2012](http://youtu.be/jsmiJQ2dbw4)
-- [Next Generation Reconnaissance – DerbyCon 2.0 (2012)](http://youtu.be/RCWZcEztNT8)
+- [Hide and Seek, Post-Exploitation Style – ShmooCon 2013](https://youtu.be/VJTrRMqHU5U)
+- [Next Generation Reconnaissance – Hack3rcon 2012](https://youtu.be/jsmiJQ2dbw4)
+- [Next Generation Reconnaissance – DerbyCon 2.0 (2012)](https://youtu.be/RCWZcEztNT8)
 - Web Recon for Penetration Testing and Network Defense – Colorado Springs ISSA Conference 2012 (Keynote)
 - Lurking in the Shadows – Augusta ISSA November 2011
-- [Lurking in the Shadows – Hack3rcon 2011](http://youtu.be/ant3ir9cRME)
+- [Lurking in the Shadows – Hack3rcon 2011](https://youtu.be/ant3ir9cRME)
 
 ### Videos
 
-- [Recon-ng - Pushpin Intro (radius)](http://youtu.be/eZV6hicvMdw)
-- [Recon-ng - Pushpin Intro](http://youtu.be/BwopO7dxT98)
-- [Recon-ng - Update Review (6/23/14)](http://youtu.be/VevMPCkd6aM)
+- [Recon-ng - Pushpin Intro (radius)](https://youtu.be/eZV6hicvMdw)
+- [Recon-ng - Pushpin Intro](https://youtu.be/BwopO7dxT98)
+- [Recon-ng - Update Review (6/23/14)](https://youtu.be/VevMPCkd6aM)
 - [Security Weekly TV - The Devil You Know (reMUX - 46:50)](http://blip.tv/securityweekly/the-devil-you-know-6719417)
-- [Recon-ng - XPath Brute Forcing Module (xpath_bruter)](http://youtu.be/RKt7o9sOe0A)
+- [Recon-ng - XPath Brute Forcing Module (xpath_bruter)](https://youtu.be/RKt7o9sOe0A)
 - [Vimeo](https://vimeo.com/lanmaster53)
