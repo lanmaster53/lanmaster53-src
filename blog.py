@@ -38,12 +38,11 @@ SITE = {
     },
     'navigation': [
         'projects',
-        'training',
         'archive',
         'categories',
+        'company',
+        'training',
         'about',
-        #'contact',
-        #'services',
     ],
     'analytics': {
         'googleUA': {
