@@ -100,7 +100,7 @@ def error_handlers():
 # create pages not linked with url_for
 @freezer.register_generator
 def page():
-    for p in ('drafts', 'restmail'):
+    for p in ('drafts', 'restmail', 'test'):
         yield {'name': p}
 
 # create pages not linked with url_for
