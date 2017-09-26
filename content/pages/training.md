@@ -1,6 +1,6 @@
 title: Training
 
-### Why Train with Me?
+## Why Train with Me?
 
 There are too many application security classes that waste time by discussing multiple tools that serve the same purpose, or make application security concepts feel like magic by not addressing the practical application of theory. Using the tools I use and the techniques I've learned from years of application security consulting, I provide training that focuses on bringing theory and reality together to provide a true learning experience. 
 
@@ -10,19 +10,18 @@ Above all, training gives me an opportunity to share my passion for application 
 
 ...but don't take my word for it. Scroll down to see testimonials from previous students.
 
-### Upcoming Classes
+## Upcoming Classes
 
 | Dates | Class | Host | Location | Registration |
 |:---:|:---:|:---:|:---:|:---:|
-| Sep 20-21 | PWAPT (Conference Edition) | DerbyCon 7.0 | Louisville, Kentucky | [register](https://www.derbycon.com/training-courses-2017/#PWAPT) |
 | Oct 11-13 | PWAPT | OWASP Boston | Boston, Massachusetts | [register](http://regonline.com/BASC2017) |
 | Oct 25-26 | PWAPT (Conference Edition) | Wild West Hackin' Fest | Deadwood, South Dakota | [register](https://eventgrid.com/Events/29336/wild-west-hackin-fest) |
 
-[Contact me](/contact/) for on-site training opportunities.
+Please [contact me](/contact/) for on-site training opportunities.
 
-### Practical Web Application Penetration Testing - PWAPT
+## Practical Web Application Penetration Testing - PWAPT
 
-#### Description
+### Description
 
 PWAPT provides comprehensive training on the latest open source tools and manual techniques for performing end-to-end web application penetration testing engagements. After a quick overview of the penetration testing methodology, the instructor will lead students through the process of testing and exploiting a target web application using the techniques and approaches developed from a career of real world application penetration testing experiences. Students will be introduced to the best tools currently available for the specific steps of the methodology, including Burp Suite Pro, and taught how to integrate these tools with manual testing techniques to maximize effectiveness. A major goal of this course is teaching students the glue that brings the tools and techniques together to successfully perform a web application penetration test from beginning to end, an oversight in most web application penetration testing courses. The end result is an individual with the confidence and skill set to conduct consultative web application penetration testing engagements.
 
@@ -36,7 +35,7 @@ For additional insight into the origin, mission, and benefits of PWAPT, listen t
     <source src="/downloads/EIS-ep54-PWAPT.mp3" type="audio/mpeg">
 </audio>
 
-#### Outline
+### Outline
 
 Day 1:
 
@@ -58,13 +57,13 @@ Day 3:
 
 Note: The Conference Edition is an abbreviated version of the course designed to fit into the typical 2-day conference schedule. While not all content can be covered during the Conference Edition courses, all of the content will be provided for self-study.
 
-#### Skill Requirements
+### Skill Requirements
 
 Students taking this course should have introductory knowledge of the OWASP Top 10. Students do not need to be comfortable with with explaining, finding, or exploiting common web vulnerabilities, but some level of exposure is ideal. This is not an advanced course. However, we will strive to cover advanced topics if the ability level of the student population allows.
 
 This course contains code remediation content that includes discussions on the proper techniques for mitigating vulnerabilities, and exercises where the instructor and students modify the application's source code to implement mitigating controls and test them for effectiveness. While not required, a basic understanding of programming concepts will allow students to better relate to the terminology and techniques demonstrated for properly remediating the discussed vulnerabilities.
 
-#### Technical Requirements
+### Technical Requirements
 
 * Laptop with at least one (1) USB port.
 * Latest VMware Player, VMware Workstation, or VWware Fusion installed. Other virtualization software such as Parallels or VirtualBox will probably work if the attendee is familiar with its functionality. However, VMware Player should be prepared as a backup.
@@ -72,7 +71,7 @@ This course contains code remediation content that includes discussions on the p
 * At least twenty (20) GB of hard drive space.
 * At least four (4) GB of RAM.
 
-### Testimonials
+## Testimonials
 
 <div class="row">
 <div class="six columns">
