@@ -1,25 +1,26 @@
 title: About
 
-#### Tim (lanmaster53) Tomes
+### Tim (lanmaster53) Tomes
 
 Christian, father, husband, veteran, code slinger, aspiring difference-maker and hacking enthusiast.
 
-### Work
+## Work
 
 - Freelance Consultant
 - Founder, Practical Security Services
 - [Independent](/training/) Application Security Instructor
 - Certified: CISSP, CISA, GWAPT (expired), GPEN (expired), CEH (expired), CCNA Security (expired), MCSA (2003), Comptia A+ and Network+, blah, blah, why are you still reading this?
 
-### Play
+## Play
 
 - Co-founder of Proverbs Hackers, a community of Christian Information Security professionals who share a common thread of faith, fellowship and pwning.
 - Security Blogger. Most of my recent stuff is posted here, but I spent some time writing for [SecurityWeekly](http://securityweekly.com/) as well. Regardless, links to all of my material can be found in the [Archive](/archive/).
 - Open source advocate. Creator and maintainer of the Recon-ng Framework amongst other things. See [Projects](/projects/) for more information.
 - Curator of the AppSec Watercooler Slack channel.
 
-### Public Speaking
+## Public Speaking
 
+- [Burping for Joy and Financial Gain - DerbyCon 7.0 (2017)](https://youtu.be/U41D_d4JQLs)
 - [Burping for Joy and Financial Gain - BSides Augusta 2017](https://youtu.be/nJ5Zw5LyqV0)
 - Edge Cases in Web - DEF CON 25 (2017)
 - [Ermahgerd Werb Verlns - Upstate SC ISSA 2016](https://speakerdeck.com/lanmaster53/ermahgerd-werb-verlns)
@@ -40,7 +41,7 @@ Christian, father, husband, veteran, code slinger, aspiring difference-maker and
 - Lurking in the Shadows – Augusta ISSA November 2011
 - [Lurking in the Shadows – Hack3rcon 2011](https://youtu.be/ant3ir9cRME)
 
-### Videos
+## Videos
 
 - [Recon-ng - Pushpin Intro (radius)](https://youtu.be/eZV6hicvMdw)
 - [Recon-ng - Pushpin Intro](https://youtu.be/BwopO7dxT98)
