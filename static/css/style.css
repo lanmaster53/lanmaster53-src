@@ -13,19 +13,31 @@ h6 a:link, h6 a:visited, h6 a:active, h6 a:hover {
     border: none;
 }
 
-/*a {
+a {
     color: #FF8080;
 }
+
 a:hover {
     color: #FF0000;
-}*/
+}
 
-/*h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-}*/
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+}
 
-h1 {
+/*h1 {
     font-size: 5.0em;
+}*/
+
+blockquote {
+    font-style: italic;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+}
+
+blockquote p {
+    margin: 0;
 }
 
 code {
