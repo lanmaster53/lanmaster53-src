@@ -15,6 +15,8 @@ Above all, training gives me an opportunity to share my passion for application 
 | Dates | Class | Host | Location | Registration |
 |:---:|:---:|:---:|:---:|:---:|
 | February 21-23, 2018 | PWAPT | OWASP Boston | Waltham, MA | [register](http://regonline.com/PWAPTDB) |
+| March 21-22, 2018 | PWAPT | HackWest | Salt Lake City, UT | [coming soon!](https://hackwest.org/) |
+| TBD | PWAPT | PWAPT Charleston | Charleston, SC | coming soon! |
 
 Please [contact me](/contact/) for on-site training opportunities.
 
