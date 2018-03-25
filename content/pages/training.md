@@ -14,8 +14,8 @@ Above all, training gives me an opportunity to share my passion for application 
 
 | Dates | Class | Host | Location | Registration |
 |:---:|:---:|:---:|:---:|:---:|
-| March 21-22, 2018 | PWAPT | HackWest | Salt Lake City, UT | [register](https://hackwest.org/register/training/1) |
 | April 19-20, 2018 | PWAPT | BSides Charleston | Charleston, SC | [register](https://www.eventbrite.com/e/practical-web-application-penetration-testing-with-tim-tomes-tickets-42262903482) |
+| June 6-8, 2018 | PWAPT | Crowe Horwath LLP | Lexington, KY | [register](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T8XNKK9EEQ8MW) |
 
 Please [contact me](/contact/) for on-site training opportunities.
 
@@ -42,17 +42,22 @@ Day 1:
 * Methodology
 * Reconnaissance
 * Mapping
-* Automated Discovery
-* Manual Discovery
+* Content Discovery
+* Vulnerability Discovery
 
 Day 2:
 
-* Manual Discovery (cont.)
-* Exploitation
+* Vulnerability Discovery (cont.)
 
 Day 3:
 
+* Vulnerability Discovery (cont.)
+* Exploitation
 * Web Services
+* Advanced Burp Usage
+
+Day 4:
+
 * Remediation
 
 Note: The Conference Edition is an abbreviated version of the course designed to fit into the typical 2-day conference schedule. While not all content can be covered during the Conference Edition courses, all of the content will be provided for self-study.
@@ -75,6 +80,8 @@ This course contains code remediation content that includes discussions on the p
 
 <div class="row">
 <div class="six columns">
+<blockquote class="twitter-tweet tw-align-center" data-cards="hidden"><p lang="en" dir="ltr">Had an amazing week in Utah. Went to <a href="https://twitter.com/LaNMaSteR53?ref_src=twsrc%5Etfw">@LaNMaSteR53</a>&#39;s <a href="https://twitter.com/hashtag/PWAPT?src=hash&amp;ref_src=twsrc%5Etfw">#PWAPT</a> trainingand HackWest. I flew out from California for it on my dime. Worth every penny and then some. Great training, and methodology I could grasp. Thanks Tim!</p>&mdash; Aaron Phillips (@EightieOG) <a href="https://twitter.com/EightieOG/status/977663175171629056?ref_src=twsrc%5Etfw">March 24, 2018</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-cards="hidden"><p lang="en" dir="ltr">Finally, thanks to <a href="https://twitter.com/LaNMaSteR53?ref_src=twsrc%5Etfw">@LaNMaSteR53</a> for an excellent PWAPT class.  Catch you next time my friend!</p>&mdash; Jason Wood (@Jason_Wood) <a href="https://twitter.com/Jason_Wood/status/977352282126757889?ref_src=twsrc%5Etfw">March 24, 2018</a></blockquote>
 <blockquote class="twitter-tweet tw-align-center" data-cards="hidden"><p lang="en" dir="ltr">I can&#39;t say enough good things about <a href="https://twitter.com/LaNMaSteR53?ref_src=twsrc%5Etfw">@LaNMaSteR53</a> &#39;s Practical Web Application Penetration Testing course. Tim delivers information in a very digestible, and immediately useful way. I highly recommend this course to all <a href="https://twitter.com/hashtag/AppSec?src=hash&amp;ref_src=twsrc%5Etfw">#AppSec</a> professionals. <a href="https://twitter.com/hashtag/PWAPT?src=hash&amp;ref_src=twsrc%5Etfw">#PWAPT</a></p>&mdash; Joshua Dow (@0xJDow) <a href="https://twitter.com/0xJDow/status/968183082602942464?ref_src=twsrc%5Etfw">February 26, 2018</a></blockquote>
 <blockquote class="twitter-tweet tw-align-center" data-cards="hidden"><p lang="en" dir="ltr"><a href="https://twitter.com/LaNMaSteR53?ref_src=twsrc%5Etfw">@LaNMaSteR53</a> <a href="https://twitter.com/hashtag/PWAPT?src=hash&amp;ref_src=twsrc%5Etfw">#PWAPT</a> class was awesome this week thank you!</p>&mdash; Kevin Murphy (@0xhexmex) <a href="https://twitter.com/0xhexmex/status/967380529787097090?ref_src=twsrc%5Etfw">February 24, 2018</a></blockquote>
 <blockquote class="twitter-tweet tw-align-center" data-cards="hidden"><p lang="en" dir="ltr">Shout-out to <a href="https://twitter.com/LaNMaSteR53?ref_src=twsrc%5Etfw">@lanmaster53</a> Tim Tomes! His Practical Web Application Penetration Testing class ROCKED! <a href="https://twitter.com/hashtag/PWAPT?src=hash&amp;ref_src=twsrc%5Etfw">#PWAPT</a> <a href="https://twitter.com/hashtag/WildWestHackinFest?src=hash&amp;ref_src=twsrc%5Etfw">#WildWestHackinFest</a></p>&mdash; Daniel Lowrie (@Daniel_ITProTV) <a href="https://twitter.com/Daniel_ITProTV/status/926092926140198913?ref_src=twsrc%5Etfw">November 2, 2017</a></blockquote>
@@ -102,6 +109,8 @@ This course contains code remediation content that includes discussions on the p
 <blockquote class="twitter-tweet tw-align-center" data-cards="hidden"><p lang="en" dir="ltr">Wooo, epic nose bleed! Thats all the training from <a href="https://twitter.com/LaNMaSteR53?ref_src=twsrc%5Etfw">@lanmaster53</a> being stored in my head, forcing the blood out to make room :)</p>&mdash; Steve Loughran (@z0rlac) <a href="https://twitter.com/z0rlac/status/647260309237968896?ref_src=twsrc%5Etfw">September 25, 2015</a></blockquote>
 </div>
 <div class="six columns">
+<blockquote class="twitter-tweet tw-align-center" data-cards="hidden"><p lang="en" dir="ltr">I returned home last night from <a href="https://twitter.com/HackWestCon?ref_src=twsrc%5Etfw">@HackWestCon</a> and <a href="https://twitter.com/LaNMaSteR53?ref_src=twsrc%5Etfw">@LaNMaSteR53</a>&#39;s <a href="https://twitter.com/hashtag/PWAPT?src=hash&amp;ref_src=twsrc%5Etfw">#PWAPT</a> course.  The course was the best <a href="https://twitter.com/hashtag/BurpSuite?src=hash&amp;ref_src=twsrc%5Etfw">#BurpSuite</a> course ever!  Thanks Tim!</p>&mdash; Ron M-F (@RonReidy) <a href="https://twitter.com/RonReidy/status/977579856610275328?ref_src=twsrc%5Etfw">March 24, 2018</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-conversation="none" data-cards="hidden"><p lang="en" dir="ltr">And we all loved you for it.  Great class, can&#39;t say enough good things.</p>&mdash; Charles Schultheiss (@testyourbackups) <a href="https://twitter.com/testyourbackups/status/977334631606308864?ref_src=twsrc%5Etfw">March 24, 2018</a></blockquote>
 <blockquote class="twitter-tweet tw-align-center" data-cards="hidden"><p lang="en" dir="ltr">I just completed the Practical Web Application Penetration Testing training course with <a href="https://twitter.com/LaNMaSteR53?ref_src=twsrc%5Etfw">@LaNMaSteR53</a>. I highly recommend this -- I came away knowing not only what to do, but how. <a href="https://twitter.com/hashtag/PWAPT?src=hash&amp;ref_src=twsrc%5Etfw">#PWAPT</a></p>&mdash; Andrew Gronosky (@AndrewGronosky) <a href="https://twitter.com/AndrewGronosky/status/968156657762144257?ref_src=twsrc%5Etfw">February 26, 2018</a></blockquote>
 <blockquote class="twitter-tweet tw-align-center" data-cards="hidden"><p lang="en" dir="ltr">Go take this training! I learned a lot from Tim during this class; It changed the way I perform  AppSec Testing. <a href="https://t.co/u6UKC4WXnV">https://t.co/u6UKC4WXnV</a></p>&mdash; Keith Hoodlet (@andMYhacks) <a href="https://twitter.com/andMYhacks/status/938141499660881920?ref_src=twsrc%5Etfw">December 5, 2017</a></blockquote>
 <blockquote class="twitter-tweet tw-align-center" data-cards="hidden"><p lang="en" dir="ltr">Recently attended <a href="https://twitter.com/LaNMaSteR53?ref_src=twsrc%5Etfw">@LaNMaSteR53</a>&#39;s <a href="https://twitter.com/hashtag/PWAPT?src=hash&amp;ref_src=twsrc%5Etfw">#PWAPT</a> course at the <a href="https://twitter.com/hashtag/WWHackinFest?src=hash&amp;ref_src=twsrc%5Etfw">#WWHackinFest</a>.  Amazing content, and useful techniques that really made it click 4 me.</p>&mdash; Jordan Axtman (@NodakInfoSec) <a href="https://twitter.com/NodakInfoSec/status/925936662999388161?ref_src=twsrc%5Etfw">November 2, 2017</a></blockquote>
