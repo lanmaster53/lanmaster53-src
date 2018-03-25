@@ -15,7 +15,7 @@ Above all, training gives me an opportunity to share my passion for application 
 | Dates | Class | Host | Location | Registration |
 |:---:|:---:|:---:|:---:|:---:|
 | April 19-20, 2018 | PWAPT | BSides Charleston | Charleston, SC | [register](https://www.eventbrite.com/e/practical-web-application-penetration-testing-with-tim-tomes-tickets-42262903482) |
-| June 6-8, 2018 | PWAPT | Crowe Horwath LLP | Lexington, KY | [register](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T8XNKK9EEQ8MW) |
+| June 6-8, 2018 | PWAPT | Crowe Horwath LLP | Lexington, KY | [register](/pwapt-lexington/) |
 
 Please [contact me](/contact/) for on-site training opportunities.
 
@@ -56,7 +56,7 @@ Day 3:
 * Web Services
 * Advanced Burp Usage
 
-Day 4:
+Day 4 (optional):
 
 * Remediation
 
