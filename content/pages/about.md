@@ -20,6 +20,7 @@ Christian, father, husband, veteran, code slinger, aspiring difference-maker and
 
 ## Public Speaking
 
+- InfoSec Proverbs: The Tim Tomes Top 10 - BSides Greenville 2018 (keynote)
 - [Burping for Joy and Financial Gain - DerbyCon 7.0 (2017)](https://youtu.be/U41D_d4JQLs)
 - [Burping for Joy and Financial Gain - BSides Augusta 2017](https://youtu.be/nJ5Zw5LyqV0)
 - Edge Cases in Web - DEF CON 25 (2017)
@@ -37,7 +38,7 @@ Christian, father, husband, veteran, code slinger, aspiring difference-maker and
 - [Hide and Seek, Post-Exploitation Style – ShmooCon 2013](https://youtu.be/VJTrRMqHU5U)
 - [Next Generation Reconnaissance – Hack3rcon 2012](https://youtu.be/jsmiJQ2dbw4)
 - [Next Generation Reconnaissance – DerbyCon 2.0 (2012)](https://youtu.be/RCWZcEztNT8)
-- Web Recon for Penetration Testing and Network Defense – Colorado Springs ISSA Conference 2012 (Keynote)
+- Web Recon for Penetration Testing and Network Defense – Colorado Springs ISSA Conference 2012 (keynote)
 - Lurking in the Shadows – Augusta ISSA November 2011
 - [Lurking in the Shadows – Hack3rcon 2011](https://youtu.be/ant3ir9cRME)
 

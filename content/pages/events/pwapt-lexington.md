@@ -1,10 +1,10 @@
 title: PWAPT Lexington
 
+<button onclick="window.location='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T8XNKK9EEQ8MW'">register</button>
+
+###### Description
+
 Don't miss out on a rare 3-day presentation of Practical Web Application Penetration Testing (PWAPT) with Tim "lanmaster53" Tomes in beautiful Lexington, KY!
-
----
-
-![](/images/pages/training/pwapt-teaching.jpg)
 
 ---
 
@@ -43,5 +43,3 @@ Blue Grass Airport of Lexington, KY (LEX / KLEX) is approximately 13 miles away 
 For specific details regarding course materials and prerequisites, see the [PWAPT training page](/training).
 
 There is a 12 student minimum that must be met 2 weeks prior to the event or the event may be canceled, so don't wait to sign up.
-
-[Sign up today!](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T8XNKK9EEQ8MW)

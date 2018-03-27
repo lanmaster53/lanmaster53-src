@@ -18,7 +18,7 @@ Framework for targeted geolocation and tracking.
 
 Series of annotated images depicting usage tips for Burp Suite.
 
-[/burp-visual-aids/](/burp-visual-aids/)
+[/projects/burp-visual-aids/](/projects/burp-visual-aids/)
 
 ### RESTmail.net Web Interface
 

@@ -1,12 +1,15 @@
-from flask import Flask, render_template, redirect, url_for, abort
+from flask import Flask, render_template, render_template_string, redirect, url_for, abort, has_app_context
 from flask_flatpages import FlatPages, pygments_style_defs
 from flask_frozen import Freezer
-from collections import OrderedDict
 from datetime import datetime
 import jinja2
+import json
+import markdown
 import os
 import re
 import sys
+
+##### configuration options
 
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
@@ -52,12 +55,21 @@ SITE = {
     },
     'posts': [],
     'drafts': [],
+    'events': json.load(open('events.json')).get('events'),
+    'testimonials': open('testimonials.html').read().decode('utf-8')
 }
 
-app = Flask(__name__, static_url_path='')
+##### app initialization
+
+app = Flask(__name__)
+app.config.from_object(__name__)
 flatpages = FlatPages(app)
 freezer = Freezer(app)
-app.config.from_object(__name__)
+
+##### app overrides
+
+# clean up white space left behind by jinja template code
+app.jinja_env.trim_blocks = True
 
 # custom loader to look for template-based pages
 custom_loader = jinja2.ChoiceLoader([
@@ -68,6 +80,18 @@ custom_loader = jinja2.ChoiceLoader([
     ]),
 ])
 app.jinja_loader = custom_loader
+
+# custom renderer to render jinja prior to markdown
+# this allows markdown files to include jinja processing
+# only works with an app context
+def my_renderer(text):
+    prerendered_body = text
+    if has_app_context():
+        prerendered_body = render_template_string(text)
+    return markdown.markdown(prerendered_body, app.config['FLATPAGES_MARKDOWN_EXTENSIONS'])
+app.config['FLATPAGES_HTML_RENDERER'] = my_renderer
+
+##### pre-request context processing
 
 def parse_date_from_path(s):
     date_str = '-'.join(s.split(os.path.sep)[-1].split('-')[:3])
@@ -92,27 +116,6 @@ for _post in _posts:
     else:
         app.config['SITE']['drafts'].append(_post)
 
-# create the 404 page for GH Pages
-@freezer.register_generator
-def error_handlers():
-    yield "/404.html"
-
-# create pages not linked with url_for
-@freezer.register_generator
-def page():
-    for p in ('drafts', 'restmail', 'test', 'pwapt-lexington'):
-        yield {'name': p}
-
-# create pages not linked with url_for
-@freezer.register_generator
-def old_post():
-    for p in app.config['SITE']['posts']:
-        yield {
-            'year': p['date'].year,
-            'month': p['date'].month,
-            'name': p['name'],
-        }
-
 # add categories to the site config item
 _categories = {}
 for _post in app.config['SITE']['posts']:
@@ -126,18 +129,47 @@ app.config['SITE']['categories'] = _categories
 app.jinja_env.globals['site'] = app.config['SITE']
 app.jinja_env.globals['date'] = datetime.now()
 
-@app.route('/pygments.css')
-def pygments_css():
-    return pygments_style_defs(PYGMENTS_STYLE), 200, {'Content-Type': 'text/css'}
+##### frozen content generators
 
-@app.route('/')
-def home():
-    return render_template('home.html')
+# create the 404 page for GH Pages
+@freezer.register_generator
+def error_handlers():
+    print 'Freezing error handlers...'
+    yield "/404.html"
+
+# create pages not linked with url_for
+@freezer.register_generator
+def page():
+    print 'Freezing unlinked pages...'
+    for p in ('drafts', 'restmail', 'test'):
+        yield {'name': p}
+
+# create events not linked with url_for
+@freezer.register_generator
+def events():
+    print 'Freezing events...'
+    for event in app.config['SITE']['events']:
+        if not event['link_href'].startswith('http'):
+            yield event['link_href']
+
+# create old post urls
+@freezer.register_generator
+def old_post():
+    print 'Freezing old post URLs...'
+    for p in app.config['SITE']['posts']:
+        yield {
+            'year': p['date'].year,
+            'month': p['date'].month,
+            'name': p['name'],
+        }
+
+##### legacy support controllers
 
 # support for old links to the specific project
 @app.route('/burp/visual-aids/')
+@app.route('/burp-visual-aids/')
 def burp_visual_aids():
-    return redirect(url_for('page', name='burp-visual-aids'))
+    return redirect(url_for('page', name='/projects/burp-visual-aids'))
 
 # support for old links to posts without the day
 @app.route('/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<string:name>/')
@@ -152,6 +184,16 @@ def old_post(year, month, name):
                 return redirect(url_for('post', year=year, month=month, day=day, name=name))
     abort(404)
 
+##### controllers
+
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+@app.route('/static/css/pygments.css')
+def pygments_css():
+    return pygments_style_defs(PYGMENTS_STYLE), 200, {'Content-Type': 'text/css'}
+
 # post rendering view
 @app.route('/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<int(fixed_digits=2):day>/<string:name>/')
 def post(year, month, day, name):
@@ -162,7 +204,8 @@ def post(year, month, day, name):
     return render_template('post.html', post=post)
 
 # page rendering view
-@app.route('/<string:name>/')
+# this does not work if flask serves static files from the web root
+@app.route('/<path:name>/')
 def page(name):
     # detect and render a template
     if os.path.isfile(os.path.join(FLATPAGES_ROOT, PAGE_DIR, '{}.html'.format(name))):

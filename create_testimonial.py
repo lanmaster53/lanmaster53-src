@@ -1,5 +1,6 @@
-import urllib2
+import codecs
 import json
+import urllib2
 
 base_url = 'https://publish.twitter.com/oembed?url={}?&hide_media=true&hide_thread=true&omit_script=true'
 
@@ -19,7 +20,8 @@ for i in range(0, len(urls)):
     else:
         right.append(markup)
 
-print u'''
+with codecs.open('testimonials.html', 'w', encoding="utf-8") as fp:
+    fp.write(u'''\
 <div class="row">
 <div class="six columns">
 {}
@@ -28,4 +30,4 @@ print u'''
 {}
 </div>
 </div>
-'''.format(''.join(left).strip(), ''.join(right).strip())
+'''.format(''.join(left).strip(), ''.join(right).strip()))
