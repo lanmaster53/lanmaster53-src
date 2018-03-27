@@ -2,6 +2,12 @@ title: PWAPT Lexington
 
 <button onclick="window.location='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T8XNKK9EEQ8MW'">register</button>
 
+###### Price
+
+$1,500.00
+
+---
+
 ###### Description
 
 Don't miss out on a rare 3-day presentation of Practical Web Application Penetration Testing (PWAPT) with Tim "lanmaster53" Tomes in beautiful Lexington, KY!
