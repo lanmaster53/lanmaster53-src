@@ -149,7 +149,7 @@ def page():
 def events():
     print 'Freezing events...'
     for event in app.config['SITE']['events']:
-        if not event['link_href'].startswith('http'):
+        if event['freeze_page']:
             yield event['link_href']
 
 # create old post urls

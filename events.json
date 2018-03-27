@@ -1,6 +1,7 @@
 {
     "events": [
         {
+            "freeze_page": false,
             "dates": "April 19-20, 2018",
             "class": "PWAPT",
             "host": "BSides Charleston",
@@ -9,6 +10,7 @@
             "link_href": "https://www.eventbrite.com/e/practical-web-application-penetration-testing-with-tim-tomes-tickets-42262903482"
         },
         {
+            "freeze_page": true,
             "dates": "June 6-8, 2018",
             "class": "PWAPT",
             "host": "Crowe Horwath LLP",
