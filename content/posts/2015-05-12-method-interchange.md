@@ -52,11 +52,11 @@ Below is an abbreviated list of methods and objects from several popular develop
 
 Discovering Method Interchange is incredibly simple. First, identify a request and move the payload from the URI query string to the request payload or vice versa. Keep in mind that `POST` requests require a `Content-Type` header to function properly, so add/remove the necessary headers as needed. While this can be done manually, Burp Suite makes this incredibly easy through the "Change request method" context menu option (thanks [Mike](https://twitter.com/mccabe615)).
 
-[![](/images/posts/method_interchange_burp_1.png)](/images/posts/method_interchange_burp_1.png)
+[![](/static/images/posts/method_interchange_burp_1.png)](/static/images/posts/method_interchange_burp_1.png)
 
-[![](/images/posts/method_interchange_burp_2.png)](/images/posts/method_interchange_burp_2.png)
+[![](/static/images/posts/method_interchange_burp_2.png)](/static/images/posts/method_interchange_burp_2.png)
 
-[![](/images/posts/method_interchange_burp_3.png)](/images/posts/method_interchange_burp_3.png)
+[![](/static/images/posts/method_interchange_burp_3.png)](/static/images/posts/method_interchange_burp_3.png)
 
 Then, fire off the request and analyze the response. If the response mirrors that of the original request, then the application is vulnerable to Method Interchange.
 

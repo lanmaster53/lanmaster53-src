@@ -6,7 +6,7 @@ Everyone knows what XSS is, right? Good, I'll spare you the definition. A common
 
 <!-- READMORE -->
 
-![Good ole' fashion cookie stealin'](/images/posts/cookie_monster.jpg)
+[![](/static/images/posts/cookie_monster.jpg)](/static/images/posts/cookie_monster.jpg)
 
 About a year ago, I came up with a stealth technique for executing cookie stealing XSS attacks that I assumed was common knowledge. But after talking about the technique with several top web app security professionals, I realize that the technique may be more unique than I initially thought. Below is an example of the technique.
 

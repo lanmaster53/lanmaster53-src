@@ -36,17 +36,17 @@ The cool thing about what we're about to do is that it requires no modification 
 
 The first thing we want to do is is select a new-style object to use for accessing the `object` base class. We can simply use `''`, a blank string, object type `str`. Then, we can use the `__mro__` attribute to access the object's inherited classes. Inject `{{ ''.__class__.__mro__ }}` as a payload into the SSTI vulnerability.
 
-[![](/images/posts/ssti_flask_p2_1.png)](/images/posts/ssti_flask_p2_1.png)
+[![](/static/images/posts/ssti_flask_p2_1.png)](/static/images/posts/ssti_flask_p2_1.png)
 
 We can see the previously discussed tuple being returned to us. Since we want go back to the root `object` class, we'll leverage an index of `2` to select the class type `object`. Now that we're at the root object, we can leverage the `__subclasses__` attribute to dump all of the classes used in the application. Inject `{{ ''.__class__.__mro__[2].__subclasses__() }}` into the SSTI vulnerability.
 
-[![](/images/posts/ssti_flask_p2_2.png)](/images/posts/ssti_flask_p2_2.png)
+[![](/static/images/posts/ssti_flask_p2_2.png)](/static/images/posts/ssti_flask_p2_2.png)
 
 As you can see, there is a lot of stuff here. In the target application I am using, there are 572 accessible classes. This is where things get tricky, and why the tweeted payload mentioned above doesn't work. Remember, not every application's Python environment will look the same. The goal is to find something useful that leads to file or operating system access. It is probably not all that uncommon to find classes like `subprocess.Popen` used somehere in an application that may not be otherwise exploitable, such as the application affected by the tweeted payload, but from what I've found, nothing like this is available in native Flask. Luckily, there is capability in native Flask that allows us to achieve similar behavior.
 
 If you comb through the output of the previous payload, you should find the `<type 'file'>` object. This is the key to file system access. While `open` is the builtin function for creating file objects, the `file` class is also capable of instantiating file objects, and if we can instantiate a file object, then we can use methods like `read` to extract the contents. To demonstrate this, find the index of the `file` class and inject `{{ ''.__class__.__mro__[2].__subclasses__()[40]('/etc/passwd').read() }}` where `40` is the index of the `<type 'file'>` object in my environment.
 
-[![](/images/posts/ssti_flask_p2_3.png)](/images/posts/ssti_flask_p2_3.png)
+[![](/static/images/posts/ssti_flask_p2_3.png)](/static/images/posts/ssti_flask_p2_3.png)
 
 So, we've now demonstrated that arbirtrary file access is possible via SSTI in Flask/Jinja2, but we're not done yet. My goal in this was Remote Code/Command Execution.
 
@@ -86,17 +86,17 @@ There's a couple of interesting things here. The most obvious is the use of the 
 
 But let's take it a step even further. While running code is great and all, having to go through a multi-step process for each block of code we want to run is tedious. Let's leverage the `from_pyfile` method for its intended purpose and add something useful to the `config` object. Inject `{{ ''.__class__.__mro__[2].__subclasses__()[40]('/tmp/owned.cfg', 'w').write('from subprocess import check_output\n\nRUNCMD = check_output\n') }}` into the SSTI vulnerability. This will write a file to the remote server that, when compiled, imports the `check_output` method of the `subprocess` module and sets it to a variable named `RUNCMD`, which, if you recall from the previous article, will get added to the Flask `config` object virtue of it being an attribute with an upper case name.
 
-[![](/images/posts/ssti_flask_p2_4.png)](/images/posts/ssti_flask_p2_4.png)
+[![](/static/images/posts/ssti_flask_p2_4.png)](/static/images/posts/ssti_flask_p2_4.png)
 
 Inject `{{ config.from_pyfile('/tmp/owned.cfg') }}` to add the new item to the `config` object. Notice the difference between the following before and after images.
 
-[![](/images/posts/ssti_flask_p2_5.png)](/images/posts/ssti_flask_p2_5.png)
+[![](/static/images/posts/ssti_flask_p2_5.png)](/static/images/posts/ssti_flask_p2_5.png)
 
-[![](/images/posts/ssti_flask_p2_6.png)](/images/posts/ssti_flask_p2_6.png)
+[![](/static/images/posts/ssti_flask_p2_6.png)](/static/images/posts/ssti_flask_p2_6.png)
 
 Now we can invoke the new configuration item to run commands on the remote operating system. Demonstrate this by injecting `{{ config['RUNCMD']('/usr/bin/id',shell=True) }}` into the SSTI vulnerability.
 
-[![](/images/posts/ssti_flask_p2_7.png)](/images/posts/ssti_flask_p2_7.png)
+[![](/static/images/posts/ssti_flask_p2_7.png)](/static/images/posts/ssti_flask_p2_7.png)
 
 Remote Command Execution achieved.
 

@@ -22,7 +22,7 @@ Wi-Fi probe requests are a great source of information from which to detect the 
 
 The application of this technology in a physical security context is simple. The combination of a white list of unique identifiers for devices that belong in the area (MAC addresses) and signal strength (RSSI) can be used to create a protected zone. With tuning, this creates a circular detection barrier that, when crossed, can trigger any number of alert systems. WUDS includes an SMS alert module, but the sky is the limit.
 
-[![](/images/posts/wuds_1.png)](/images/posts/wuds_1.png)
+[![](/static/images/posts/wuds_1.png)](/static/images/posts/wuds_1.png)
 
 Now, when I say everyone carries a mobile phone, that includes criminals. In addition to alerting on the presence of foreign Wi-Fi devices, WUDS logs time stamps and probe request packet data. Having the time stamp and MAC address for all devices in an area during criminal activity can be quite useful. Law enforcement can take a MAC address to the cellular SP where the owner of the device can be identified. And not only can the MAC be used against a perpetrator, but probe requests also contain the ESSIDs of the networks that have been previously connected. Therefore, if a probe request is seen with the SSID of "Bag-Guy Wi-Fi", something like [Wigle](https://wigle.net/) can be used to geolocate that SSID and provide additional attribution. Good luck avoiding arrest and prosecution when I can place your device at the scene of the crime during the time that the crime took place and prove that it was your phone through ISP records and a PushPin dropped on your house. Pwned.
 
@@ -32,7 +32,7 @@ Applying this concept in a densely populated area has it's challenges, as the wh
 
 For my particular setup, I decided to use a Raspberry Pi as my WUDS server; the same Raspberry Pi that controls my [whole home audio system](/2014/05/11/raspberry-pi-pianobar/). The wireless card I use is an ALFA AWUS036H connected via USB.
 
-[![](/images/posts/wuds_2.jpg)](/images/posts/wuds_2.jpg)
+[![](/static/images/posts/wuds_2.jpg)](/static/images/posts/wuds_2.jpg)
 
 Guidance for installing and configuring WUDS is posted in the repository. A link to the repository can be found over on the [Projects](/projects/) page.
 

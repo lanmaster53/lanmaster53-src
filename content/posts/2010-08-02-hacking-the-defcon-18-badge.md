@@ -12,11 +12,11 @@ I took a little bit of time to solve 2 of the puzzles.
 
 One of the puzzles was a hidden QR code that looked like this:
 
-![](/images/posts/qr_image.jpg)
+[![](/static/images/posts/qr_image.jpg)](/static/images/posts/qr_image.jpg)
 
 Which translated to this:
 
-![](/images/posts/qr_bmp.png)
+[![](/static/images/posts/qr_bmp.png)](/static/images/posts/qr_bmp.png)
 
 Which, when scanned with a QR code reader, displayed:
 
@@ -36,15 +36,15 @@ STOP ASKING ABOUT MY WANG!!!
 
 Solving the key was irrelevant to the "Ninja Party" as it is known by Con goers, but it was a challenge, so me and a fellow "ninja in training" did it anyway. The first screen of the challenge looked like this:
 
-![](/images/posts/locked.jpg)
+[![](/static/images/posts/locked.jpg)](/static/images/posts/locked.jpg)
 
 When you entered the challenge, you were required to configure 15 tumblers as if you were picking a lock.
 
-![](/images/posts/key.jpg)
+[![](/static/images/posts/key.jpg)](/static/images/posts/key.jpg)
 
 If you entered the pattern correctly, the screen displayed this:
 
-![](/images/posts/unlocked.jpg)
+[![](/static/images/posts/unlocked.jpg)](/static/images/posts/unlocked.jpg)
 
 We weren't about to navigate the clumsy interface and attempt to brute force the key to solve the puzzle, so we went straight to the code (C for those interested). Inside the code we found this:
 

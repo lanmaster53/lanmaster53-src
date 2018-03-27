@@ -15,7 +15,7 @@ ENJOY!
 
 UPDATE: Note to self, take screenshots prior to disclosure of vulnerabilities. In my own defense, I was caught completely off guard by the disclosure so...
 
-![Oops!](/images/posts/oops.png)
+[![](/static/images/posts/oops.png)](/static/images/posts/oops.png)
 
 Since i'm limited in the amount of pictures I can show at this point, i'll do my best to explain the process.
 

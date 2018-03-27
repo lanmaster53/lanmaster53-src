@@ -34,15 +34,15 @@ The scenario behind this code is that the developer thought it would be silly to
 
 When exercising this functionality, we see the expected behavior.
 
-[![](/images/posts/ssti_flask_1.png)](/images/posts/ssti_flask_1.png)
+[![](/static/images/posts/ssti_flask_1.png)](/static/images/posts/ssti_flask_1.png)
 
 Most people that see this behavior immediately think XSS, and they would be right. Appending `<script>alert(42)</script>` to the end of the URL triggers a XSS vulnerability.
 
-[![](/images/posts/ssti_flask_2.png)](/images/posts/ssti_flask_2.png)
+[![](/static/images/posts/ssti_flask_2.png)](/static/images/posts/ssti_flask_2.png)
 
 The target code is vulnerable to XSS, and if you read James' article, he points out that XSS can be an indicator of possible SSTI. This is a good example of that. But if we dig a little deeper by appending `{{ 7+7 }}` to the end of the URL, we'll see that the template engine evaluates the mathematical expression and the application responds with `14` where the template syntax would have been.
 
-[![](/images/posts/ssti_flask_3.png)](/images/posts/ssti_flask_3.png)
+[![](/static/images/posts/ssti_flask_3.png)](/static/images/posts/ssti_flask_3.png)
 
 We have now discovered SSTI in the target application.
 
@@ -93,7 +93,7 @@ We make our first interesting discovery by introspecting the `request` object. T
 
 Our second interesting discovery comes from introspecting the `config` object. The `config` object is a Flask template global that represents "The current configuration object (flask.config)." It is a dictionary-like object that contains all of the configuration values for the application. In most cases, this includes sensitive values such as database connection strings, credentials to third party services, the `SECRET_KEY`, etc. Viewing these configuration items is as easy as injecting a payload of `{{ config.items() }}`.
 
-[![](/images/posts/ssti_flask_4.png)](/images/posts/ssti_flask_4.png)
+[![](/static/images/posts/ssti_flask_4.png)](/static/images/posts/ssti_flask_4.png)
 
 And don't think that storing these configuration items in environment variables protects against this disclosure. The `config` object contains all of the configuration values AFTER they have been resolved by the framework.
 
@@ -185,11 +185,11 @@ def import_string(import_name, silent=False):
 
 The `from_object` method then adds all attributes of the newly loaded module whose variable name is all uppercase to the `config` object. The interesting thing about this is that attributes added to the `config` object maintain their type, which means functions added to the `config` object can be called from the template context via the `config` object. To demonstrate this, inject `{{ config.items() }}` into the SSTI vulnerability and note the current configuration entries.
 
-[![](/images/posts/ssti_flask_5.png)](/images/posts/ssti_flask_5.png)
+[![](/static/images/posts/ssti_flask_5.png)](/static/images/posts/ssti_flask_5.png)
 
 Then inject `{{ config.from_object('os') }}`. This will add to the `config` object all attributes of the `os` library whose variable names are all uppercase. Inject `{{ config.items() }}` again and notice the new configuration items. Also notice the types of these configuration items.
 
-[![](/images/posts/ssti_flask_6.png)](/images/posts/ssti_flask_6.png)
+[![](/static/images/posts/ssti_flask_6.png)](/static/images/posts/ssti_flask_6.png)
 
 Any callable items added to the `config` object can now be called through the SSTI vulnerability. The next step is finding functionality within the available importable modules that can be manipulated to break out of the template sandbox.
 

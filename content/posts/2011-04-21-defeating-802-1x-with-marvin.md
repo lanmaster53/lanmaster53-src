@@ -14,13 +14,13 @@ categories: [network security]
 
 EAP-TLS authentication was in use for the supplicants which were on the segment I wanted access, so vector 3b was not an option at this juncture. Here is what my initial setup looked like:
 
-![](/images/posts/hub.png)
+[![](/static/images/posts/hub.png)](/static/images/posts/hub.png)
 
 Once in this configuration, I was able to execute attack vectors 1 and 2. However, the problem with the above configuration is that neither machine can pass TCP traffic while both are connected. When one of the machines sends out a SYN, both receive the SYN/ACK. The machine not expecting the SYN/ACK will send a RST and kill the connection for the other machine. While I realize that unplugging the authenticated supplicant would allow for successful TCP connections, if the switch is forcing 802.1X re-authentication, connectivity would break during the re-auth process. As Red Teamers, we err on the side of transparency, and don't want to take chances creating unnecessary error log entries. Hence, the need for a tool.
 
 Before dedicating myself to writing a tool to do this, I did some quick research which yielded [this](http://www.gremwell.com/marvin-mitm-tapping-dot1x-links). Marvin. A tool written by abb of [Gremwell](http://www.gremwell.com/) (thanks abb!!) which "diverts and re-injects network connections while preserving the original network addresses, including layer 2." Perfect. My setup for attack vector 3 looked like this:
 
-![](/images/posts/marvin.png)
+[![](/static/images/posts/marvin.png)](/static/images/posts/marvin.png)
 
 In order to conduct the attack as passively as possible, I gathered all the necessary configuration information from the network prior to using Marvin. Here's the step-by-step of what I did.
 

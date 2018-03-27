@@ -14,7 +14,7 @@ Um... yeah! I immediately thought of how great a CSRF-via-email attack vector th
 
 An attacker crafts a spam message with an embedded "unsubscribe" link containing the CSRF attack payload like so:
 
-![](/images/posts/2018-03-15-report-spam-get-owned/spam-unsubscribe.png)
+[![](/static/images/posts/2018-03-15-report-spam-get-owned/spam-unsubscribe.png)](/static/images/posts/2018-03-15-report-spam-get-owned/spam-unsubscribe.png)
 
 The attacker then sends the email to their victims. In the process of reporting suspicious links and unsubscribing from future messages, because it's the "safe" thing the victims were trained to do, Google clicks the link for the victims, and the CSRF attack payload is triggered from the victim's browser.
 

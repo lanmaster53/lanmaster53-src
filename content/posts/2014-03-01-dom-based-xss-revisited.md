@@ -93,14 +93,14 @@ The second impact that the hash character has on D-XSS is that not all browsers 
 
 - Internet Explorer 11 does not encode anything.
 
-[![](/images/posts/d-xss_ie.png)](/images/posts/d-xss_ie.png)
+[![](/static/images/posts/d-xss_ie.png)](/static/images/posts/d-xss_ie.png)
 
 - Chrome v33 does not encode the URI fragment portions of the URL.
 
-[![](/images/posts/d-xss_chrome.png)](/images/posts/d-xss_chrome.png)
+[![](/static/images/posts/d-xss_chrome.png)](/static/images/posts/d-xss_chrome.png)
 
 - Firefox v27 encodes everything.
 
-[![](/images/posts/d-xss_firefox.png)](/images/posts/d-xss_firefox.png)
+[![](/static/images/posts/d-xss_firefox.png)](/static/images/posts/d-xss_firefox.png)
 
 Therefore, if our target is using Chrome or Internet Explorer, we can use the hash character to inject D-XSS payloads without requiring the developer to decode the injectable parameter value prior to updating the DOM, all while bypassing server-side mitigations.

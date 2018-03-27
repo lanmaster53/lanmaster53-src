@@ -68,11 +68,11 @@ An application won't arbitrarily issue a new session token if a session token al
 
 First, I added an arbitrary cookie to the DOM of the application running on `mail.google.com` to simulate writing a cookie via XSS.
 
-[![](/images/posts/fixation_1.png)](/images/posts/fixation_1.png)
+[![](/static/images/posts/fixation_1.png)](/static/images/posts/fixation_1.png)
 
 I then visited the root Google domain and several other hosts on the Google domain. The created cookie was passed along to each resource.
 
-[![](/images/posts/fixation_2.png)](/images/posts/fixation_2.png)
+[![](/static/images/posts/fixation_2.png)](/static/images/posts/fixation_2.png)
 
 This behavior allows us to bypass the `HttpOnly` restriction and fixate sessions on applications in the same domain via XSS.
 
@@ -86,4 +86,4 @@ Preventing Session Fixation is simple. If no pre-authenticated session is requir
 
 I'm certain that there are other ways to exploit (header injection via network attack) and prevent (anomaly detection) Session Fixation, but the approaches I mention here are the simplest and most common based on my experience as an Application Security consultant. I encourage you to continue researching the topic. I leave you with this flow chart for discovering and assigning risk ratings to Session Fixation vulnerabilities. I hope you find it useful. Enjoy!
 
-[![](/images/posts/fixation_3.png)](/images/posts/fixation_3.png)
+[![](/static/images/posts/fixation_3.png)](/static/images/posts/fixation_3.png)

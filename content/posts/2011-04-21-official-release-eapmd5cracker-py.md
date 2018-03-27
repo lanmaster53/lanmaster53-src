@@ -16,6 +16,6 @@ Features:
 - Verbosity option.
 - Execution halts when password is found.
 
-![Screenshot](/images/posts/eapmd5screen.png)
+[![](/static/images/posts/eapmd5screen.png)](/static/images/posts/eapmd5screen.png)
 
 Download [here](https://github.com/lanmaster53/ptscripts/blob/master/eapmd5crack.py).

@@ -8,13 +8,13 @@ This afternoon my wife looked up from her laptop and said to me, "You're gonna b
 
 My wife helps run her fathers company, so she handles most of the business email that the company receives. As a result, she received the following email.
 
-[![](/images/posts/tpwitter_phish.png)](/images/posts/tpwitter_phish.png)
+[![](/static/images/posts/tpwitter_phish.png)](/static/images/posts/tpwitter_phish.png)
 
 Looks pretty legit, right? You can't see it here, but the "from" address seems legit, and the links go to exactly where they say they're going. The trick here is that the attacker is using a URL shortener to obfuscate the final destination of the link. This is a good technique, as Twitter users are accustomed to seeing shortened URLs.
 
 My wife did the right thing by manually going to twitter to see if she actually did receive a Direct Message, but not until after she clicked the link. Many people think that clicking links and visiting pages is okay as long as they don't enter credentials into untrusted pages. This is not the case. By merely visiting a web page, attacks can be launched against all sorts of client side technologies i.e. Java, Flash, the browser itself, etc. How each of these attacks work is out of the scope of this article. The point is, if someone clicks a link or visits a page which is hosting malicious content, they could be in trouble. Here is what the phishing site my wife encountered looks like.
 
-[![](/images/posts/tpwitter_site.png)](/images/posts/tpwitter_site.png)
+[![](/static/images/posts/tpwitter_site.png)](/static/images/posts/tpwitter_site.png)
 
 What's wrong with this picture?
 
@@ -36,6 +36,6 @@ The next step is to analyze the target site's invocation process and contents fo
 
 URLQuery.net is a malicious web page analysis tool. It runs the contents of the given page through the proverbial "wringer". URLQuery.net loads web pages through two different Intrusion Detection Systems with commercial rule sets (Suricata and Snort), executes the content intended for client side technologies such as JavaScript, Java and Adobe Reader, and provides a detailed report on the results, including traffic analysis. The results for the page in question can be seen below. The level of information given is incredible. Take a few moments to analyze the report.
 
-[![](/images/posts/tpwitter_urlquery.png)](/images/posts/tpwitter_urlquery.png)
+[![](/static/images/posts/tpwitter_urlquery.png)](/static/images/posts/tpwitter_urlquery.png)
 
 As you can see, there isn't much danger on this site other than the fact that someone from Russia is trying to harvest Twitter credentials. Granted, there could be 0-day exploits embedded, but as far as we can see as first responders, things seem clean for now. Disaster averted.
