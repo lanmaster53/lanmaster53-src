@@ -35,7 +35,7 @@ PWAPT is a PortSwigger preferred [Burp Suite Training course](https://portswigge
 For additional insight into the origin, mission, and benefits of PWAPT, listen to my interview with [Timothy De Block](https://twitter.com/TimothyDeBlock) for the [Exploring Information Security podcast](http://www.timothydeblock.com/eis/54) on the topic of "What is Practical Web Application Penetration Testing?"
 
 <audio controls>
-    <source src="/downloads/EIS-ep54-PWAPT.mp3" type="audio/mpeg">
+    <source src="{{ url_for('static', filename='downloads/EIS-ep54-PWAPT.mp3') }}" type="audio/mpeg">
 </audio>
 
 ### Outline
