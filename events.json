@@ -1,15 +1,6 @@
 {
     "events": [
         {
-            "freeze_page": false,
-            "dates": "April 19-20, 2018",
-            "class": "PWAPT",
-            "host": "BSides Charleston",
-            "location": "Charleston, SC",
-            "link_text": "register",
-            "link_href": "https://www.eventbrite.com/e/practical-web-application-penetration-testing-with-tim-tomes-tickets-42262903482"
-        },
-        {
             "freeze_page": true,
             "dates": "June 6-8, 2018",
             "class": "PWAPT",
@@ -17,6 +8,15 @@
             "location": "Lexington, KY",
             "link_text": "register",
             "link_href": "/events/pwapt-lexington/"
+        },
+        {
+            "freeze_page": true,
+            "dates": "July 16-18, 2018",
+            "class": "PWAPT",
+            "host": "WIN",
+            "location": "Eau Claire, WI",
+            "link_text": "register",
+            "link_href": "/events/pwapt-eau-claire/"
         }
     ]
 }

@@ -51,3 +51,9 @@ Blue Grass Airport of Lexington, KY (LEX / KLEX) is approximately 13 miles away 
 For specific details regarding course materials and prerequisites, see the [PWAPT training page](/training).
 
 There is a 12 student minimum that must be met 2 weeks prior to the event or the event may be canceled, so don't wait to sign up. Click the "register" button at the top of the page to sign up today!
+
+---
+
+###### Refunds
+
+All purchases are considered final two weeks from the start date of the event and no refunds will be issued after that time.
