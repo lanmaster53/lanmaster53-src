@@ -17,6 +17,15 @@
             "location": "Eau Claire, WI",
             "link_text": "register",
             "link_href": "/events/pwapt-eau-claire/"
+        },
+        {
+            "freeze_page": false,
+            "dates": "October 3-4, 2018",
+            "class": "PWAPT",
+            "host": "DerbyCon",
+            "location": "Louisville, KY",
+            "link_text": "register",
+            "link_href": "https://www.eventbrite.com/e/derbycon-training-80-2018-evolution-tickets-45652389526"
         }
     ]
 }
