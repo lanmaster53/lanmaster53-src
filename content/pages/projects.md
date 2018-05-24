@@ -14,6 +14,12 @@ Framework for targeted geolocation and tracking.
 
 [https://github.com/lanmaster53/honeybadger/](https://github.com/lanmaster53/honeybadger/)
 
+### SQLi Exploiter
+
+Tool for exploiting SQL injection vulnerabilities that sqlmap just can't find.
+
+[https://github.com/lanmaster53/sqli-exploiter](https://github.com/lanmaster53/sqli-exploiter)
+
 ### Burp Suite Visual Aids
 
 Series of annotated images depicting usage tips for Burp Suite.

