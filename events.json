@@ -26,6 +26,15 @@
             "location": "Louisville, KY",
             "link_text": "register",
             "link_href": "https://www.eventbrite.com/e/derbycon-training-80-2018-evolution-tickets-45652389526"
+        },
+        {
+            "freeze_page": true,
+            "dates": "October 17-19, 2018",
+            "class": "PWAPT",
+            "host": "BSides Augusta",
+            "location": "Augusta, GA",
+            "link_text": "register",
+            "link_href": "/events/pwapt-augusta/"
         }
     ]
 }
