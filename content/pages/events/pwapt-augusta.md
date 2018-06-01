@@ -10,7 +10,7 @@ $1,500.00
 
 ###### Description
 
-Headed to Augusta, GA for BSides Augusta? If not, you should be! With Fort Gordon, home of NSA South and the Army Cyber branch, only a few miles away, Augusta is a fast growing Information Security community and host to one of the largest BSides events in the world. While the conference has historically been a huge success, it's done so without offering training opportunities. Not anymore! This year BSides Augusta is partnering with Practical Security Services to bring you a 3-day presentation of Practical Web Application Penetration Testing (PWAPT) with Tim "lanmaster53" Tomes. For specific details regarding course materials and prerequisites, see the [PWAPT training page](/training).
+Headed to Augusta, GA for [BSidesAugusta](http://bsidesaugusta.org/)? If not, you should be! With Fort Gordon, home of NSA South and the Army Cyber branch, only a few miles away, Augusta is a fast growing Information Security community and host to one of the largest BSides events in the world. While the conference has historically been a huge success, it's done so without offering training opportunities. Not anymore! This year [BSidesAugusta](http://bsidesaugusta.org/) is partnering with Practical Security Services to bring you a 3-day presentation of Practical Web Application Penetration Testing (PWAPT) with Tim "lanmaster53" Tomes. For specific details regarding course materials and prerequisites, see the [PWAPT training page](/training).
 
 ---
 
@@ -30,7 +30,7 @@ Our friends at [Augusta University](https://www.augusta.edu/) have opened their 
 
 ###### Lodging
 
-There are a variety of lodging accommodations in close proximity to the training location. Feel free to choose your preference.
+The [DoubleTree Augusta](http://doubletree3.hilton.com/en/hotels/georgia/doubletree-by-hilton-hotel-augusta-AGSDTDT/index.html) is the official hotel of [BSidesAugusta](http://bsidesaugusta.org/). However, there are a variety of lodging accommodations in close proximity to the training location. Feel free to choose your preference.
 
 ---
 
@@ -42,7 +42,7 @@ Meals will not be provided, but there is a variety of food options in the immedi
 
 ###### Travel
 
-Augusta Regional Airport (AGS) is approximately 9 miles away from the training facility and surrounding accommodations. The closest large airport is Hartsfield-Jackson Atlanta International Airport (ATL) (153 miles).
+Augusta Regional Airport (AGS) is approximately 9 miles away from the training facility and surrounding accommodations. The closest large airport is Hartsfield-Jackson Atlanta International Airport (ATL), approximately 153 miles away.
 
 ---
 
