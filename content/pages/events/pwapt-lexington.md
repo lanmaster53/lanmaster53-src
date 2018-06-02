@@ -10,7 +10,7 @@ $1,500.00
 
 ###### Description
 
-Don't miss out on a rare 3-day presentation of Practical Web Application Penetration Testing (PWAPT) with Tim "lanmaster53" Tomes in beautiful Lexington, KY!
+Don't miss out on a rare 3-day presentation of Practical Web Application Penetration Testing (PWAPT) with Tim "lanmaster53" Tomes in beautiful Lexington, KY! For specific details regarding course materials and prerequisites, see the [PWAPT training page](/training).
 
 ---
 
@@ -48,9 +48,7 @@ Blue Grass Airport of Lexington, KY (LEX / KLEX) is approximately 13 miles away 
 
 ###### Other
 
-For specific details regarding course materials and prerequisites, see the [PWAPT training page](/training).
-
-There is a 12 student minimum that must be met 2 weeks prior to the event or the event may be canceled, so don't wait to sign up. Click the "register" button at the top of the page to sign up today!
+There is a 12 student minimum that must be met 2 weeks prior to the event or the event may be cancelled, so don't wait to sign up! In the event of a cancellation, paid participants will have the option of a full refund or credit toward a future training opportunity. Credits apply to training organized by Practical Security Services LLC only.
 
 ---
 
