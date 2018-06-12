@@ -11,13 +11,13 @@ So this is kinda fun. With this page open, copy and paste one of the listener co
 #### Linux
 
 ```
-while :; do printf "j$ "; read c; echo $c | nc -lp 8000 >/dev/null; done
+while :; do printf "j$ "; read c; printf "HTTP/1.1 200 OK\n\n$c" | nc -lp 8000 >/dev/null; done
 ```
 
 #### OS X
 
 ```
-while :; do printf "j$ "; read c; echo $c | nc -l 8000 >/dev/null; done
+while :; do printf "j$ "; read c; printf "HTTP/1.1 200 OK\n\n$c" | nc -l 8000 >/dev/null; done
 ```
 
 ### Example Payloads
