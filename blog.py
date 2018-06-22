@@ -45,6 +45,7 @@ SITE = {
         'categories',
         'company',
         'training',
+        'faq',
         'about',
     ],
     'analytics': {
