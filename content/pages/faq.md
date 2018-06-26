@@ -1,5 +1,13 @@
 title: FAQ
 
+As someone that openly offers mentorship, I get a lot of emails asking similar questions to which I issue similar replies. These questions range from specifics about PWAPT training, to general Information Security career stuff. Rather than continue to type out three page emails, I've decided to consolidate much of the information here for wider dissemination. And who knows. Perhaps by placing it here someone will stumble upon and benefit from it.
+
+Also, please keep in mind that much of this is opinion and/or based on personal experience. My experience is bound to differ from others, so please consume this information with that in mind.
+
+Thank you, and enjoy.
+
+---
+
 **As someone who didn't meet the prerequisites going into the class, what are the next steps I should take moving forward from PWAPT?**
 
 PWAPT is definitely not an introductory class with regards to the theory behind the vulnerabilities, so I applaud you for tackling it head on. There are other training courses that can help to solidify those things, but my biggest concern in PWAPT is communicating the methodology and thought process, which doesn't require much of the technical piece to grasp.
@@ -20,7 +28,9 @@ I have never been a professional developer, but I have been writing code since I
 
 Being a developer before moving into the security space would give you additional perspective of what development teams face on a daily basis. This will better equip you to provide actionable recommendations that reduce engineering overhead and account for the internal struggles that development teams deal with.
 
-**Did you have to get a Computer Science degree or something related specifically to Cyber Security to experience success? Does not having a degree in the Cyber Security field actually matter when seeking a career there?**
+---
+
+**Did you have to get a Computer Science degree or something related specifically to Information Security to experience success? Does not having a degree in the Information Security field actually matter when seeking a career there?**
 
 As far as college degree goes, I think there is a general understanding that academia provides little skill in the way of security with respect to the depth we see it in private industry. But it also depends on where you want to land. Upper management and executive level roles have a different set of requirements than a consultant would. From a technical perspective, when I am hiring consultants I prioritize the following things in order:
 
@@ -48,6 +58,47 @@ I know this isn't a great answer, but it's the reality of the situation right no
 
 **I am currently enrolled in a self-study course to learn more about Python-based web technologies. My intention in pursuing this training is so that I can use these skills for web application testing. However, I'm having a hard time finding companies that use Python in their everyday technology stack. Should I focus elsewhere?**
 
-Almost everyone I know in Cyber Security that stands out from their peers does so largely based on their ability to code. The ability to code makes you more efficient and effective in any technical role, whether be administrative, defensive, or offensive. Coding is not a skill that is unique to Application Security. Whether you're in Exploit Development, Incident Response, Forensics, Network Security, Systems Security, Application Security, whatever, the ability to code will separate you from your peers.
+Almost everyone I know in Information Security that stands out from their peers does so largely based on their ability to code. The ability to code makes you more efficient and effective in any technical role, whether be administrative, defensive, or offensive. Coding is not a skill that is unique to Application Security. Whether you're in Exploit Development, Incident Response, Forensics, Network Security, Systems Security, Application Security, whatever, the ability to code will separate you from your peers.
 
 That being said, to answer your question more directly, based on my experience there are two main enterprise technology stacks in use by the majority of the industry right now. Those are C# and Java, and the various flavors and frameworks built on these technologies. Node is catching momentum, but you're right, Python, Ruby, Go, etc. based frameworks aren't nearly as common. When I hire a consultant, I prefer that they have a decent amount of experience in one of the enterprise technologies, and at least dabble in something more trendy. This makes them immediately useful in all types of assessments, while indicating that they have passion to learn other technologies. However, knowing one language, no matter what it is, is all you need to be an effective Penetration Tester. When you're Penetration Testing, most vulnerabilities manifest themselves in similar ways regardless of the technology stack. Therefore, when you're inputing data and analyzing the output (black box testing), whether you reverse the server-side code in your head using the native language or something you know doesn't matter. It's understanding the logic that matters. I am on the fence about adding a requirement to also know a client-side framework. These are just too common to ignore any longer.
+
+---
+
+**There are so many things to do in Information Security. I just don't think I can keep up with all of these things. How can anyone possibly succeed?**
+
+Your assessment of the Information Security field is correct. There are so many things one can do within the industry. As someone looking to work in the industry, you have two options: specialize, or be a jack-of-all-trades and an expert at none. If you're going to do anything in this field at a technical level, you need to be an expert. Companies don't want someone in a technical role to be pretty good at everything, but not great at the thing they hired them for. They want someone great at what they were hired for! Since there is way too much to know to be an expert at everything, you have to specialize. It's okay to dabble in everything, but commit the majority of your time becoming an expert at something. What defines a "something"? Let me give you my example. I was pretty good at everything at one point, but an expert at nothing. I decided I loved code more than anything else and wanted to only work with code. That landed me in Application Security. But being an expert in Application Security was even a bit too much to ask for my mediocre brain, so I specialized further in Web Application Security. This put me in a niche where I could become a subject matter expert, and comfortably keep up with the rapidly changing environment.
+
+---
+
+**I'm seeking a college-level internship. I have an opportunity to work on an internal team right now, but want to be a consultant when I graduate. Should I take this internship or keep looking for one at a consulting firm?**
+
+Consulting is a fast-paced intense business. I'm not going to say that it's the case everywhere, but most interns for consultancies do not get used in a capacity typical of a consultant. The company simply cannot afford to do so. There's too much risk to time lines, backlogs, and quality. As a result, interns end up with busy work or something unrelated to front-line work, and learn very little about consulting or how consulting companies function.
+
+Working for an internal team gives interns the opportunity to see a lot of different parts of the industry i.e. defense, incident handling, forensics, attack, etc.. It will also give the intern additional perspective of the challenges companies face when dealing with security issues. This will be invaluable when working as a consultant.
+
+This may not be indicative of every possible situation regarding Information Security internships, but is something to keep in mind.
+
+---
+
+**What are some good ways to stay involved and informed in the world of Information Security?**
+
+For me, it all comes down to Twitter and conferences. RSS feeds are decent if you've got the right folks in the feed, but it's tough casting a wide enough net this way. I know lots of folks that use Reddit, but I never really figured out how to make it a good source of information. Magazines are way too slow and books are even slower. However, books quite often serve as great on-the-job references and preparatory training material.
+
+The Information Security community has found a way to use Twitter that goes well beyond it's original intent as a social network. As a community, we use it to:
+
+* Share quick thoughts on a topic.
+* Conduct full blown discussions on a topic. It's like an online panel where everyone is invited.
+* Disclose vulnerabilities.
+* Share links to articles, whitepapers, and tools.
+* Offer short challenges and puzzles.
+* Troll each other with pictures of cats and clever memes.
+
+Even though Twitter (as an Information Security resource) took a decent hit in 2016 due to all of the political drama and trolling, it's still the #1 place to go for up-to-the-minute Information Security information... provided you follow the right people. It's all about who you follow, and who you follow will have a lot to do with which part of Information Security you're interested in. Follow the people that talk about what you're interested in. If you want to be even more efficient, follow people that scour Twitter themselves and retweet what you're interested in. Basically, use other people that spend more time on Twitter than you as a filter. This is probably really bad social network etiquette, but I did say we don't really use it as a "social" network... at least I don't.
+
+Conferences are great too, but probably not for why you think they are. To me, conferences aren't about the presented material anymore. Most conferences are recorded these days, and all the talks can be watched later. Lobbycon is where it's at. Lobbycon is just hanging out in the Lobby of the venue where the conference is being hosted. Lobbycon is invaluable with regards to networking, sharing ideas, and discussing topics. I've walked away from Lobbycon with so many great ideas over the years. Heck, I know people that won't go to a conference, but will pay travel costs just get a room in the same hotel as the conference and do Lobbycon. It really is a great resource. All that being said, watch the talks. Whether you do it in person or on video, there is so much good information being shared this way, and you don't want to miss it. I'll usually go through the conference booklet on the first day and mark all of the talks I want to see. If I get tired of gabbing, or have some free time, I'll go see one of them in person. Otherwise, I'll keep my booklet around and watch them on video later.
+
+---
+
+**There are so many Information Security conferences these days. What conferences do you recommend?**
+
+Without a doubt, DerbyCon. Then, any BSides. DerbyCon is great for so many reasons, but the main reason I prefer it is because it's a community event with a family atmosphere, and not a culture. Honestly, I'm not a fan of the hacker culture and don't identify with it at all. You won't see me at DEF CON for that very reason. However, it can be tough to get a ticket to DerbyCon (see my [article](/2017/08/26/cooling-down-the-hottest-ticket-in-town/) on the topic if you agree, missed out, and are still looking for a ticket), and it requires travel. The thing about BSides is they are all over the place, are pretty consistent in terms of quality, and getting tickets is easy. On any given year, I attend DerbyCon, BSides Greenville, and BSides Augusta at a minimum. I will say that I thoroughly enjoyed Wild West Hackin' Fest last year in South Dakota. It had some of the best Lobbycon ever. Since it was in the middle of nowhere, and there was nothing else for anyone to do, everyone congregated at the same bar and restaurant every night.
