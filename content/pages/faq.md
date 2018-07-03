@@ -1,8 +1,8 @@
 title: FAQ
 
-As someone that openly offers mentorship, I get a lot of emails asking similar questions to which I issue similar replies. These questions range from specifics about PWAPT training, to general Information Security career stuff. Rather than continue to type out three page emails, I've decided to consolidate much of the information here for wider dissemination. And who knows. Perhaps by placing it here someone will stumble upon and benefit from it.
+As someone that openly offers mentorship, I get a lot of emails asking similar questions to which I provide similar replies. These questions range from specifics about PWAPT training to general Information Security career stuff. Rather than continuing to type three page emails, I've decided to consolidate most of the information here for wider dissemination. And who knows, perhaps by placing it here someone will stumble upon and benefit from it.
 
-Also, please keep in mind that much of this is opinion and/or based on personal experience. My experience is bound to differ from others, so please consume this information with that in mind.
+Also, please keep in mind that much of this is opinion and/or based on personal experience. My experience is bound to differ from others, so please consume this information with that in mind. As always, feedback is welcome.
 
 Thank you, and enjoy.
 
@@ -64,19 +64,19 @@ That being said, to answer your question more directly, based on my experience t
 
 ---
 
-**There are so many things to do in Information Security. I just don't think I can keep up with all of these things. How can anyone possibly succeed?**
+**There are so many things to do in Information Security and I just don't think I can keep up with all of them. What is the expectation and how can I be successful?**
 
-Your assessment of the Information Security field is correct. There are so many things one can do within the industry. As someone looking to work in the industry, you have two options: specialize, or be a jack-of-all-trades and an expert at none. If you're going to do anything in this field at a technical level, you need to be an expert. Companies don't want someone in a technical role to be pretty good at everything, but not great at the thing they hired them for. They want someone great at what they were hired for! Since there is way too much to know to be an expert at everything, you have to specialize. It's okay to dabble in everything, but commit the majority of your time becoming an expert at something. What defines a "something"? Let me give you my example. I was pretty good at everything at one point, but an expert at nothing. I decided I loved code more than anything else and wanted to only work with code. That landed me in Application Security. But being an expert in Application Security was even a bit too much to ask for my mediocre brain, so I specialized further in Web Application Security. This put me in a niche where I could become a subject matter expert, and comfortably keep up with the rapidly changing environment.
+Your assessment of the Information Security field is correct. There are so many things one can do within the industry. As someone looking to work in the industry, you have two options: specialize, or be a jack of all trades, which is an expert of none. If you're going to do anything in this field at a technical level, you need to be an expert. Companies don't want someone in a technical role to be pretty good at everything, but not great at the thing they hired them for. They want someone great at what they were hired for! Since there is way too much to know to be an expert at everything, you have to specialize. It's okay to dabble in everything, but commit the majority of your time becoming an expert at something. What defines a "something"? Let me give you my example. I was pretty good at a lot of things at one point, but an expert at nothing. I decided I loved code more than anything else and wanted to only work with code. That landed me in Application Security. But being an expert in Application Security was even a bit too much to ask for my mediocre brain, so I specialized further in Web Application Security. This put me in a niche where I could become a subject matter expert, and comfortably keep up with the rapidly changing environment.
 
 ---
 
 **I'm seeking a college-level internship. I have an opportunity to work on an internal team right now, but want to be a consultant when I graduate. Should I take this internship or keep looking for one at a consulting firm?**
 
-Consulting is a fast-paced intense business. I'm not going to say that it's the case everywhere, but most interns for consultancies do not get used in a capacity typical of a consultant. The company simply cannot afford to do so. There's too much risk to time lines, backlogs, and quality. As a result, interns end up with busy work or something unrelated to front-line work, and learn very little about consulting or how consulting companies function.
+Consulting is a fast-paced, intense business. I'm not going to say that it's the case everywhere, but most interns for consultancies do not get used in a capacity typical of a consultant. The company simply cannot afford to do so. There's too much risk to time lines, backlogs, and quality. As a result, interns end up with busy work or something unrelated to front-line work, and learn very little about consulting or how consulting companies function.
 
-Working for an internal team gives interns the opportunity to see a lot of different parts of the industry i.e. defense, incident handling, forensics, attack, etc.. It will also give the intern additional perspective of the challenges companies face when dealing with security issues. This will be invaluable when working as a consultant.
+Working for internal teams gives interns the opportunity to see a lot of different parts of the industry i.e. defense, incident handling, forensics, attack, etc. It will also give the intern additional perspective of the challenges companies face when dealing with security issues. This could be invaluable when working as a consultant.
 
-This may not be indicative of every possible situation regarding Information Security internships, but is something to keep in mind.
+I would lean towards interning on an internal team now in preparation for consulting later. This description may not be indicative of every possible situation regarding Information Security internships, but is something to keep in mind.
 
 ---
 
@@ -102,3 +102,21 @@ Conferences are great too, but probably not for why you think they are. To me, c
 **There are so many Information Security conferences these days. What conferences do you recommend?**
 
 Without a doubt, DerbyCon. Then, any BSides. DerbyCon is great for so many reasons, but the main reason I prefer it is because it's a community event with a family atmosphere, and not a culture. Honestly, I'm not a fan of the hacker culture and don't identify with it at all. You won't see me at DEF CON for that very reason. However, it can be tough to get a ticket to DerbyCon (see my [article](/2017/08/26/cooling-down-the-hottest-ticket-in-town/) on the topic if you agree, missed out, and are still looking for a ticket), and it requires travel. The thing about BSides is they are all over the place, are pretty consistent in terms of quality, and getting tickets is easy. On any given year, I attend DerbyCon, BSides Greenville, and BSides Augusta at a minimum. I will say that I thoroughly enjoyed Wild West Hackin' Fest last year in South Dakota. It had some of the best Lobbycon ever. Since it was in the middle of nowhere, and there was nothing else for anyone to do, everyone congregated at the same bar and restaurant every night.
+
+---
+
+**I keep hearing people in Information Security refer to something called a personal brand. What exactly is a personal brand, and how does it apply to me as an Information Security professional?**
+
+As you saw in my list of priorities for hiring people (above), the first tangible item is personal accomplishments, above both certifications and degrees. Status in the Information Security industry relies heavily on notoriety. This is true for the black hat side of things as well as the white hat side. Notoriety comes when you've publicly accomplished something, whether in a positive or negative fashion. The collection of your public accomplishments and how you relate to others in the industry becomes your personal brand. Whether seeking a job or starting a company, success will have little to do with your traditional credentials and everything to do with your personal brand. A good enough personal brand will take you beyond the need to apply for a job or submit a resume. Companies will come looking for you. There is simply too much work and not enough good people to do it. If your personal brand is known for expertise in something, the job offers will come.
+
+---
+
+**How does the dynamic of a personal brand work when employed by a company, which has its own independent brand?**
+
+Because of the nature of how you develop a personal brand, personal brands and company brands thrive in a synergistic symbiotic cyber relationship (three in a row, bingo!). When you speak in front of a group, you're wearing the company's logo. When you teach a workshop or write an article, you're referring to experiences gained at the company. As long as your ethics and efforts are in line with the company's, your personal brand will boost the company's brand. This make you a more valuable asset to the company, resulting in the company providing more opportunities for you to grow your personal brand. It's a beautiful thing to see companies embrace this. The results are a better security team and culture for the company, and a major brand boost when the security team itself becomes known as a contributor to the community.
+
+---
+
+**How do you build a personal brand?**
+
+Basically, by being outspoken and not being selfish. Share your discoveries with others, whether it be blog articles, hosting lunch & learns, speaking at conferences, or providing training. Share your creations with others by open sourcing your scripts and tools that you use to make your own job easier. While these things may be differentiators at times, remember that there is more work than there are skilled people. Don't be greedy. I've seen people throw away personal brand growth opportunities while trying to make a quick buck. Don't underestimate the value of giving stuff (ideas, software, techniques, etc.) away. It may make you more in the long run giving it away than it would in a short term money grab. Open sourcing Recon-ng has done more for my career than I can quantify, yet there were people in the beginning that told me I was crazy for giving it away. I'm glad I didn't listen.
