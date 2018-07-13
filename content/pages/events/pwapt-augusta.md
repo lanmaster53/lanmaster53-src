@@ -22,9 +22,9 @@ October 17-19, 2018
 
 ###### Location
 
-Our friends at [Augusta University](https://www.augusta.edu/) have opened their doors to the public for this event. We are grateful for their support.
+Our friends at [Augusta University](https://www.augusta.edu/) have opened their doors to the public for this event. We are grateful for their support. The class will be held in room 131 of the University Hall building on the Summerville Campus.
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1630.1724448858802!2d-81.99104919869139!3d33.4671610780999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7c41d2198601d1e6!2sJ.+Harold+Harrison+MD%2C+Education+Commons!5e1!3m2!1sen!2sus!4v1527823932012" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1663.972810023107!2d-82.02313819187337!3d33.47676654519161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f9cd94321e27fd%3A0xba10291423c55ca0!2sUniversity+Hall!5e0!3m2!1sen!2sus!4v1531449221563" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
 
 ---
 
