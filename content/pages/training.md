@@ -10,7 +10,7 @@ No one wants to hire a consultant without experience, but it's difficult to gain
 
 Above all, training gives me an opportunity to share my passion for application security with individuals who make a real difference in the state of security for the applications that impact our daily lives. From banks, to social media, to government agencies, the opportunity to support those on the front line of application security is a privilege I don't take for granted.
 
-...but don't take my word for it. Scroll down to see testimonials from previous students.
+...but don't take my word for it. Read the [testimonials](/testimonials/) from previous students.
 
 ## Upcoming Classes
 
@@ -78,8 +78,3 @@ This course contains code remediation content that includes discussions on the p
 * Ability to disable all security software on their laptop such as Antivirus and/or firewalls (Administrator).
 * At least twenty (20) GB of hard drive space.
 * At least four (4) GB of RAM.
-
-## Testimonials
-
-{{ site.testimonials|safe }}
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

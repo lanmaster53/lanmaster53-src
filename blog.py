@@ -48,6 +48,12 @@ SITE = {
         'faq',
         'about',
     ],
+    'freeze': [
+        'drafts',
+        'restmail',
+        'test',
+        'testimonials',
+    ],
     'analytics': {
         'googleUA': {
             'tracking_id' : 'UA-52269615-1',
@@ -142,7 +148,7 @@ def error_handlers():
 @freezer.register_generator
 def page():
     print 'Freezing unlinked pages...'
-    for p in ('drafts', 'restmail', 'test'):
+    for p in app.config['SITE']['freeze']:
         yield {'name': p}
 
 # create events not linked with url_for
