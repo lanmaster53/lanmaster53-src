@@ -1,24 +1,6 @@
 {
     "events": [
         {
-            "freeze_page": true,
-            "dates": "June 6-8, 2018",
-            "class": "PWAPT",
-            "host": "Crowe Horwath LLP",
-            "location": "Lexington, KY",
-            "link_text": "register",
-            "link_href": "/events/pwapt-lexington/"
-        },
-        {
-            "freeze_page": true,
-            "dates": "July 16-18, 2018",
-            "class": "PWAPT",
-            "host": "WIN",
-            "location": "Eau Claire, WI",
-            "link_text": "register",
-            "link_href": "/events/pwapt-eau-claire/"
-        },
-        {
             "freeze_page": false,
             "dates": "October 3-4, 2018",
             "class": "PWAPT",
