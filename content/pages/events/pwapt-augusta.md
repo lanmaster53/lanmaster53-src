@@ -6,6 +6,8 @@ title: PWAPT Augusta
 
 $1,500.00
 
+**IMPORTANT**: BSidesAugusta event tickets \*must\* be purchased separately. Training tickets are not valid for entry into the conference. Event tickets can be purchased at the [BSidesAugusta event page](https://www.eventbrite.com/e/bsidesaugusta-2018-tickets-48258920731).
+
 ---
 
 ###### Description
