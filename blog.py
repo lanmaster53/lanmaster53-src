@@ -49,6 +49,7 @@ SITE = {
         'about',
     ],
     'freeze': [
+        'cef',
         'drafts',
         'restmail',
         'test',
