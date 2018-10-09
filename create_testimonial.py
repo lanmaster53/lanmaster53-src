@@ -4,7 +4,7 @@ import urllib2
 
 base_url = 'https://publish.twitter.com/oembed?url={}?&hide_media=true&hide_thread=true&omit_script=true'
 
-urls = open('tweets.txt').read().split()
+urls = [u for u in open('tweets.txt').read().split() if not u.startswith('#')]
 
 left = []
 right = []
