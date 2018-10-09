@@ -2,11 +2,11 @@ title: Training
 
 [![](/static/images/pages/training/pwapt-teaching.jpg)](/static/images/pages/training/pwapt-teaching.jpg)
 
-## Why Train with Me?
+## Why Train with Practical Security Services?
 
-There are too many Application Security testing and secure development classes that waste time by discussing multiple tools that serve the same purpose, or make Application Security concepts feel like "magic" by not addressing the practical application of theory. Using the tools I use and the techniques I've learned from years of Application Security consulting and software development, I provide training that focuses on bringing theory and reality together to provide a true learning experience. Training also gives me an opportunity to share my passion for Application Security and software development with individuals who make a real difference in the state of security for the applications that impact our daily lives. From banks, to social media, to government agencies, the opportunity to support those on the front line of Application Security is a privilege I don't take for granted.
+There are too many Application Security testing and secure development classes that waste time by discussing multiple tools that serve the same purpose, or make Application Security concepts feel like "magic" by not addressing the practical application of theory. Using the tools they use and the techniques they've learned from years of Application Security consulting and software development, Practical Security Services provides training that focuses on bringing theory and reality together to provide a true learning experience. Training also gives Practical Security Services an opportunity to share a passion for Application Security and software development with individuals who make a real difference in the state of security for the applications that impact our daily lives. From banks, to social media, to government agencies, the opportunity to support those on the front line of Application Security is a privilege Practical Security Services does not take for granted.
 
-...but don't take my word for it. Read the [testimonials](/testimonials/) of previous students.
+...but don't take our word for it. Read the [testimonials](/testimonials/) of previous students.
 
 ## Upcoming Classes
 
@@ -16,17 +16,19 @@ There are too many Application Security testing and secure development classes t
 | {{ event.dates }} | {{ event.class }} | {{ event.host }} | {{ event.location }} | [{{ event.link_text }}]({{ event.link_href }}) |
 {% endfor %}
 
-Please [contact me](/contact/) for on-site training opportunities.
+Please [contact us](/contact/) for on-site training opportunities.
 
 ## Courses
 
 ---
 
-### Practical Burp Suite: Advanced Tactics - PBAT (coming soon!)
+### Practical Burp Suite: Advanced Tactics - PBAT
+
+> All Burp all the time. (Coming soon!)
 
 #### Description
 
-Do you feel good about your Application Security testing methodology, but think you might be able to get more out of your tools? Perhaps I can help. After years of teaching people the process of conducting Application Security assessments, I've found that even the most experienced testers lack a full and complete understanding of everything that is available in the industry's #1 Application Security testing tool: PortSwigger's Burp Suite. It's time to fix that with PBAT.
+Do you feel good about your Application Security testing methodology, but think you might be able to get more out of your tools? Perhaps Practical Security Services can help. Years of experience providing instruction on the process of conducting Application Security assessments has made it clear that even the most experienced testers lack a complete understanding of everything that is available in the industry's #1 Application Security testing tool: PortSwigger's Burp Suite. It's time to fix that with PBAT.
 
 PBAT provides comprehensive training on the capabilities of Burp Suite and the practical application of these capabilities in real world web application penetration testing engagements. The instructor will introduce the various components of Burp Suite individually, discussing their purpose and limitations, and lead students in realistic scenario driven hands-on exercises leveraging the components against a modern web application. As the scenarios unfold, the instructor will share tips and tricks for using Burp Suite gained from years of personal usage experience and extensive research into the tool's capabilities and ongoing expansion.
 
@@ -36,8 +38,6 @@ PBAT is 100% focused on Burp Suite and does not address the methodology and proc
 * Undocumented tips and tricks
 * Burp's REST API
 * Macros
-    * test
-    * test
 * Burp Infiltrator (pending)
 * Clickbandit
 * Burp Scanner
@@ -56,23 +56,27 @@ Check back often for updates and availability.
 
 ---
 
-### Practical Web Application Security (Fully Customized Training)
+### Practical Web Application Security
+
+> Fully customized Application Security training.
 
 #### Description
 
-No single Application Security training class fits every need, and developing and managing custom training courses is a difficult task often resulting in additional expense for you, the purchaser. It doesn't have to be that way. I've developed a proprietary content management and presentation platform that quickly and effortlessly builds custom training courses based on client specified needs, removing the overhead and expense associated with providing customized training. This saves you money and results in a consistent high-quality product.
+No single Application Security training class fits every need, and developing and managing custom training courses is a difficult task often resulting in additional expense for you, the purchaser. It doesn't have to be that way. Practical Security Services has developed a proprietary content management and presentation platform that quickly and effortlessly builds custom training courses based on client specified needs, removing the overhead and expense associated with providing customized training. This saves you money and results in a consistent high-quality product.
 
 Clients choose from a menu of 150+ Application Security modules and my system creates a training deck and associated booklet with the push of a button. Available training modules include content related to vulnerability theory, remediation techniques, secure development, testing methodology (dynamic, static and hybrid), hands-on exercises and labs, tooling, web-based protocols, etc. New modules can also be created upon request.
 
-Please [contact me](/contact/) to begin the discussion on how customized training can meet your Application Security training needs.
+Please [contact us](/contact/) to begin the discussion on how customized training can meet your Application Security training needs.
 
 ---
 
 ### Practical Web Application Penetration Testing - PWAPT
 
+> Real world Application Security testing experience in a classroom environment.
+
 #### Description
 
-No one wants to hire an Application Security consultant without experience, but it's difficult to gain experience unless you already work in the field or breach ethical boundaries. This is a challenge that many "green" Application Security professionals face. Born out of this need, PWAPT was designed to provide real world experience in a classroom environment, allowing for the growth required to enter the work force with confidence and competence. PWAPT was also designed to provide experienced Application Security consultants with a better defined testing methodology complimented by obscure vulnerability discovery techniques and "quality of life" tips and tricks to improve on a developed skill set. Regardless of skill level, PWAPT has something for everyone.
+No one wants to hire an Application Security consultant without experience, but it's difficult to gain experience unless you already work in the field or breach ethical boundaries. This is a challenge that many "green" Application Security professionals face. Born out of this need, Practical Security Services designed PWAPT to provide real world experience in a classroom environment, allowing for the growth required to enter the work force with confidence and competence. PWAPT was also designed to provide experienced Application Security consultants with a better defined testing methodology complimented by obscure vulnerability discovery techniques and "quality of life" tips and tricks to improve on a developed skill set. Regardless of skill level, PWAPT has something for everyone.
 
 PWAPT provides comprehensive training on the latest open source tools and manual techniques for performing end-to-end web application penetration testing engagements. After a quick overview of the penetration testing methodology, the instructor will lead students through the process of testing and exploiting a target web application using the techniques and approaches developed from a career of real world application penetration testing experiences. Students will be introduced to the best tools currently available for the specific steps of the methodology, including Burp Suite Pro, and taught how to integrate these tools with manual testing techniques to maximize effectiveness. A major goal of this course is teaching students the glue that brings the tools and techniques together to successfully perform a web application penetration test from beginning to end, an oversight in most web application penetration testing courses. The end result is an individual with the confidence and skill set to conduct consultative web application penetration testing engagements.
 
@@ -80,7 +84,7 @@ The majority of the course will be spent performing an instructor led, hands-on 
 
 PWAPT is a PortSwigger preferred [Burp Suite Training course](https://portswigger.net/training/). PWAPT students will learn basic and advanced usage techniques for Burp Suite Pro, as well as discover obscure functionality hidden within the vast capabilities of the tool. Students will also receive a ~2 week trial license for Burp Suite Pro to use during and after the course.
 
-For additional insight into the origin, mission, and benefits of PWAPT, listen to my interview with [Timothy De Block](https://twitter.com/TimothyDeBlock) for the [Exploring Information Security podcast](http://www.timothydeblock.com/eis/54) on the topic of "What is Practical Web Application Penetration Testing?" The course has developed significantly since the interview, but my philosophy remains the same.
+For additional insight into the origin, mission, and benefits of PWAPT, listen to our interview with [Timothy De Block](https://twitter.com/TimothyDeBlock) for the [Exploring Information Security podcast](http://www.timothydeblock.com/eis/54) on the topic of "What is Practical Web Application Penetration Testing?" The course has developed significantly since the interview, but the discussed principles behind the development of the course remain the same.
 
 <audio controls>
     <source src="{{ url_for('static', filename='downloads/EIS-ep54-PWAPT.mp3') }}" type="audio/mpeg">
