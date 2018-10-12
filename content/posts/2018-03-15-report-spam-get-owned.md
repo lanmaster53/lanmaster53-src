@@ -32,10 +32,10 @@ While in theory I love this idea, it wasn't nearly as awesome in practice. After
 
 ### Verifying Targets
 
-Before this information is at all useful, an attacker must validate whether or not their target is using one of Google's email services. Detecting Gmail is easy. Just look for the `@gmail.com` domain in the email address. Detecting G Suite isn't much harder. Do a MX record lookup for the email addresses domain (hostname actually) via DNS and examine the mail server addresses. Below is an example of using dig to conduct such a lookup for the `tim.tomes@practicalsecurity.services` email address:
+Before this information is at all useful, an attacker must validate whether or not their target is using one of Google's email services. Detecting Gmail is easy. Just look for the `@gmail.com` domain in the email address. Detecting G Suite isn't much harder. Do a MX record lookup for the email addresses domain (hostname actually) via DNS and examine the mail server addresses. Below is an example of using dig to conduct such a lookup for the `tim.tomes@practisec.com` email address:
 
 ```
-$ dig -t MX practicalsecurity.services +short
+$ dig -t MX practisec.com +short
 1 aspmx.l.google.com.
 5 alt1.aspmx.l.google.com.
 5 alt2.aspmx.l.google.com.

@@ -28,7 +28,7 @@ SITE = {
         'name': 'Tim Tomes',
         'emails': {
             'personal': 'timothy.tomes@gmail.com',
-            'business': 'tim.tomes@practicalsecurity.services',
+            'business': 'tim.tomes@practisec.com',
         },
         'gravatar': 'https://www.gravatar.com/avatar/0a6d9b1ad59ad436bf9d9d16b2a7133e.png',
         'meta': {
