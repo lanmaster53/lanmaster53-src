@@ -2,12 +2,12 @@
     "events": [
         {
             "freeze_page": true,
-            "dates": "October 17-19, 2018",
+            "dates": "January 28-30, 2019",
             "class": "PWAPT",
-            "host": "BSides Augusta",
-            "location": "Augusta, GA",
+            "host": "NetApp",
+            "location": "Raleigh, NC",
             "link_text": "register",
-            "link_href": "/events/pwapt-augusta/"
+            "link_href": "/events/pwapt-raleigh/"
         }
     ]
 }
