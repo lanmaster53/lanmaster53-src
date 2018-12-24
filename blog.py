@@ -45,7 +45,6 @@ SITE = {
         'categories',
         'company',
         'training',
-        'faq',
         'about',
     ],
     'freeze': [
