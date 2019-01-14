@@ -42,7 +42,7 @@ Practical Security Services charges a flat rate of $500 per person per day for o
 
 ### Practical Burp Suite: Advanced Tactics - PBAT
 
-> All Burp all the time. (Coming soon!)
+> All Burp, all the time. (Coming soon!)
 
 #### Description
 
@@ -82,7 +82,7 @@ Check back often for updates and availability.
 
 No single Application Security training class fits every need, and developing and managing custom training courses is a difficult task often resulting in additional expense for you, the purchaser. It doesn't have to be that way. Practical Security Services has developed a proprietary content management and presentation platform that quickly and effortlessly builds custom training courses based on client specified needs, removing the overhead and expense associated with providing customized training. This saves you money and results in a consistent high-quality product.
 
-Clients choose from a menu of 150+ Application Security modules and my system creates a training deck and associated booklet with the push of a button. Available training modules include content related to vulnerability theory, remediation techniques, secure development, testing methodology (dynamic, static and hybrid), hands-on exercises and labs, tooling, web-based protocols, etc. New modules can also be created upon request.
+Clients choose from a menu of 150+ Application Security modules and our system creates a training deck and associated booklet with the push of a button. Available training modules include content related to vulnerability theory, remediation techniques, secure development, testing methodology (dynamic, static and hybrid), hands-on exercises and labs, tooling, web-based protocols, etc. New modules can also be created upon request.
 
 Please [contact us](/contact/) to begin the discussion on how customized training can meet your Application Security training needs.
 
