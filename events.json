@@ -8,6 +8,15 @@
             "location": "Raleigh, NC",
             "link_text": "register",
             "link_href": "/events/pwapt-raleigh/"
+        },
+        {
+            "freeze_page": true,
+            "dates": "June 5-7, 2019",
+            "class": "PWAPT",
+            "host": "WorkshopCon",
+            "location": "Boston, MA",
+            "link_text": "register",
+            "link_href": "/events/pwapt-workshopcon/"
         }
     ]
 }
