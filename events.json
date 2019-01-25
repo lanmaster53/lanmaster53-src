@@ -11,6 +11,15 @@
         },
         {
             "freeze_page": true,
+            "dates": "April 15-17, 2019",
+            "class": "PWAPT",
+            "host": "Lockstep",
+            "location": "Atlanta, GA",
+            "link_text": "register",
+            "link_href": "/events/pwapt-atlanta/"
+        },
+        {
+            "freeze_page": true,
             "dates": "June 5-7, 2019",
             "class": "PWAPT",
             "host": "WorkshopCon",
