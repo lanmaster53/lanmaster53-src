@@ -26,6 +26,15 @@
             "location": "Boston, MA",
             "link_text": "register",
             "link_href": "/events/pwapt-workshopcon/"
+        },
+        {
+            "freeze_page": true,
+            "dates": "August 5-7, 2019",
+            "class": "PWAPT",
+            "host": "ISACA",
+            "location": "Springfield, MO",
+            "link_text": "register",
+            "link_href": "/events/pwapt-springfield/"
         }
     ]
 }
