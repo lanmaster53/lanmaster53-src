@@ -1,6 +1,7 @@
 from flask import Flask, render_template, render_template_string, redirect, url_for, abort, has_app_context
 from flask_flatpages import FlatPages, pygments_style_defs
 from flask_frozen import Freezer
+from collections import OrderedDict
 from datetime import datetime
 import jinja2
 import json
@@ -8,6 +9,19 @@ import markdown
 import os
 import re
 import sys
+import yaml
+
+# custom yaml loader that will maintain the order of objects loaded
+def ordered_load(stream, Loader=yaml.Loader, object_pairs_hook=OrderedDict):
+    class OrderedLoader(Loader):
+        pass
+    def construct_mapping(loader, node):
+        loader.flatten_mapping(node)
+        return object_pairs_hook(loader.construct_pairs(node))
+    OrderedLoader.add_constructor(
+        yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG,
+        construct_mapping)
+    return yaml.load(stream, OrderedLoader)
 
 ##### configuration options
 
@@ -62,7 +76,7 @@ SITE = {
     },
     'posts': [],
     'drafts': [],
-    'events': json.load(open('events.json')).get('events'),
+    'events': ordered_load(open('events.yaml')),
     'testimonials': open('testimonials.html').read().decode('utf-8')
 }
 
@@ -155,7 +169,7 @@ def page():
 @freezer.register_generator
 def events():
     print 'Freezing events...'
-    for event in app.config['SITE']['events']:
+    for name, event in app.config['SITE']['events'].iteritems():
         if event['freeze_page']:
             yield event['link_href']
 
@@ -209,6 +223,19 @@ def post(year, month, day, name):
     path = os.path.join(POST_DIR, name)
     post = flatpages.get_or_404(path)
     return render_template('post.html', post=post)
+
+# event rendering view
+@app.route('/events/<string:name>/')
+def event(name):
+    event = app.config['SITE']['events'].get(name)
+    if not event:
+        abort(404)
+    # dynamically create the markdown based on a requested event
+    prerendered_body = render_template('event.md', event=app.config['SITE']['events'][name])
+    # render the markdown into HTML
+    body = markdown.markdown(prerendered_body, app.config['FLATPAGES_MARKDOWN_EXTENSIONS'])
+    # place the HTML into a template
+    return render_template('event.html', body=body, event=event)
 
 # page rendering view
 # this does not work if flask serves static files from the web root

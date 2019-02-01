@@ -12,8 +12,8 @@ There are too many Application Security testing and secure development classes t
 
 | Dates | Class | Host | Location | Registration |
 |:---:|:---:|:---:|:---:|:---:|
-{% for event in site.events %}
-| {{ event.dates }} | {{ event.class }} | {{ event.host }} | {{ event.location }} | [{{ event.link_text }}]({{ event.link_href }}) |
+{% for name, event in site.events.iteritems() %}
+| {{ event.date }} | {{ event.class }} | {{ event.host }} | {{ event.city }} | [{{ event.link_text }}]({{ event.link_href }}) |
 {% endfor %}
 
 Please [contact us](/contact/) for on-site training opportunities.
