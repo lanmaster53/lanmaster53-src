@@ -28,7 +28,7 @@ def ordered_load(stream, Loader=yaml.Loader, object_pairs_hook=OrderedDict):
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
-FLATPAGES_MARKDOWN_EXTENSIONS = ['codehilite', 'fenced_code', 'tables']
+FLATPAGES_MARKDOWN_EXTENSIONS = ['codehilite', 'fenced_code', 'tables', 'attr_list']
 FLATPAGES_ROOT = 'content'
 FREEZER_IGNORE_404_NOT_FOUND = True
 FREEZER_DESTINATION_IGNORE = ['.git/', 'CNAME']

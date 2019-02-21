@@ -1,4 +1,6 @@
-title: Practical Security Services LLC
+title: ''
+
+![/static/images/pages/company/logo-small.png)](/static/images/pages/company/logo-small.png){: class="company-logo" }
 
 > **prac·ti·cal**: of or concerned with the actual doing or use of something rather than with theory and ideas.
 
