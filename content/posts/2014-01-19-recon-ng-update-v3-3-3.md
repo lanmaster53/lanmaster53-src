@@ -1,6 +1,6 @@
 title: Recon-ng Update (v3.3.3)
 publish: True
-categories: [projects]
+categories: [projects, tools, Recon-ng]
 
 Some users may have noticed an usually high number of bugs over the past couple of weeks. We've been making some sweeping changes to the guts of the framework during that time, and since the entire user population is the beta test community, you have been instrumental in helping spot and fix issues. For that I thank you. We've been trying to fix bugs as fast as they've been reported, so at this point, I believe most issues have been identified and resolved. However, please continue to report any strange behavior or bugs.
 

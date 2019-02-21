@@ -1,6 +1,6 @@
 title: 'XSS Active Defense'
 publish: True
-categories: [application security, hacking, projects]
+categories: [application security, hacking]
 
 While I don't do active defense in any part of my professional life, I enjoy developing active defense techniques for web technologies. Lately I've been dabbling in active defense mechanisms for Cross-Site Scripting (XSS) attacks, and as the developer of the HoneyBadger geolocation framework, incorporating the research into new reporting techniques and agents.
 

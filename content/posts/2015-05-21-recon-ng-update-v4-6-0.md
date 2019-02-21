@@ -1,6 +1,6 @@
 title: Recon-ng Update (v4.6.0)
 publish: True
-categories: [projects]
+categories: [projects, tools, Recon-ng]
 
 Recon-ng v4.6.0 is the largest single framework commit to date. Most of the changes are behind the scenes and won't effect the average user's experience. Below is a summary of the important changes, including the one change that will affect everyone: dependencies.
 
