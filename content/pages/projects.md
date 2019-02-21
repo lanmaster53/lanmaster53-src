@@ -2,7 +2,7 @@ title: Projects
 
 ## Active
 
-### The Recon-ng Framework
+### Recon-ng
 
 Full-featured Web Reconnaissance framework for conducting open source reconnaissance.
 
@@ -20,17 +20,17 @@ Tool for exploiting SQL injection vulnerabilities that sqlmap just can't find.
 
 [https://github.com/lanmaster53/sqli-exploiter](https://github.com/lanmaster53/sqli-exploiter)
 
-### Burp Suite Visual Aids
+### Burp Suite Pro Visual Aids
 
-Series of annotated images depicting usage tips for Burp Suite.
+Series of annotated images depicting usage tips for Burp Suite Pro.
 
-[/projects/burp-visual-aids/](/projects/burp-visual-aids/)
+[Google Doc](https://docs.google.com/document/d/1vrhFxgE-yGaQlC1wq5rj0WCxkDv9UnyTFG8Q2fxU1JE)
 
-### RESTmail.net Web Interface
+### Burp Suite Pro v2 FAQ
 
-React driven web interface for the restmail.net API
+Ongoing Q&A between the Burp Suite Pro development team and myself concerning all things v2.
 
-[/restmail/](/restmail/)
+[Google Doc](https://docs.google.com/document/d/1vvYguq-s5VnkR51eBvXtORenzxI1U9vLtg80tRt38Do)
 
 ---
 

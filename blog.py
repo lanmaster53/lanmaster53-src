@@ -59,14 +59,12 @@ SITE = {
         'categories',
         'company',
         'training',
+        'testimonials',
         'about',
     ],
     'freeze': [
         'cef',
         'drafts',
-        'restmail',
-        'test',
-        'testimonials',
     ],
     'analytics': {
         'googleUA': {
@@ -185,12 +183,6 @@ def old_post():
         }
 
 ##### legacy support controllers
-
-# support for old links to the specific project
-@app.route('/burp/visual-aids/')
-@app.route('/burp-visual-aids/')
-def burp_visual_aids():
-    return redirect(url_for('page', name='/projects/burp-visual-aids'))
 
 # support for old links to posts without the day
 @app.route('/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<string:name>/')
