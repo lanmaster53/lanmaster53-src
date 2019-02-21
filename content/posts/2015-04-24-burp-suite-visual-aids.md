@@ -10,4 +10,4 @@ The reason I began blogging years ago was to keep notes on things I wanted for f
 
 ##### Friday, May 8, 2015
 
-Due to its nature, the content of this blog post had been moved to its [own page](/burp-visual-aids/).
+Due to its nature, the content of this blog post had been moved to a [Google Doc](https://docs.google.com/document/d/1vrhFxgE-yGaQlC1wq5rj0WCxkDv9UnyTFG8Q2fxU1JE).
