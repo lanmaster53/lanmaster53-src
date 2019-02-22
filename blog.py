@@ -1,8 +1,10 @@
 from flask import Flask, render_template, render_template_string, redirect, url_for, abort, has_app_context
 from flask_flatpages import FlatPages, pygments_style_defs
 from flask_frozen import Freezer
+from werkzeug.contrib.atom import AtomFeed
 from collections import OrderedDict
 from datetime import datetime
+from urlparse import urljoin
 import jinja2
 import json
 import markdown
@@ -35,6 +37,7 @@ FREEZER_DESTINATION_IGNORE = ['.git/', 'CNAME']
 PYGMENTS_STYLE = 'tango'
 PAGE_DIR = 'pages'
 POST_DIR = 'posts'
+URL_ROOT = 'https://www.lanmaster53.com/'
 SITE = {
     'title': 'lanmaster53.com',
     'tagline': '',
@@ -240,6 +243,26 @@ def page(name):
     path = os.path.join(PAGE_DIR, name)
     page = flatpages.get_or_404(path)
     return render_template('page.html', page=page)
+
+@app.route('/atom.xml')
+def atom_feed():
+    feed = AtomFeed(
+        'Recent Articles',
+        feed_url=urljoin(app.config['URL_ROOT'], url_for('atom_feed')),
+        url=app.config['URL_ROOT'],
+        author='Tim Tomes',
+    )
+    for post in app.config['SITE']['posts'][:10]:
+        url = '{:04d}/{:02d}/{:02d}/{}'.format(post['date'].year, post['date'].month, post['date'].day, post['name'])
+        feed.add(
+            title=post['title'],
+            content=post.html,
+            content_type='html',
+            url=urljoin(app.config['URL_ROOT'], url),
+            updated=post['date'],
+            published=post['date'],
+        )
+    return feed.get_response()
 
 @app.errorhandler(404)
 def page_not_found(e):

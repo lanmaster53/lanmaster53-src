@@ -4,9 +4,10 @@
         <meta charset="utf-8">
         <title>{{ site.title }}{% if title %} - {{ title }}{% endif %}</title>
         <meta name="author" content="{{ site.author.name }}">
-        <meta name="description" content="">
+        <meta name="description" content="Articles, information, and projects related to development and web application security.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <link rel="alternate" href="{{ url_for('atom_feed') }}" title="Recent Articles" type="application/atom+xml">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" type="text/css">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/skeleton.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -23,6 +24,7 @@
                         <li><a href="{{ site.author.meta[meta].url }}{{ site.author.meta[meta].username }}" target="_blank"><img src="{{ url_for('static', filename='images/meta/'+meta+'.png') }}" /></a></li>
                     {% endfor %}
                         <li><a href="{{ url_for('page', name='contact') }}"><img src="{{ url_for('static', filename='images/meta/email.png') }}"></a></li>
+                        <li><a href="{{ url_for('atom_feed') }}"><img src="{{ url_for('static', filename='images/meta/feed.png') }}"></a></li>
                     </ul>
                 </div>
                 <div class="eight columns nav">
