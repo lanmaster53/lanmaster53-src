@@ -6,9 +6,11 @@
 {% endblock %}
 
 {% block content %}
+<div class="content">
     {% if page %}
         {{ page.html|safe }}
     {% else %}
         {% block html %}{% endblock %}
     {% endif %}
+</div>
 {% endblock %}
