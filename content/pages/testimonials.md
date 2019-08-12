@@ -11,5 +11,8 @@ title: Testimonials
 <!-- -->
 > "I've taken several different trainings/certifications to include: OSCP, eMAPT, ePPT, Sans (GCFE and GMOB); your training and method of instruction blew these away. You've given me the gift of knowledge and I greatly appreciate it!" - DJ Phishes (PWAPT Eau Claire, 2018)
 
+<!-- -->
+> "Thank you for an amazing class! Truly inspirational. I'm probably one of the newest from your Springfield class to the security world, but you were able to teach and present all of the information in a way that was not only at a level that could be easily understood, but was engaging and fun!" - Blaise Lacktis (PWAPT Springfield, 2019)
+
 {{ site.testimonials|safe }}
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
