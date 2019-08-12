@@ -10,11 +10,15 @@ There are too many Web Application Security testing and secure development class
 
 ## Upcoming Classes
 
+{% if site.events %}
 | Dates | Class | Host | Location | Registration |
 |:---:|:---:|:---:|:---:|:---:|
 {% for name, event in site.events.iteritems() %}
 | {{ event.date }} | {{ event.class }} | {{ event.host }} | {{ event.city }} | [{{ event.link_text }}]({{ event.link_href }}) |
 {% endfor %}
+{% else %}
+No future classes scheduled at this time.
+{% endif %}
 
 Please [contact us](/contact/) for on-site training opportunities.
 

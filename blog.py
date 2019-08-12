@@ -77,7 +77,7 @@ SITE = {
     },
     'posts': [],
     'drafts': [],
-    'events': ordered_load(open('events.yaml')),
+    'events': ordered_load(open('events.yaml')) or {},
     'testimonials': open('testimonials.html').read().decode('utf-8')
 }
 
@@ -191,7 +191,7 @@ def old_post():
 @app.route('/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<string:name>/')
 def old_post(year, month, name):
     # regex pattern to find a filename that includes the day
-    regex = '\d{4}\-\d{2}\-(\d{2})\-' + re.escape(name) + '\.md'
+    regex = r'\d{4}\-\d{2}\-(\d{2})\-' + re.escape(name) + r'\.md'
     for root, dirs, files in os.walk(os.path.sep.join((FLATPAGES_ROOT, POST_DIR))):
         for file in files:
             match = re.search(regex, file)
