@@ -1,5 +1,5 @@
 title: 'Burp Suite Pro v2 Transition'
-publish: True
+publish: False
 categories: [application security, training, tools, Burp Suite]
 
 Most of you are probably well aware of the ongoing beta for Burp Suite Pro v2. While Portswigger recommends continuing to use the latest v1 stable version for commercial testing, many are anxious to get started with the features that Portswigger shared with us last year. Let me help you. I've been actively transitioning for six months now and would like to share with you a resource I've built along the way.
