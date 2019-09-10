@@ -7,19 +7,21 @@ Christian, father, husband, veteran, code slinger, aspiring difference-maker and
 ## Work
 
 - Freelance Consultant
-- Founder, Practical Security Services
+- Founder, Practical Security Services (PractiSec)
 - [Independent](/training/) Application Security Instructor
 - Certified: CISSP, CISA, GWAPT (expired), GPEN (expired), CEH (expired), CCNA Security (expired), MCSA (2003), Comptia A+ and Network+, blah, blah, why are you still reading this?
 
 ## Play
 
 - Co-founder of Proverbs Hackers, a community of Christian Information Security professionals who share a common thread of faith, fellowship and pwning.
-- Security Blogger. Most of my recent stuff is posted here, but I spent some time writing for [SecurityWeekly](http://securityweekly.com/) as well. Regardless, links to all of my material can be found in the [Archive](/archive/).
+- Security Blogger. Most stuff is here, but there's some other stuff floating around. Google me.
 - Open source advocate. Creator and maintainer of the Recon-ng Framework amongst other things. See [Projects](/projects/) for more information.
 - Curator of the AppSec Watercooler Slack channel.
 
 ## Public Speaking
 
+- [To CORS! The Cause of and Solution to All of your SPA Problems - DerbyCon 9.0 (2019)](https://youtu.be/tH-HG4b4GYQ)
+- To CORS! The Cause of and Solution to All of your SPA Problems - BSides Greenville 2019
 - InfoSec Proverbs: The Tim Tomes Top 10 - BSides Greenville 2018 (keynote)
 - [Burping for Joy and Financial Gain - DerbyCon 7.0 (2017)](https://youtu.be/U41D_d4JQLs)
 - [Burping for Joy and Financial Gain - BSides Augusta 2017](https://youtu.be/nJ5Zw5LyqV0)
@@ -44,9 +46,5 @@ Christian, father, husband, veteran, code slinger, aspiring difference-maker and
 
 ## Videos
 
-- [Recon-ng - Pushpin Intro (radius)](https://youtu.be/eZV6hicvMdw)
-- [Recon-ng - Pushpin Intro](https://youtu.be/BwopO7dxT98)
-- [Recon-ng - Update Review (6/23/14)](https://youtu.be/VevMPCkd6aM)
-- [Security Weekly TV - The Devil You Know (reMUX - 46:50)](http://blip.tv/securityweekly/the-devil-you-know-6719417)
-- [Recon-ng - XPath Brute Forcing Module (xpath_bruter)](https://youtu.be/RKt7o9sOe0A)
+- [YouTube](https://www.youtube.com/user/lanmaster53)
 - [Vimeo](https://vimeo.com/lanmaster53)
