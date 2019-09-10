@@ -46,49 +46,30 @@ Practical Security Services charges a flat rate of $500 per person per day for o
 
 ### Practical Burp Suite Pro: Advanced Tactics - PBAT
 
-> All Burp, all the time. (Coming soon!)
+> All Burp, all the time.
 
 #### Description
 
-Do you feel good about your Web Application Security testing methodology, but think you might be able to get more out of your tools? Perhaps Practical Security Services can help. Years of experience providing instruction on the process of conducting Web Application Security assessments has made it clear that even the most experienced testers lack a complete understanding of everything that is available in the industry's #1 Web Application Security testing tool: PortSwigger's Burp Suite Pro. It's time to fix that with PBAT.
+Do you feel pretty good about your Web Application Security testing methodology, but think you might be able to get more out of your tools? Years of experience providing instruction on the process of conducting Web Application Security assessments has made it clear. Even the most experienced testers lack a complete understanding of everything that is available in the industry’s #1 Web Application Security testing tool: PortSwigger’s Burp Suite Pro. It’s time to fix that with PBAT.
 
-PBAT provides comprehensive training on the capabilities of Burp Suite Pro and the practical application of these capabilities in real world web application penetration testing engagements. The instructor will introduce the various components of Burp Suite Pro individually, discussing their purpose and limitations, and lead students in realistic scenario driven hands-on exercises leveraging the components against a modern web application. As the scenarios unfold, the instructor will share tips and tricks for using Burp Suite Pro gained from years of personal usage experience and extensive research into the tool's capabilities and ongoing expansion.
+PBAT provides comprehensive training on the capabilities of Burp Suite Pro and the practical application of these capabilities in real world web application penetration testing engagements. The instructor will introduce the various components of Burp Suite Pro, discussing their purpose and limitations, and lead students in realistic scenario driven hands-on exercises leveraging the components against a modern web application. As the scenarios unfold, the instructor will share tips and tricks for using Burp Suite Pro gained from years of personal usage experience and extensive research into the tool’s capabilities and ongoing expansion.
 
-PBAT is 100% focused on Burp Suite Pro and does not address the methodology and process of web application penetration testing or specific vulnerabilities. However, the class is taught within the context of a web application penetration test in order to provide realistic scenarios for the tool's usage. While not an official continuation of PWAPT, PBAT is a great follow-up for students who have previously attended PWAPT. Below are some topics students can expect to explore in PBAT:
-
-* Advanced usage
-* Undocumented tips and tricks
-* Burp's REST API
-* Macros
-* Burp Infiltrator (pending)
-* Clickbandit
-* Burp Scanner
-* Extension development w/Python
-* ...and much more!
-
-Check back often for updates and availability.
+As a Portswigger Preferred Burp Suite Pro Trainer, Tim is a trusted source for comprehensive training on Burp Suite Pro v2.0. Since v2.0 was announced in August 2018, Tim has been the leader in researching and identifying the differences between the old and new versions of Burp Suite Pro, and assisting Web Application Security professionals in the transition.
 
 <!---
 #### Outline
+-->
 
 #### Skill Requirements
 
+PBAT is 100% focused on Burp Suite Pro v2.0 and does not address the methodology and process of web application penetration testing or specific vulnerabilities. However, the class is taught within the context of a web application penetration test in order to provide realistic scenarios for the tool’s usage. While not an official continuation of Practical Web Application Penetration Testing (PWAPT), PBAT is a great follow-up for students who have previously attended PWAPT.
+
 #### Technical Requirements
--->
 
----
-
-### Practical Web Application Security
-
-> Fully customized Web Application Security training.
-
-#### Description
-
-No single Web Application Security training class fits every need, and developing and managing custom training courses is a difficult task often resulting in additional expense for you, the purchaser. It doesn't have to be that way. Practical Security Services has developed a proprietary content management and presentation platform that quickly and effortlessly builds custom training courses based on client specified needs, removing the overhead and expense associated with providing customized training. This saves you money and results in a consistent high-quality product.
-
-Clients choose from a menu of 150+ Web Application Security modules and our system creates a training deck and associated booklet with the push of a button. Available training modules include content related to vulnerability theory, remediation techniques, secure development, testing methodology (dynamic, static and hybrid), hands-on exercises and labs, tooling, web-based protocols, etc. New modules can also be created upon request. Once a course is built, it is delivered as a blend of lecture and lab exercises that the students and instructor will do together so that the students can see, feel, and think what the instructor has learned through years of software development and Web Application Security consulting.
-
-With this kind of interactive, fully customized, framework agnostic, Web Application Security training, clients can provide their developers, quality assurance personnel, and security engineers with the in-depth knowledge of web-based software vulnerabilities required to meet Web Application Security objectives. Please [contact us](/contact/) to begin the discussion on how customized training can meet your Web Application Security training needs.
+* Laptop with the latest VMware Player, VMware Workstation, or VWware Fusion installed. Other virtualization software such as Parallels or VirtualBox will probably work if the attendee is familiar with its functionality. However, VMware Player should be prepared as a backup.
+* Ability to disable all security software on their laptop such as Antivirus and/or firewalls (Administrator).
+* At least twenty (20) GB of hard drive space.
+* At least four (4) GB of RAM.
 
 ---
 
@@ -133,10 +114,6 @@ Day 3:
 * Web Services
 * Advanced Burp Usage
 
-Day 4 (optional):
-
-* Remediation
-
 Note: The three day offering requires a minimum of 24 hours of classroom time in order to get through the core content. Be prepared for three full days of training with the potential for overtime in the evenings.
 
 #### Skill Requirements
@@ -149,8 +126,21 @@ While this is not an advanced course, PWAPT will strive to cover advanced topics
 
 #### Technical Requirements
 
-* Laptop with at least one (1) USB port.
 * Latest VMware Player, VMware Workstation, or VWware Fusion installed. Other virtualization software such as Parallels or VirtualBox will probably work if the attendee is familiar with its functionality. However, VMware Player should be prepared as a backup.
 * Ability to disable all security software on their laptop such as Antivirus and/or firewalls (Administrator).
 * At least twenty (20) GB of hard drive space.
 * At least four (4) GB of RAM.
+
+---
+
+### Practical Web Application Security
+
+> Fully customized Web Application Security training.
+
+#### Description
+
+No single Web Application Security training class fits every need, and developing and managing custom training courses is a difficult task often resulting in additional expense for you, the purchaser. It doesn't have to be that way. Practical Security Services has developed a proprietary content management and presentation platform that quickly and effortlessly builds custom training courses based on client specified needs, removing the overhead and expense associated with providing customized training. This saves you money and results in a consistent high-quality product.
+
+Clients choose from a menu of 150+ Web Application Security modules and our system creates a training deck and associated booklet with the push of a button. Available training modules include content related to vulnerability theory, remediation techniques, secure development, testing methodology (dynamic, static and hybrid), hands-on exercises and labs, tooling, web-based protocols, etc. New modules can also be created upon request. Once a course is built, it is delivered as a blend of lecture and lab exercises that the students and instructor will do together so that the students can see, feel, and think what the instructor has learned through years of software development and Web Application Security consulting.
+
+With this kind of interactive, fully customized, framework agnostic, Web Application Security training, clients can provide their developers, quality assurance personnel, and security engineers with the in-depth knowledge of web-based software vulnerabilities required to meet Web Application Security objectives. Please [contact us](/contact/) to begin the discussion on how customized training can meet your Web Application Security training needs.
