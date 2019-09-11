@@ -8,11 +8,17 @@ Full-featured Web Reconnaissance framework for conducting open source reconnaiss
 
 [http://recon-ng.com/](http://recon-ng.com/)
 
+### PyScripter-er
+
+Framework built on top of the Python Scripter Burp Suite extension.
+
+[https://github.com/lanmaster53/pyscripter-er](https://github.com/lanmaster53/pyscripter-er)
+
 ### HoneyBadger v2
 
 Framework for targeted geolocation and tracking.
 
-[https://github.com/lanmaster53/honeybadger/](https://github.com/lanmaster53/honeybadger/)
+[https://github.com/lanmaster53/honeybadger](https://github.com/lanmaster53/honeybadger)
 
 ---
 
