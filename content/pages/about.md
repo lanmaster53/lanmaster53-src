@@ -7,8 +7,8 @@ Christian, father, husband, veteran, code slinger, aspiring difference-maker and
 ## Work
 
 - Freelance Consultant
-- Founder, Practical Security Services (PractiSec)
-- [Independent](/training/) Application Security Instructor
+- Founder, [Practical Security Services (PractiSec)](//www.practisec.com)
+- [Application Security Instructor](/training/)
 - Certified: CISSP, CISA, GWAPT (expired), GPEN (expired), CEH (expired), CCNA Security (expired), MCSA (2003), Comptia A+ and Network+, blah, blah, why are you still reading this?
 
 ## Play
@@ -16,10 +16,11 @@ Christian, father, husband, veteran, code slinger, aspiring difference-maker and
 - Co-founder of Proverbs Hackers, a community of Christian Information Security professionals who share a common thread of faith, fellowship and pwning.
 - Security Blogger. Most stuff is here, but there's some other stuff floating around. Google me.
 - Open source advocate. Creator and maintainer of the Recon-ng Framework amongst other things. See [Projects](/projects/) for more information.
-- Curator of the AppSec Watercooler Slack channel.
+- Curator of the AppSec Watercooler and Recon-ng Slack channels.
 
 ## Public Speaking
 
+- Rapid Recon for Red Teams - Clemson University Cyber Meetup (10/17/2019)
 - [To CORS! The Cause of and Solution to All of your SPA Problems - DerbyCon 9.0 (2019)](https://youtu.be/tH-HG4b4GYQ)
 - To CORS! The Cause of and Solution to All of your SPA Problems - BSides Greenville 2019
 - InfoSec Proverbs: The Tim Tomes Top 10 - BSides Greenville 2018 (keynote)
