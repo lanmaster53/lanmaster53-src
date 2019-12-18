@@ -8,7 +8,15 @@ There are too many Web Application Security testing and secure development class
 
 ...but don't take our word for it. Read the [testimonials](/testimonials/) from previous students.
 
-## Upcoming Classes
+[Upcoming Classes](#upcoming-classes) |
+[Training Options](#training-options) |
+[PWAPT](#pwapt) |
+[PBAT](#pbat) |
+[PWAS](#pwas)
+
+---
+
+## <a name="upcoming-classes"></a> Upcoming Classes
 
 {% if site.events %}
 | Dates | Class | Host | Location | Registration |
@@ -22,7 +30,7 @@ No future classes scheduled at this time.
 
 Please [contact us](/contact/) for on-site training opportunities.
 
-## Training Options
+## <a name="training-options"></a> Training Options
 
 ### Open Enrollment
 
@@ -44,7 +52,7 @@ Practical Security Services charges a flat rate per person per day for on-site t
 
 ---
 
-### Practical Burp Suite Pro: Advanced Tactics - PBAT
+### <a name="pbat"></a> Practical Burp Suite Pro: Advanced Tactics - PBAT
 
 > All Burp, all the time.
 
@@ -73,7 +81,7 @@ PBAT is 100% focused on Burp Suite Pro v2.0 and does not address the methodology
 
 ---
 
-### Practical Web Application Penetration Testing - PWAPT
+### <a name="pwapt"></a> Practical Web Application Penetration Testing - PWAPT
 
 > Real world Web Application Security testing experience in a classroom environment.
 
@@ -85,7 +93,7 @@ PWAPT provides comprehensive training on the latest open source tools and manual
 
 The majority of the course will be spent performing an instructor led, hands-on web application penetration test against a target application built specifically for this class using a modern technology stack and including real vulnerabilities as encountered in the wild. No old-school vanilla PHP stuff here folks. Students won't be given overly simplistic steps to execute independently. Rather, at each stage of the test, the instructor will present the goals that each testing task is to accomplish and perform the penetration test in front of the class while students do it on their own machine. Primary emphasis of these instructor led exercises will be placed on how to integrate the tools with manual testing procedures to improve the overall work flow. This experience will help students gain the confidence and knowledge necessary to perform web application penetration tests as a Web Application Security professional.
 
-PWAPT is a PortSwigger preferred [Burp Suite Training course](https://portswigger.net/training/). PWAPT students will learn basic and advanced usage techniques for Burp Suite Pro, as well as discover obscure functionality hidden within the vast capabilities of the tool. Students will also receive a ~2 week trial license for Burp Suite Pro to use during and after the course.
+PWAPT is a PortSwigger preferred [Burp Suite Training course](https://portswigger.net/training/). PWAPT students will learn basic and advanced usage techniques for Burp Suite Pro, as well as discover obscure functionality hidden within the vast capabilities of the tool. Students will also receive a trial license for Burp Suite Pro to use during and after the course.
 
 For additional insight into the origin, mission, and benefits of PWAPT, listen to our interview with [Timothy De Block](https://twitter.com/TimothyDeBlock) for the [Exploring Information Security podcast](http://www.timothydeblock.com/eis/54) on the topic of "What is Practical Web Application Penetration Testing?" The course has developed significantly since the interview, but the discussed principles behind the development of the course remain the same.
 
@@ -133,7 +141,7 @@ While this is not an advanced course, PWAPT will strive to cover advanced topics
 
 ---
 
-### Practical Web Application Security
+### <a name="pwas"></a> Practical Web Application Security - PWAS
 
 > Fully customized Web Application Security training.
 
