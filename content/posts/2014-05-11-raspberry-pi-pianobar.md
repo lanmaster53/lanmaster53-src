@@ -14,7 +14,7 @@ I'm more comfortable in Debian environments, so I use Raspbian with my Raspberry
 
 With the Raspberry Pi up and running, I updated Raspbian and installed screen. Screen comes in handy during some of the lengthy steps involved with the manual install of Pianobar. Plus, screen is always a good tool to have around when working with a remote terminal.
 
-```
+``` text
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install screen
@@ -23,7 +23,7 @@ screen
 
 I then proceeded to install Pianobar manually using the following steps.
 
-```
+``` text
 # install dependencies
 sudo apt-get install git libao-dev libgcrypt11-dev libgnutls-dev libfaad-dev libmad0-dev libjson0-dev make pkg-config
 # install FFmpeg manually from source
@@ -52,7 +52,7 @@ I used the following resource to configure Pianobar.
 
 Notice the TLS fingerprint directive in the configuration file. For whatever reason, it is critical. If it is not correct, Pianobar will throw TLS errors and will not function. If I encounter TLS errors, the first thing I do is use the following command and check to see if Pandora has changed their TLS signature.
 
-```
+``` text
 openssl s_client -connect tuner.pandora.com:443 < /dev/null 2> /dev/null | openssl x509 -noout -fingerprint | tr -d ':' | cut -d'=' -f2
 ```
 
@@ -64,7 +64,7 @@ The Pianobar remote is only available for Android, so it doesn't work when I wan
 
 Here is a summary of the commands I used to install ShairPort.
 
-```
+``` text
 sudo apt-get install git libao-dev libssl-dev libcrypt-openssl-rsa-perl libio-socket-inet6-perl libwww-perl avahi-utils libmodule-build-perl
 git clone https://github.com/njh/perl-net-sdp.git
 cd perl-net-sdp
@@ -90,7 +90,7 @@ The Raspberry Pi audio sounded pretty terrible in its default configuration, so 
 
 Let it be known that Raspberry Pis do not handle power outages well. After countless hours of troubleshooting and rebuilding due to power outage induced corruption, I finally got smart and decided it was time to make an image of a complete install for recovery purposes. Below is the process for doing so on OSX.
 
-```
+``` text
 # gracefully shutdown the RPi
 sudo shutdown -h now
 # plug the USB drive/SD card into OSX

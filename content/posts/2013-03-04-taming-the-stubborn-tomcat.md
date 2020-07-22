@@ -27,7 +27,7 @@ I tweeted for suggestions and [James Jardine](https://twitter.com/JardineSoftwar
     - upload mimikatz.exe and sekurlsa.dll to the server.
 6. Use the JSP shell to execute mimikatz and extract the clear text credentials from memory. This must be done in a single command as the mimikatz interactive shell will not work through a non-interactrive web shell.
 
-    ```
+    ``` text
     mimikatz.exe privilege::debug sekurlsa::logonPasswords exit
     ```
 

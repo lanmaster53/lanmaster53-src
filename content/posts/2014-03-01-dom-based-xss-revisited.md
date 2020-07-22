@@ -49,7 +49,7 @@ Hello
 
 - Exploit
 
-```
+``` text
 http://example.com?name=<script>alert(42)</script>
 ```
 
@@ -77,7 +77,7 @@ Hello
 
 - Exploit
 
-```
+``` text
 http://example.com?name=Tim#<script>alert(42)</script>
 ```
 

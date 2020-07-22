@@ -35,7 +35,7 @@ Beyond overwriting the `alert` function, there are a few other XSS specific Hone
 
 The Content-Security-Policy agent reports upon any violation of the configured policy, which when done correctly indicates the introduction of arbitrary client-side code. Incorporating either of these agents into a web page requires the ability to set headers for the page's response. The following headers create the Content-Security-Policy agent:
 
-```
+``` text
 X-XSS-Protection: 0
 Content-Security-Policy-Report-Only: <policy>; report-uri https://<honeybadger host>/api/beacon/<target guid>/Content-Security-Policy
 
@@ -45,7 +45,7 @@ The `X-XSS-Protection` header disables the browser-side XSS protection before th
 
 The XSS-Protection agent reports any time the built-in browser XSS protection mechanism triggers, which indicates the presence of a known XSS attack. The following header creates the XSS-Protection agent:
 
-```
+``` text
 X-XSS-Protection: 1; report=https://<honeybadger host>/api/beacon/<target guid>/XSS-Protection
 
 ```

@@ -8,25 +8,25 @@ I came across an application recently that contained an Unvalidated Redirect fla
 
 The remediated redirect logic contained a call to a function that consumed the value of the `next` parameter and the hostname of the current location.
 
-```
+``` text
 document.location = validate(next, document.location.hostname)
 ```
 
 Pretty standard stuff. The interesting bit was in the called function.
 
-```
+``` text
 function validate(n, c) { var r = document.createElement("a"); return r.href = n, r.hostname === c ? n : "/"; }
 ```
 
 Which can be simplified to...
 
-```
+``` text
 function validate(n, c) { var r = document.createElement("a"); r.href = n; return r.hostname === c ? n : "/"; }
 ```
 
 Which can be further simplified to...
 
-```
+``` text
 function validate(n, c) { var r = document.createElement("a"); r.href = n; if(r.hostname === c) { return r.href; } else { return "/" ; }}
 ```
 
@@ -34,19 +34,19 @@ I am including several versions of the same code because the first version can b
 
 Just in case you haven't picked up on it yet, let's look at exactly what is going on here. I am using the Chrome Developer Tools JavaScript console on the [nVisium](https://nvisium.com) web page to demonstrate this if you want to follow along. Paste one of the functions above into the console and assign a value to a variable called `next`.
 
-```
+``` text
 var next = "http://lanmaster53.com"
 ```
 
 Now let's follow the logic of the first simplified version of the `validate` function to see how this works. The function first creates a hyperlink tag. Don't type the following into the console. I'll let you know when we're ready to continue with the demonstration.
 
-```
+``` text
 var r = document.createElement("a")
 ```
 
 Hyperlink tags accept an attribute called `href` that determines the destination of the browser when the hyperlink is clicked. The function then sets the `href` attribute of the dynamically created hyperlink to the value of the `next` parameter.
 
-```
+``` text
 r.href = n
 ```
 
@@ -54,7 +54,7 @@ This is where it gets interesting. Like the `document` object itself, the hyperl
 
 All that's left for the function to do is compare the hostname of the document (provided to the function) and the hostname derived from the dynamically created hyperlink to determine whether the value of the `next` parameter is a safe location, in this case local to the application.
 
-```
+``` text
 return r.hostname === c ? n : "/"
 ```
 
@@ -62,13 +62,13 @@ This is a [Ternary](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 Let's test the validation function with our values. Enter the following into the console to continue the demonstration.
 
-```
+``` text
 validate(next, document.location.hostname)
 ```
 
 The function should have returned `/`, which, when assigned to `document.location` would redirect the browser to the root of the website. Now change the value of `next` to something local and test.
 
-```
+``` text
 var next = "https://nvisium.com/blog"
 validate(next, document.location.hostname)
 ```

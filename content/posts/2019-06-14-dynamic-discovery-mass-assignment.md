@@ -12,7 +12,7 @@ There's this thing called Mass Assignment. It has other names, which I'll mentio
 
 For example, let's say our table (model) applies this schema:
 
-```
+``` text
 +-----------------+
 |      users      |
 +-----------------+
@@ -24,13 +24,13 @@ For example, let's say our table (model) applies this schema:
 
 Using an ORM, instead of making a raw query to insert a record into the table like:
 
-```
+``` text
 INSERT INTO users (username, password, role) VALUES ('lanmaster53', 'correcthorsebatterystaple', 'user');
 ```
 
 The developer can create a new instance of the model (row) and assign values to its attributes (columns) like:
 
-```
+``` text
 user = User()
 user = user.username='lanmaster53'
 user = user.password='correcthorsebatterystaple'
@@ -41,7 +41,7 @@ db.commit()
 
 or:
 
-```
+``` text
 user = User(username='lanmaster53', password='correcthorsebatterystaple', role='user')
 db.add(user)
 db.commit()
@@ -51,13 +51,13 @@ And a new row is made in the table with the provided attribute values in the cor
 
 The attributes in the above code blocks (username, password and role) could also be parameters in a request. Consider the following POST payload:
 
-```
+``` text
 username=lanmaster53&password=correcthorsebatterystaple&role=user
 ```
 
 In modern frameworks, a developer would access these values on the server from the request using something like `request.form`, which is an array of the name-value pairs. What's also possible in modern frameworks, is the ability to pass an array to a function as is, while signaling to the system that the array should be expanded into name-value pairs and treated as parameters. For example, take the following block of code:
 
-```
+``` text
 def example(x, y, z):
     #do something with x, y, and z
 
@@ -70,13 +70,13 @@ array = {
 
 This function could be invoked like:
 
-```
+``` text
 example(x=array[x], y=array[y], z=array[z])
 ```
 
 But it would be a heck of a lot easier to do something like:
 
-```
+``` text
 example(**array)
 ```
 
@@ -84,7 +84,7 @@ Which is shorthand for the previous example. Such a nice feature, right!? It exi
 
 Now look back at our POST payload example above. Some of you may have already picked up on this, but what kind of application allows the user to control what role they get? Not a good one, right? Obviously it depends on the context, but this isn't something that should normally be done. So the POST payload would probably look more like:
 
-```
+``` text
 username=lanmaster53&password=correcthorsebatterystaple
 ```
 
@@ -127,7 +127,7 @@ First, validate input. Applications should always validate input, whether using 
 
 Second, explicitly bind parameters to the model object. Given the example above, it would look something like this:
 
-```
+``` text
 user = User()
 user = user.username=request.form['username']
 user = user.password=request.form['password']

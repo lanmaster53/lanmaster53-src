@@ -54,7 +54,7 @@ Here are some other resources that helped along the way.
 
 I've had a few folks report an issue with WUDS where the sensor is picking up probes that have a 0 RSSI, MAC addresses with a sequential first octet, and a garbled SSID. One of the users reported that commenting out the following line in the `/etc/network/interfaces` file fixed the issue on the Raspberry Pi.
 
-```
+``` text
 pre-up wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 

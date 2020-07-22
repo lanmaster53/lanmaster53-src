@@ -16,14 +16,14 @@ The HTTP protocol specifies two traditional methods for passing parameters from 
 
 * `GET`
 
-```
+``` text
 GET /resource.ext?name1=value1&name2=value2 HTTP/1.1
 Host: www.example.com
 ```
 
 * `POST`
 
-```
+``` text
 POST /resource.ext HTTP/1.1
 Host: www.example.com
 

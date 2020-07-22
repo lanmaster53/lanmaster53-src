@@ -20,13 +20,13 @@ Which translated to this:
 
 Which, when scanned with a QR code reader, displayed:
 
-```
+``` text
 VANDALS WANG
 ```
 
 If you ran into Vandal (one of the goons) at the conference, he was wearing a QR code around his neck.  When scanned, it displayed:
 
-```
+``` text
 Vandal
 Official Defcon Scavenger Hunt Judge
 STOP ASKING ABOUT MY WANG!!!

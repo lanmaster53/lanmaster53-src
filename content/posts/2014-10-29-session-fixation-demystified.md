@@ -38,7 +38,7 @@ If you are the inquisitive type, then you immediately picked up on the statement
 
 Cookieless sessions are sessions that are managed by a token that is passed in some form other than a cookie. This means that the session token is passed between the client and server as a parameter in the URL, a parameter in the POST payload, or embedded in the URL. Below is an example of a .NET cookieless session. .NET rewrites each URL on the page to include the session token.
 
-```
+``` text
 http://www.example.com/s(lit3py55t21z5v55vlm25s55)/orderform.aspx
 ```
 
@@ -54,13 +54,13 @@ The Document Object Model (DOM) within the browser allows for cookies to be crea
 
 - JavaScript
 
-```
+``` text
 <script>document.cookie='SESSION_ID=THISISAFIXATEDCOOKIE; expires=Thu, 18 Dec 2015 12:00:00 UTC; path=/; domain=google.com; path=/'</script>
 ```
 
 - HTML Injection
 
-```
+``` text
 <meta http-equiv=Set-Cookie content="SESSION_ID=THISISAFIXATEDCOOKIE; expires=Thu, 18 Dec 2015 12:00:00 UTC; path=/; domain=google.com; path=/">
 ```
 

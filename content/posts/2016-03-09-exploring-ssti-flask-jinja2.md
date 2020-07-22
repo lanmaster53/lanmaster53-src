@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
 Below is some abbreviated output from the script when ran against Python 2.7, including the most interesting importable items.
 
-```
+``` text
 (venv)macbook-pro:search lanmaster$ ./search.py 2.7
 
 [{module}] {config key} => {config value}

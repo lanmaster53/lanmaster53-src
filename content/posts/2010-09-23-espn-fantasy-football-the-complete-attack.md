@@ -100,7 +100,7 @@ Other information I was able to discover:
 
 transType table:
 
-```
+``` text
 1=Move
 2=Add
 3=Drop
@@ -108,7 +108,7 @@ transType table:
 
 Position table:
 
-```
+``` text
 0=QB
 1=Not on Roster
 2=RB1/2
@@ -122,21 +122,21 @@ Position table:
 
 ADD Player:
 
-```
+``` text
 transType_playerId_?_?_startPos?_endPos
 ex. 2_11390_-1_1001_1_20
 ```
 
 MOVE Player:
 
-```
+``` text
 transType_playerId_startPos_endPos
 ex. 1_1753_0_20
 ```
 
 DROP Player:
 
-```
+``` text
 transType_playerId_teamId/scoringPeriod?_Position_?_?
 ex. 3_1753_1_2_-1_1002
 ```
