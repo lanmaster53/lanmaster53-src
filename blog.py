@@ -4,7 +4,7 @@ from flask_frozen import Freezer
 from werkzeug.contrib.atom import AtomFeed
 from collections import OrderedDict
 from datetime import datetime
-from urlparse import urljoin
+from urllib.parse import urljoin
 import jinja2
 import json
 import markdown
@@ -78,7 +78,7 @@ SITE = {
     'posts': [],
     'drafts': [],
     'events': ordered_load(open('events.yaml')) or {},
-    'testimonials': open('testimonials.html').read().decode('utf-8')
+    'testimonials': open('testimonials.html').read()
 }
 
 ##### app initialization
@@ -110,7 +110,7 @@ def my_renderer(text):
     prerendered_body = text
     if has_app_context():
         prerendered_body = render_template_string(text)
-    return markdown.markdown(prerendered_body, app.config['FLATPAGES_MARKDOWN_EXTENSIONS'])
+    return markdown.markdown(prerendered_body, extensions=app.config['FLATPAGES_MARKDOWN_EXTENSIONS'])
 app.config['FLATPAGES_HTML_RENDERER'] = my_renderer
 
 ##### pre-request context processing
@@ -156,28 +156,28 @@ app.jinja_env.globals['date'] = datetime.now()
 # create the 404 page for GH Pages
 @freezer.register_generator
 def error_handlers():
-    print 'Freezing error handlers...'
+    print('Freezing error handlers...')
     yield "/404.html"
 
 # create pages not linked with url_for
 @freezer.register_generator
 def page():
-    print 'Freezing unlinked pages...'
+    print('Freezing unlinked pages...')
     for p in app.config['SITE']['freeze']:
         yield {'name': p}
 
 # create events not linked with url_for
 @freezer.register_generator
 def events():
-    print 'Freezing events...'
-    for name, event in app.config['SITE']['events'].iteritems():
+    print('Freezing events...')
+    for name, event in app.config['SITE']['events'].items():
         if event['freeze_page']:
             yield event['link_href']
 
 # create old post urls
 @freezer.register_generator
 def old_post():
-    print 'Freezing old post URLs...'
+    print('Freezing old post URLs...')
     for p in app.config['SITE']['posts']:
         yield {
             'year': p['date'].year,
@@ -228,7 +228,7 @@ def event(name):
     # dynamically create the markdown based on a requested event
     prerendered_body = render_template('event.md', event=app.config['SITE']['events'][name])
     # render the markdown into HTML
-    body = markdown.markdown(prerendered_body, app.config['FLATPAGES_MARKDOWN_EXTENSIONS'])
+    body = markdown.markdown(prerendered_body, extenions=app.config['FLATPAGES_MARKDOWN_EXTENSIONS'])
     # place the HTML into a template
     return render_template('event.html', body=body, event=event)
 

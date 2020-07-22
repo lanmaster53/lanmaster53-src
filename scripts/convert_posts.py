@@ -4,7 +4,7 @@ os.chdir('content/posts')
 posts = os.listdir('.')
 for post in posts:
     new = post.split('-', 3)[-1]
-    print '{} ---> {}'.format(post, new)
+    print('{} ---> {}'.format(post, new))
     os.rename(post, new)
 
 '''
@@ -31,7 +31,7 @@ for post in posts:
         content = fp.readlines()
         year, month, day = content[1].split()[1].split('-')
     new = '{}-{}-{}-{}'.format(year, month, day, post)
-    print '{} ---> {}'.format(post, new)
+    print('{} ---> {}'.format(post, new))
     os.rename(post, new)
 
 posts = os.listdir('content/posts')
@@ -46,5 +46,5 @@ for post in posts:
         content.insert(1, 'date: {}\n'.format(date))
     with open('content/posts/'+name, 'w') as fp:
         fp.writelines(content)
-    print '{} ---> {}'.format(post, name)
+    print('{} ---> {}'.format(post, name))
 '''
