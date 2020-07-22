@@ -20,6 +20,7 @@ Christian, father, husband, veteran, code slinger, aspiring difference-maker and
 
 ## Public Speaking
 
+- [Sucking @Capitalism - BSides Greenville 2020 (keynote)](https://www.youtube.com/watch?v=l9JUP6fkenY)
 - [Rapid Recon for Red Teams - Upstate SC ISSA 2020](https://speakerdeck.com/lanmaster53/rapid-recon-for-red-teams)
 - Rapid Recon for Red Teams - Clemson University Cyber Meetup (10/17/2019)
 - [To CORS! The Cause of and Solution to All of your SPA Problems - DerbyCon 9.0 (2019)](https://youtu.be/tH-HG4b4GYQ)
