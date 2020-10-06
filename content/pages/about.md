@@ -2,7 +2,9 @@ title: About
 
 ### Tim (lanmaster53) Tomes
 
-Christian, father, husband, veteran, code slinger, aspiring difference-maker and hacking enthusiast.
+Radical "all in" Christ-follower, husband, father, veteran, coder, breaker, teacher, entrepreneur, and sharer.
+
+> Burp Suite master and king of making HTTP requests tremble.
 
 ## Work
 
