@@ -2,15 +2,15 @@ title: About
 
 ### Tim (lanmaster53) Tomes
 
-Radical "all in" Christ-follower, husband, father, veteran, coder, breaker, teacher, entrepreneur, and sharer.
+Husband, father, veteran, coder, breaker, teacher, entrepreneur, and sharer.
 
 > Burp Suite master and king of making HTTP requests tremble.
 
 ## Work
 
 - Freelance Consultant
-- Founder, [Practical Security Services (PractiSec)](//www.practisec.com)
-- [Application Security Instructor](/training/)
+- Founder, [Practical Security Services (PractiSec)](https://www.practisec.com)
+- [Application Security Instructor](https://www.practisec.com/training/)
 - Certified: CISSP, CISA, GWAPT (expired), GPEN (expired), CEH (expired), CCNA Security (expired), MCSA (2003), Comptia A+ and Network+, blah, blah, why are you still reading this?
 
 ## Play

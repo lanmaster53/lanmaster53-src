@@ -22,11 +22,11 @@
                     {% for meta in site.author.meta %}
                         <li><a href="{{ site.author.meta[meta].url }}{{ site.author.meta[meta].username }}" target="_blank"><img src="{{ url_for('static', filename='images/meta/'+meta+'.png') }}" /></a></li>
                     {% endfor %}
-                        <li><a href="{{ url_for('page', name='contact') }}"><img src="{{ url_for('static', filename='images/meta/email.png') }}"></a></li>
                     </ul>
                 </div>
                 <div class="eight columns nav">
                     <ul>
+                        <li><a href="https://www.practisec.com/"><span style="font-weight: bold; color: #00b5ef;">Practi</span><span style="font-weight: bold; color: #1e1b1d;">Sec</span></a> | </li>
                     {% for name in site.navigation %}
                         <li><a href="{{ url_for('page', name=name) }}">{{ name.capitalize() }}</a>{% if not loop.last %} | {% endif %}</li>
                     {% endfor %}
