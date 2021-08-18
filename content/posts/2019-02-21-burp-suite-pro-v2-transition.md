@@ -6,7 +6,7 @@ Most of you are probably well aware of the ongoing beta for Burp Suite Pro v2. W
 
 <!-- READMORE -->
 
-As a Portswigger Preferred Burp Suite Pro trainer, I consider it my responsibility to be on the front lines of Burp Suite Pro product knowledge. Therefore, I spend a great deal of time digging into Burp's extensive feature set and communicating with the development team concerning bugs, behaviors and features in an effort to bring that knowledge to you through my [training](/training) courses.
+As a Portswigger Preferred Burp Suite Pro trainer, I consider it my responsibility to be on the front lines of Burp Suite Pro product knowledge. Therefore, I spend a great deal of time digging into Burp's extensive feature set and communicating with the development team concerning bugs, behaviors and features in an effort to bring that knowledge to you through my [training](https://www.practisec.com/training/) courses.
 
 I began making the transition to Burp Suite Pro v2 in my training courses as soon as it was released last year. During this time, I've learned a ton about what the new feature set is, isn't, and how it impacts the workflow afforded by the previous version. As classes have come and gone using the beta version, I've compiled a library of questions and answers from dialog between folks at Portswigger and myself. I've chosen to share that information with the public as much of the information will be extremely helpful in making the transition. Some is good news, and some is bad news, but it's all useful.
 

@@ -25,7 +25,7 @@ while :; do printf "j$ "; read c; printf "HTTP/1.1 200 OK\n\n$c" | nc -l 8000 >/
 #### Redirection
 
 ``` text
-window.location = 'http://lanmaster53.com/training/'
+window.location = 'https://www.practisec.com/training/'
 ```
 
 #### Phishing

@@ -28,5 +28,3 @@ A co-worker and I were struggling through configuring Privoxy on a recent test w
 10. Connect to the VPN on the VM.
 11. Configure Burp on the host with the host-only interface as an upstream proxy (IP address from step 9 and port from step 6).
 12. Profit. Man I hate it when people say this.
-
-See the [Burp Suite Visual Aids project page](/burp-visual-aids/) for a picture of what this configuration looks like.

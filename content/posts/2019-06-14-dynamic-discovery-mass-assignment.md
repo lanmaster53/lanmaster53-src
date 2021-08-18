@@ -92,7 +92,7 @@ Notice the lack of `role` parameter. The developer is likely setting the `role` 
 
 ### Mass Assignment in Flask
 
-Previously, it seems, this issue has only been widely discussed in the context of Ruby on Rails, NodeJS, Java Spring MVC, ASP.NET MVC and PHP. However, when incorporating this topic into [Practical Web Application Penetration Testing (PWAPT)](https://www.lanmaster53.com/training/), I found a realistic way to introduce and exploit the issue in Flask. What you have seen up to this point is Python code and is exactly how this issue manifests itself in a Flask application.
+Previously, it seems, this issue has only been widely discussed in the context of Ruby on Rails, NodeJS, Java Spring MVC, ASP.NET MVC and PHP. However, when incorporating this topic into [Practical Web Application Penetration Testing (PWAPT)](https://www.practisec.com/training/), I found a realistic way to introduce and exploit the issue in Flask. What you have seen up to this point is Python code and is exactly how this issue manifests itself in a Flask application.
 
 I have not been able to find anywhere else on the Internet that includes Flask in the list of affected frameworks, so **consider this a zero-day release of this information**. I have not mentioned this to the Flask community, and I don't consider this to be an irresponsible disclosure because there's nothing the framework should do about this. These are valid features of both the framework and the ORM (in this case Flask and SQLAlchemy), and developers need to know when, and when not, to use them. More on that in a bit.
 
