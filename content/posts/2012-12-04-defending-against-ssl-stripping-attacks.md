@@ -2,6 +2,8 @@ title: Defending Against SSL Stripping Attacks
 publish: True
 categories: [application security]
 
+---
+
 SSL Stripping is an attack originally disclosed by Moxie Marlinspike (@moxie) at BlackHat DC 2009 along with a tool called SSLStrip. SSL Stripping is an attack that takes advantage of the fact that server-side redirects are used to redirect clients from HTTP versions of a page to the HTTPS, SSL encrypted, version. SSL Stripping tools, such as SSLStrip, listen for requests from clients that receive a response intended to redirect the client to a HTTPS resource. SSL Stripping tools hijack this response, make the SSL encrypted HTTPS connection to the server, convert all instances of "https" to "http" within the legitimate content, and pass the modified content to the unsuspecting client over unencrypted HTTP. The attacker can then view all of the traffic between the client and the server in clear text while brokering the half encrypted connection.
 
 <!-- READMORE -->

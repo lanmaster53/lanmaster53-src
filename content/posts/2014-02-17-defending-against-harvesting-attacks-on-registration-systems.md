@@ -2,6 +2,8 @@ title: Defending Against Harvesting Attacks on Registration Systems
 publish: True
 categories: [application security]
 
+---
+
 The most obvious challenge to preventing harvesting on registration systems is that the application must ask for a unique piece of information with which to identify the applicant. In most cases, this piece of information is the username. If we enforce this distinction during the traditional registration process and provide visual feedback, then we create the possibility for username harvesting.
 
 <!-- READMORE -->

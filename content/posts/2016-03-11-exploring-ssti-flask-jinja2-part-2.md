@@ -2,6 +2,8 @@ title: 'Exploring SSTI in Flask/Jinja2 - Part 2'
 publish: True
 categories: [application security, hacking, Flask]
 
+---
+
 I recently wrote [this article](/2016/03/09/exploring-ssti-flask-jinja2/) about exploring the true impact of Server-Side Template Injection (SSTI) in applications leveraging the Flask/Jinja2 development stack. My initial goal was to find a path to file or operating system access. I was previously unable to do so, but thanks to some feedback on the initial article, I have since been able to achieve that goal. This article is the result of the additional research.
 
 <!-- READMORE -->

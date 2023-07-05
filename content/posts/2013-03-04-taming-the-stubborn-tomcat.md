@@ -2,6 +2,8 @@ title: Taming the Stubborn Tomcat
 publish: True
 categories: [network security]
 
+---
+
 Today I ran into a problem that most penetration testers will encounter at some point, and whose solution required a creative approach. Therefore, I'm writing this brief article as a reference for future encounters with stubborn Tomcat servers.
 
 <!-- READMORE -->

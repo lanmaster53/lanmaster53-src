@@ -2,6 +2,8 @@ title: Prototype Pollution in Flask
 publish: True
 categories: [API, application security, consulting, Flask, hacking]
 
+---
+
 Not too long ago I shared an interesting article on Twitter titled [Prototype Pollution in Python](https://blog.abdulrah33m.com/prototype-pollution-in-python/). Not only are the memes great, but it's a fun and engaging read that does a good job of breaking down a complex topic into easy to understand concepts with practical examples. I highly recommend it if you enjoy tinkering with Python. At the bottom of the article the author mentions a couple practical examples for the reader to explore further. One of the examples was "Overwriting Flask web app secret key that's used for session signing." Anything with the word "Flask" in it catches my attention immediately, so I spent a couple of hours exploring this idea.
 
 <!-- READMORE -->

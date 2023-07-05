@@ -2,6 +2,8 @@ title: Defeating 802.1x with Marvin
 publish: True
 categories: [network security]
 
+---
+
 [Mark Baggett](http://www.indepthdefense.com/) of [PaulDotCom](http://www.pauldotcom.com/) and I were asked to conduct an insider pentest of a network using 802.1X for port security. Mark was not able to join me during the initial phases of the test, so I was left with the task of figuring out how to bypass the port security so we could attack local targets. As I began to put my plan together, I came up with the following 802.1X attack vectors:
 
 <!-- READMORE -->

@@ -2,6 +2,8 @@ title: Multi-POST Cross-Site Request Forgery
 publish: True
 categories: [application security, hacking]
 
+---
+
 A co-worker of mine, [Ethan Robish](https://twitter.com/EthanRobish), and I encountered several complicated CSRF situations for which he came up with a brilliant solution. A solution worthy of recording here for future reference.
 
 <!-- READMORE -->

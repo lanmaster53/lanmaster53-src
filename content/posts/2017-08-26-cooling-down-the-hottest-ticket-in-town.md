@@ -2,6 +2,8 @@ title: 'Cooling Down the Hottest Ticket in Town'
 publish: True
 categories: [miscellaneous, hacking]
 
+---
+
 We had an interesting conversation on the Proverbs Hackers mailing list today about getting tickets for popular conferences that have limited ticket sales. Security conferences most often thought of in this category are DerbyCon and ShmooCon. For anyone that has tried to get tickets to one of these conferences in the traditional fashion, you know the struggle is real. The conversation got me thinking about ways you can acquire a ticket that you may not realize are available. Below is the result of that thought exercise.
 
 <!-- READMORE -->

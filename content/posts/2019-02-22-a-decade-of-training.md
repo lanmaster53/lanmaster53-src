@@ -2,6 +2,8 @@ title: 'A Decade of Training'
 publish: True
 categories: [application security, training, development]
 
+---
+
 Training has been a significant part of my professional life since 2009. I've never written about my training pursuits, so as I march into my tenth year of training, fifth year of Practical Web Application Penetration Testing (PWAPT), and the first year of Practical Burp Suite Pro: Advanced Tactics (PBAT), I'd like to share a little about where I've been, where I'm at, and where I'm going, while specifically addressing my various courses.
 
 <!-- READMORE -->

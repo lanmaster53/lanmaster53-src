@@ -2,6 +2,8 @@ title: 'Dynamic Discovery of Mass Assignment Vulnerabilities'
 publish: True
 categories: [application security, training, development, Flask, hacking]
 
+---
+
 I love teaching for a lot of reasons. One of the reasons is because I learn so much when I teach. Sounds weird doesn't it? Why would the person teaching be learning? Well, It's probably not what you think. Some of what I learn comes directly from the students, but a lot comes from debugging issues on the fly and some dumb-luck discovery when someone in the class accidentally clicks somewhere or mistypes something. Recently I was teaching a class, and a combination of these led to a pretty neat discovery that I want to share with the community.
 
 <!-- READMORE -->

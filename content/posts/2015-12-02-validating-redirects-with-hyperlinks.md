@@ -2,6 +2,8 @@ title: 'Validating Redirects with Hyperlinks'
 publish: True
 categories: [application security]
 
+---
+
 I came across an application recently that contained an Unvalidated Redirect flaw. The flaw was pretty basic. The login page accepted a `next` parameter and blindly redirected to the value of the parameter without validating whether or not the value represented a trusted destination. The redirect occurred in client-side logic without the parameter ever hitting the server. My recommendation to the client included a pretty basic JavaScript validation filter, and they quickly implemented a fix and sent the code back for me to validate if the flaw had been remediated. In looking at the code, I realized that they had not implemented my recommended code, but did something that I had not seen before and thought was quite novel. Hence, why I am writing this.
 
 <!-- READMORE -->

@@ -2,6 +2,8 @@ title: No Nmap, No Permissions, No Problem
 publish: True
 categories: [network security]
 
+---
+
 Thanks to the guys at [Command Line Kung Fu](http://blog.commandlinekungfu.com/2010/04/episode-89-lets-scan-us-some-ports.html), I was able to expand on some of their ideas to come up with a pretty neat way to conduct port scanning from a user level command shell without the use of any tools. Here it is:
 
 <!-- READMORE -->

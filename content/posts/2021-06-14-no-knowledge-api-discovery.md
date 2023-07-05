@@ -2,6 +2,8 @@ title: 'No-Knowledge API Discovery'
 publish: True
 categories: [hacking, application security, API, discovery]
 
+---
+
 I recently received an email from a previous student asking a question about API discovery during a no-knowledge test. The question was, "How can one discover API's across an organization's external IP range when the API's are not linked like URLs and can't be crawled using traditional means?" I thought my answer might be useful for others, so I'm documenting it here.
 
 <!-- READMORE -->

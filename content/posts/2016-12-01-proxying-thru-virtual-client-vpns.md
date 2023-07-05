@@ -2,6 +2,8 @@ title: 'Proxying thru Virtual Client VPNs'
 publish: True
 categories: [application security, network security]
 
+---
+
 So, I'm sorta OCD. Anyone that knows me will attest to that. When it comes to my computing environments, I can't stand clutter. That includes both the external and internal components of my computing environment. One particular point of interest for me is the number of applications installed on my system. I've always felt like limiting the amount of software on my system to only what I needed, and avoiding endless install and uninstall cycles, has resulted in a more stable system. I have no scientific proof to back this up, but it's always worked for me, so I like to keep my system clean and tidy. However, in my line of work, where one-off tools for testing and research abound, this is a daily challenge.
 
 <!-- READMORE -->

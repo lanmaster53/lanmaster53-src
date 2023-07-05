@@ -2,6 +2,8 @@ title: 'Review: Burp Suite Certified Practitioner (Part 2)'
 publish: True
 categories: [API, application security, consulting, hacking, leadership, tools, training]
 
+---
+
 With Portswigger slashing the price of their Burp Suite Certified Practitioner exam to $9, I couldn't resist buying an attempt and giving it a try. I spent a couple more days preparing and took the certification exam. I didn't get very far in the three hours, completing only a single challenge (step 1 of application 1), but I did learn a little about the environment and wanted to share some of that information with others that may be considering an attempt at becoming a Burp Suite Certified Practitioner.
 
 <!-- READMORE -->

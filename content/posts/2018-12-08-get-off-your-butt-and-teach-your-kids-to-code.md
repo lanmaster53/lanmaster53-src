@@ -2,6 +2,8 @@ title: 'Get Off Your Butt and Teach Your Kids to Code'
 publish: True
 categories: [automation, development, leadership]
 
+---
+
 If you're my age (born in the early 1980s) and know how to code, then it has likely been a differentiator for you in your career. I can't think of a single thing I've done professionally where my ability to understand programming concepts and write code has not benefited me in some way. However, coding is fast becoming a more common skill set amongst the younger generations. Teaching our kids to code is now more of a necessity and less of a luxury.
 
 <!-- READMORE -->

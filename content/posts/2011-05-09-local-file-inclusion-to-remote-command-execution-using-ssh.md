@@ -2,6 +2,8 @@ title: Local File Inclusion to Remote Command Execution using SSH
 publish: True
 categories: [application security]
 
+---
+
 Log poisoning has been used for years to upgrade local file inclusion vulnerabilities to remote command execution. In most cases, web server logs are used to execute such an attack. Most admins have become wise to the technique and do a decent job of preventing this. However, an equal amount of attention is not always paid to authentication logs.
 
 <!-- READMORE -->

@@ -2,6 +2,8 @@ title: A Work in Progress
 publish: True
 categories: [miscellaneous]
 
+---
+
 One of the most common questions asked by newcomers to our community is, "How do I get started in InfoSec?" This article shows it is not simply a matter of what you do (don't get me wrong, ability and aptitude is important), but also a matter of who you surround yourself with. In any profession, to create an environment for maximum professional development, you must surround yourself with people that are smarter and more experienced than you. If you're the smartest and most experienced guy in the room, the level of development you experience will be far less than that of those you are mentoring. That being said, I've been doing the infosec thing for a couple of years now, and I've always tried to surround myself with the smartest and most experienced people possible. While I've been personally gracious to some of those individuals who have helped me along the way, I would like to publicly thank the rest of them now. I'm sure I'll end up unintentionally leaving someone out, but this is closer to the beginning of my career than the end, so I'm sure there will be many more mentors and many more blog posts like this to make up for anyone I fail to mention here.
 
 <!-- READMORE -->

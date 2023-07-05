@@ -2,6 +2,8 @@ title: Public Facing LDAP Enumeration
 publish: True
 categories: [network security]
 
+---
+
 This article is more for future reference than anything else, but here's the deal. While doing an assessment, I encountered a public facing LDAP server. Not a huge deal, except that this LDAP server allowed empty base objects and NULL BINDs. Basically, this means that any anonymous Internet user could extract information from the LDAP server. This LDAP server was also tied directly into the internal Windows Active Directory infrastructure. Oops.
 
 <!-- READMORE -->

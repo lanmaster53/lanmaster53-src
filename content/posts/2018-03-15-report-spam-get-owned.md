@@ -2,6 +2,8 @@ title: 'Report Spam. Get Owned.'
 publish: True
 categories: [application security, hacking]
 
+---
+
 So, a couple weeks ago Matt Svensson ([@TechNerdings](https://twitter.com/TechNerdings)) dropped me a DM in Twitter:
 
 > Random other thing that I am curious if you guys have seen anything on... I just got an email from the local eye clinic.  I hit the "spam" button on Gmail to report spam and unsubscribe. What I didn't realize is that it actually opens the unsubscribe link in the browser. Good news, easy unsubscribe. Maybe.....if you properly craft the spam...you could use the unsubscribe button to open a malicious web page?

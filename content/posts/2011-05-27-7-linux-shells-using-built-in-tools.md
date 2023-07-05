@@ -2,6 +2,8 @@ title: 7 Linux Shells Using Built-in Tools
 publish: True
 categories: [network security]
 
+---
+
 There are many distributions of linux, and they all do things a little different regarding default security and built-in tool sets. Which means when engaging these different flavors during a pentest, what works against one linux target to get an interactive shell, may not work against another. Well, not to worry my friends, there are many techniques for spawning shells, specifically reverse shells, from linux, and one or more of these techniques is bound to be available no matter which distro you're looking at.
 
 <!-- READMORE -->

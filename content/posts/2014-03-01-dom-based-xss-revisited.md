@@ -2,6 +2,8 @@ title: DOM-based Cross-Site Scripting, Revisited
 publish: True
 categories: [application security]
 
+---
+
 Disclaimer: I am not an subject matter expert in DOM-based XSS (D-XSS). In fact, I have yet to see an exploitable D-XSS flaw in all my years of application security testing. However, I have a curious mind and love code, so I am always looking to learn more about web application flaws and uncover new ways to approach finding and exploiting them. That being said, if you have experience dealing with D-XSS and would like to contribute to this topic, whether to correct an inaccuracy in this article or provide insight, please send me an email or tweet. I welcome and appreciate all input.
 
 <!-- READMORE -->

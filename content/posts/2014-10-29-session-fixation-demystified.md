@@ -2,6 +2,8 @@ title: Session Fixation Demystified
 publish: True
 categories: [application security]
 
+---
+
 I've recently been approached by quite a few junior consultants having issues with understanding, discovering, and exploiting Session Fixation. Rather than continue to provide impromptu training, I decided to brain dump everything I know about Session Fixation into an article for reference.
 
 <!-- READMORE -->

@@ -2,6 +2,8 @@ title: 'Review: Burp Suite Certified Practitioner (Part 3 Final)'
 publish: True
 categories: [API, application security, consulting, hacking, leadership, tools, training]
 
+---
+
 Failure is hard to swallow. After failing my first attempt at the Burp Suite Certified Practitioner exam, I decided to try the certification exam again... and again... and again.
 
 <!-- READMORE -->

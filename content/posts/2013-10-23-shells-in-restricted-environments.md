@@ -2,6 +2,8 @@ title: Getting Shell in Modern Restricted User Environments
 publish: True
 categories: [network security]
 
+---
+
 Anyone that has been doing penetration tests for a reasonable amount of time has at some point encountered a restricted user environment. A restricted user environment is a locked down, and usually shared, environment which restricts users to very limited functionality. These configurations are commonly seen in public kiosks and shared terminal servers.
 
 <!-- READMORE -->

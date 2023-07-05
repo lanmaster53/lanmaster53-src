@@ -2,6 +2,8 @@ title: 'Review: Burp Suite Certified Practitioner'
 publish: True
 categories: [API, application security, consulting, hacking, leadership, tools, training]
 
+---
+
 Portswigger recently announced their [Burp Suite Certified Practitioner certification](https://portswigger.net/web-security/certification). As a Burp Suite enthusiast and self-proclaimed subject matter expert, I decided to exercise the certification preparation process as a way to sharpen my skills, provide insight to others on the preparation process, and ultimately decide whether or not I would give the certification exam an attempt myself. Below are my takeaways from the process and thoughts I want to share with others that are considering an attempt at becoming a Burp Suite Certified Practitioner.
 
 <!-- READMORE -->
