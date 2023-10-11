@@ -2,15 +2,15 @@ title: About
 
 ### Tim (lanmaster53) Tomes
 
-Husband, father, veteran, coder, breaker, teacher, entrepreneur, and sharer.
+Believer, husband, father, veteran, coder, breaker, teacher, entrepreneur, and sharer.
 
 > Burp Suite master and king of making HTTP requests tremble.
 
 ## Work
 
-- Freelance Consultant
+- Web Application Security Engineer
 - Founder, [Practical Security Services (PractiSec)](https://www.practisec.com)
-- [Application Security Instructor](https://www.practisec.com/training/)
+- [Web Application Security Instructor](https://www.practisec.com/training/)
 - Certified: CISSP, CISA, GWAPT (expired), GPEN (expired), CEH (expired), CCNA Security (expired), MCSA (2003), Comptia A+ and Network+, blah, blah, why are you still reading this?
 
 ## Play
@@ -18,10 +18,11 @@ Husband, father, veteran, coder, breaker, teacher, entrepreneur, and sharer.
 - Co-founder of Proverbs Hackers, a community of Christian Information Security professionals who share a common thread of faith, fellowship and pwning.
 - Security Blogger. Most stuff is here, but there's some other stuff floating around. Google me.
 - Open source advocate. Creator and maintainer of the Recon-ng Framework amongst other things. See [Projects](/projects/) for more information.
-- Curator of the AppSec Watercooler and Recon-ng Slack channels.
+- Curator of the AppSec Watercooler Slack channel.
 
 ## Public Speaking
 
+- [{JWT}.{Misuse}.&Abuse - BSides Augusta 2023](https://www.youtube.com/watch?v=3_7hv3cvdTg)
 - [Sucking @Capitalism - BSides Greenville 2020 (keynote)](https://www.youtube.com/watch?v=l9JUP6fkenY)
 - [Rapid Recon for Red Teams - Upstate SC ISSA 2020](https://speakerdeck.com/lanmaster53/rapid-recon-for-red-teams)
 - Rapid Recon for Red Teams - Clemson University Cyber Meetup (10/17/2019)
