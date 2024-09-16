@@ -22,6 +22,7 @@ Believer, husband, father, veteran, coder, breaker, teacher, entrepreneur, and s
 
 ## Public Speaking
 
+- [{JWT}.{Misuse}.&Abuse - Carolina Code Conference 2024](https://www.youtube.com/watch?v=yLfhoQ-lyIc)
 - [{JWT}.{Misuse}.&Abuse - BSides Augusta 2023](https://www.youtube.com/watch?v=3_7hv3cvdTg)
 - [Sucking @Capitalism - BSides Greenville 2020 (keynote)](https://www.youtube.com/watch?v=l9JUP6fkenY)
 - [Rapid Recon for Red Teams - Upstate SC ISSA 2020](https://speakerdeck.com/lanmaster53/rapid-recon-for-red-teams)
