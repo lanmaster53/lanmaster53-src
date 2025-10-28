@@ -22,6 +22,10 @@ Believer, husband, father, veteran, coder, breaker, teacher, entrepreneur, and s
 
 ## Public Speaking
 
+- Web Application Authorization: Taming the Perfect Storm - Upstate SC ISSA 2025
+- [Web Application Authorization: Taming the Perfect Storm - BSides Augusta 2025](https://www.youtube.com/watch?v=Yj7tvufc1O8)
+- Web Application Authorization: Taming the Perfect Storm - Wild West Hackin' Fest 2025
+- Web Application Authorization: Taming the Perfect Storm - BSides Greenville 2025
 - [{JWT}.{Misuse}.&Abuse - Wild West Hackin' Fest 2024](https://www.youtube.com/watch?v=L4W7CmeNtAI)
 - [{JWT}.{Misuse}.&Abuse - Carolina Code Conference 2024](https://www.youtube.com/watch?v=yLfhoQ-lyIc)
 - [{JWT}.{Misuse}.&Abuse - BSides Augusta 2023](https://www.youtube.com/watch?v=3_7hv3cvdTg)
