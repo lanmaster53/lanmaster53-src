@@ -32,7 +32,7 @@ Now, when I say everyone carries a mobile phone, that includes criminals. In add
 
 Applying this concept in a densely populated area has it's challenges, as the white list and RSSI threshold must be highly tuned. In a rural area, similar to where I live, the system functions spectacularly. I accidentally left the system on the other day after I had been doing some testing the night before. In the middle of the afternoon the following day, an SMS message came through to my phone notifying me that someone had crossed my detection barrier. I was about to write it off as a false positive when the doorbell rang. It was a delivery service dropping off a package.
 
-For my particular setup, I decided to use a Raspberry Pi as my WUDS server; the same Raspberry Pi that controls my [whole home audio system](/2014/05/11/raspberry-pi-pianobar/). The wireless card I use is an ALFA AWUS036H connected via USB.
+For my particular setup, I decided to use a Raspberry Pi as my WUDS server; the same Raspberry Pi that controls my [whole home audio system](/blog/2014/05/11/raspberry-pi-pianobar/). The wireless card I use is an ALFA AWUS036H connected via USB.
 
 [![](/static/images/posts/wuds_2.jpg)](/static/images/posts/wuds_2.jpg)
 

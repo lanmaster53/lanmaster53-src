@@ -8,7 +8,7 @@ Failure is hard to swallow. After failing my first attempt at the Burp Suite Cer
 
 <!-- READMORE -->
 
-If you've not already read [part one](/2021/11/15/burp-suite-certified-practitioner-review/) or [part two](/2021/11/18/burp-suite-certified-practitioner-review-part-2/) of my review, please do so before continuing. This is a direct continuation of the previous articles.
+If you've not already read [part one](/blog/2021/11/15/burp-suite-certified-practitioner-review/) or [part two](/blog/2021/11/18/burp-suite-certified-practitioner-review-part-2/) of my review, please do so before continuing. This is a direct continuation of the previous articles.
 
 ### Attempts Summary
 

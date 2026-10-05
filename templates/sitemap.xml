@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url><loc>{{ absolute_url(url_for('home')) }}</loc></url>
+{% for name in pages %}
+    <url><loc>{{ absolute_url(url_for('page', name=name)) }}</loc></url>
+{% endfor %}
+{% for post in posts %}
+    <url><loc>{{ absolute_url(post_url(post)) }}</loc><lastmod>{{ post.date.strftime('%Y-%m-%d') }}</lastmod></url>
+{% endfor %}
+</urlset>

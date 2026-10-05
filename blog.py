@@ -1,11 +1,9 @@
-from flask import Flask, render_template, render_template_string, redirect, url_for, abort, has_app_context
+from flask import Flask, render_template, url_for, abort
 from flask_flatpages import FlatPages, pygments_style_defs
 from flask_frozen import Freezer
 from datetime import datetime
-import jinja2
-import markdown
+from markupsafe import Markup
 import os
-import re
 import sys
 
 ##### configuration options
@@ -15,15 +13,19 @@ FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_MARKDOWN_EXTENSIONS = ['codehilite', 'fenced_code', 'tables', 'attr_list']
 FLATPAGES_ROOT = 'content'
-FREEZER_IGNORE_404_NOT_FOUND = True
 FREEZER_DESTINATION_IGNORE = ['.git/', 'CNAME']
+FREEZER_REDIRECT_POLICY = 'error'
+# drafts are only served by the dev server, never frozen
+SHOW_DRAFTS = True
 PYGMENTS_STYLE = 'tango'
 PAGE_DIR = 'pages'
 POST_DIR = 'posts'
-URL_ROOT = 'https://www.lanmaster53.com/'
+READMORE = '<!-- READMORE -->'
 SITE = {
     'title': 'lanmaster53.com',
     'tagline': '',
+    'url': 'https://www.lanmaster53.com',
+    'description': 'Articles, information, and projects related to development and web application security.',
     'author': {
         'name': 'Tim Tomes',
         'gravatar': 'https://www.gravatar.com/avatar/0a6d9b1ad59ad436bf9d9d16b2a7133e.png',
@@ -41,129 +43,129 @@ SITE = {
         'categories',
         'about',
     ],
-    'freeze': [
-        'drafts',
-    ],
-    'analytics': {
-        'googleUA': {
-            'tracking_id' : 'UA-52269615-1',
-            'property_name' : 'lanmaster53.com',
-        },
-    },
-    'posts': [],
-    'drafts': [],
 }
 
 ##### app initialization
 
 app = Flask(__name__)
 app.config.from_object(__name__)
-flatpages = FlatPages(app)
-freezer = Freezer(app)
-
-##### app overrides
-
-# clean up white space left behind by jinja template code
 app.jinja_env.trim_blocks = True
+# template-based pages live alongside markdown pages
+app.jinja_loader.searchpath.append(os.path.join(FLATPAGES_ROOT, PAGE_DIR))
+flatpages = FlatPages(app)
+# routes are frozen explicitly via generators so drafts are never included
+freezer = Freezer(app, with_no_argument_rules=False)
 
-# custom loader to look for template-based pages
-custom_loader = jinja2.ChoiceLoader([
-    app.jinja_loader,
-    jinja2.FileSystemLoader([
-        os.path.join(FLATPAGES_ROOT, PAGE_DIR),
-        '/templates'
-    ]),
-])
-app.jinja_loader = custom_loader
+##### content index
 
-# custom renderer to render jinja prior to markdown
-# this allows markdown files to include jinja processing
-# only works with an app context
-def my_renderer(text):
-    prerendered_body = text
-    if has_app_context():
-        prerendered_body = render_template_string(text)
-    return markdown.markdown(prerendered_body, extensions=app.config['FLATPAGES_MARKDOWN_EXTENSIONS'])
-app.config['FLATPAGES_HTML_RENDERER'] = my_renderer
+def load_posts():
+    posts = []
+    for page in flatpages:
+        if not page.path.startswith(POST_DIR + '/'):
+            continue
+        filename = page.path.split('/')[-1]
+        page.meta['date'] = datetime.strptime(filename[:10], '%Y-%m-%d')
+        page.meta['slug'] = filename[11:]
+        page.meta['intro'] = page.html.split(READMORE)[0] if READMORE in page.html else None
+        page.meta['summary'] = summarize(page.meta['intro'] or page.html)
+        posts.append(page)
+    posts.sort(key=lambda p: p['date'], reverse=True)
+    published = [p for p in posts if p.meta.get('publish') is True]
+    drafts = [p for p in posts if p.meta.get('publish') is not True]
+    return published, drafts
 
-##### pre-request context processing
+def summarize(html, length=160):
+    text = Markup(html).striptags()
+    if len(text) <= length:
+        return text
+    return text[:length].rsplit(' ', 1)[0] + '…'
 
-def parse_date_from_path(s):
-    date_str = '-'.join(s.split(os.path.sep)[-1].split('-')[:3])
-    return datetime.strptime(date_str, '%Y-%m-%d')
+def load_categories(posts):
+    categories = {}
+    for post in posts:
+        for category in post['categories']:
+            categories.setdefault(category, []).append(post)
+    return categories
 
-def parse_name_from_path(s):
-    return '-'.join(s.split(os.path.sep)[-1].split('-')[3:])
+with app.app_context():
+    POSTS, DRAFTS = load_posts()
+CATEGORIES = load_categories(POSTS)
 
-# add posts to the site config item
-_posts = [p for p in flatpages if p.path.startswith(POST_DIR)]
-for _post in _posts:
-    _post.meta['date'] = parse_date_from_path(_post.path)
-    _post.meta['name'] = parse_name_from_path(_post.path)
-    # create intros for the home page
-    marker = '<!-- READMORE -->'
-    if marker in _post.html:
-        _post.meta['intro'] = _post.html[:_post.html.find(marker)]
-_posts.sort(key=lambda item:item['date'], reverse=True)
-for _post in _posts:
-    if _post['publish'] is True:
-        app.config['SITE']['posts'].append(_post)
-    else:
-        app.config['SITE']['drafts'].append(_post)
+def find_post(year, month, day, slug, include_drafts=False):
+    posts = POSTS + DRAFTS if include_drafts else POSTS
+    for post in posts:
+        d = post['date']
+        if (d.year, d.month, slug) == (year, month, post['slug']) and day in (None, d.day):
+            return post
+    abort(404)
 
-# add categories to the site config item
-_categories = {}
-for _post in app.config['SITE']['posts']:
-    for _category in _post['categories']:
-        if _category not in _categories:
-            _categories[_category] = []
-        _categories[_category].append(_post)
-app.config['SITE']['categories'] = _categories
+# markdown and template-based pages
+def page_names():
+    names = [p.path.split('/', 1)[1] for p in flatpages if p.path.startswith(PAGE_DIR + '/')]
+    names += [f[:-5] for f in os.listdir(os.path.join(FLATPAGES_ROOT, PAGE_DIR)) if f.endswith('.html')]
+    return sorted(names)
 
-# add the site jinja global as an alias to the main config item
-app.jinja_env.globals['site'] = app.config['SITE']
-app.jinja_env.globals['date'] = datetime.now()
+##### template helpers
+
+def post_url(post):
+    d = post['date']
+    return url_for('post', year=d.year, month=d.month, day=d.day, slug=post['slug'])
+
+def absolute_url(path):
+    return SITE['url'] + path
+
+app.jinja_env.globals.update(
+    site=SITE,
+    posts=POSTS,
+    drafts=DRAFTS,
+    categories=CATEGORIES,
+    post_url=post_url,
+    absolute_url=absolute_url,
+    now=datetime.now,
+)
 
 ##### frozen content generators
 
-# create the 404 page for GH Pages
 @freezer.register_generator
-def error_handlers():
-    print('Freezing error handlers...')
-    yield "/404.html"
+def post():
+    for p in POSTS:
+        yield {'year': p['date'].year, 'month': p['date'].month, 'day': p['date'].day, 'slug': p['slug']}
 
-# create pages not linked with url_for
+@freezer.register_generator
+def legacy_post():
+    for p in POSTS:
+        yield {'year': p['date'].year, 'month': p['date'].month, 'day': p['date'].day, 'slug': p['slug']}
+
+@freezer.register_generator
+def legacy_post_no_day():
+    for p in POSTS:
+        yield {'year': p['date'].year, 'month': p['date'].month, 'slug': p['slug']}
+
 @freezer.register_generator
 def page():
-    print('Freezing unlinked pages...')
-    for p in app.config['SITE']['freeze']:
-        yield {'name': p}
+    for name in page_names():
+        yield {'name': name}
 
-# create old post urls
 @freezer.register_generator
-def old_post():
-    print('Freezing old post URLs...')
-    for p in app.config['SITE']['posts']:
-        yield {
-            'year': p['date'].year,
-            'month': p['date'].month,
-            'name': p['name'],
-        }
+def static_routes():
+    for endpoint in ('home', 'not_found_page', 'pygments_css', 'feed', 'sitemap', 'robots'):
+        yield endpoint, {}
 
 ##### legacy support controllers
 
-# support for old links to posts without the day
-@app.route('/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<string:name>/')
-def old_post(year, month, name):
-    # regex pattern to find a filename that includes the day
-    regex = r'\d{4}\-\d{2}\-(\d{2})\-' + re.escape(name) + r'\.md'
-    for root, dirs, files in os.walk(os.path.sep.join((FLATPAGES_ROOT, POST_DIR))):
-        for file in files:
-            match = re.search(regex, file)
-            if match:
-                day = match.group(1)
-                return redirect(url_for('post', year=year, month=month, day=day, name=name))
-    abort(404)
+# static hosting can't issue real redirects, so serve a redirect stub
+def redirect_stub(location):
+    return render_template('redirect.html', location=location)
+
+# old post urls without the /blog prefix
+@app.route('/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<int(fixed_digits=2):day>/<string:slug>/')
+def legacy_post(year, month, day, slug):
+    return redirect_stub(post_url(find_post(year, month, day, slug)))
+
+# older post urls without the day
+@app.route('/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<string:slug>/')
+def legacy_post_no_day(year, month, slug):
+    return redirect_stub(post_url(find_post(year, month, None, slug)))
 
 ##### controllers
 
@@ -175,14 +177,32 @@ def home():
 def pygments_css():
     return pygments_style_defs(PYGMENTS_STYLE), 200, {'Content-Type': 'text/css'}
 
-# post rendering view
-@app.route('/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<int(fixed_digits=2):day>/<string:name>/')
-def post(year, month, day, name):
-    # flatpages index is the relative file path without the extension
-    name = '{:04d}-{:02d}-{:02d}-{}'.format(year, month, day, name)
-    path = os.path.join(POST_DIR, name)
-    post = flatpages.get_or_404(path)
+@app.route('/blog/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<int(fixed_digits=2):day>/<string:slug>/')
+def post(year, month, day, slug):
+    post = find_post(year, month, day, slug, include_drafts=app.config['SHOW_DRAFTS'])
     return render_template('post.html', post=post)
+
+@app.route('/drafts/')
+def drafts():
+    if not app.config['SHOW_DRAFTS']:
+        abort(404)
+    return render_template('drafts.html')
+
+@app.route('/feed.xml')
+def feed():
+    return render_template('feed.xml', posts=POSTS[:20]), 200, {'Content-Type': 'application/xml'}
+
+@app.route('/sitemap.xml')
+def sitemap():
+    return render_template('sitemap.xml', pages=page_names()), 200, {'Content-Type': 'application/xml'}
+
+@app.route('/robots.txt')
+def robots():
+    return 'Sitemap: {}\n'.format(absolute_url(url_for('sitemap'))), 200, {'Content-Type': 'text/plain'}
+
+@app.route('/404.html')
+def not_found_page():
+    return render_template('404.html')
 
 # page rendering view
 # this does not work if flask serves static files from the web root
@@ -192,8 +212,7 @@ def page(name):
     if os.path.isfile(os.path.join(FLATPAGES_ROOT, PAGE_DIR, '{}.html'.format(name))):
         return render_template('{}.html'.format(name))
     # detect and render markdown
-    path = os.path.join(PAGE_DIR, name)
-    page = flatpages.get_or_404(path)
+    page = flatpages.get_or_404(os.path.join(PAGE_DIR, name))
     return render_template('page.html', page=page)
 
 @app.errorhandler(404)
@@ -202,6 +221,7 @@ def page_not_found(e):
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == 'build':
+        app.config['SHOW_DRAFTS'] = False
         freezer.freeze()
     else:
         app.run(host='0.0.0.0', debug=True)

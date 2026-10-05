@@ -1,7 +1,7 @@
 {% extends "page.html" %}
 {% set title = 'Archive' %}
 {% block html %}
-{% for post in site.posts %}
+{% for post in posts %}
     {% set this_year = post.date.strftime("%Y") %}
     {% set this_month = post.date.strftime("%B") %}
     {% if loop.first %}
@@ -9,12 +9,12 @@
         <h5>{{ this_month }}</h5>
         <ul>
     {% endif %}
-    <li><span>{{ post.date.strftime("%B %e, %Y") }}</span> &raquo; <a href="{{ url_for('post', year=post.date.strftime('%Y'), month=post.date.strftime('%m'), day=post.date.strftime('%d'), name=post.name) }}">{{ post.title }}</a></li>
+    <li><span>{{ post.date.strftime("%B %e, %Y") }}</span> &raquo; <a href="{{ post_url(post) }}">{{ post.title }}</a></li>
     {% if loop.last %}
         </ul>
     {% else %}
-        {% set next_year = site.posts[loop.index0+1].date.strftime("%Y") %}
-        {% set next_month = site.posts[loop.index0+1].date.strftime("%B") %}
+        {% set next_year = posts[loop.index0+1].date.strftime("%Y") %}
+        {% set next_month = posts[loop.index0+1].date.strftime("%B") %}
         {% if this_year != next_year %}
             </ul>
             <h2>{{ next_year }}</h2>

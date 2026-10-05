@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Redirecting...</title>
+        <link rel="canonical" href="{{ absolute_url(location) }}">
+        <meta name="robots" content="noindex">
+        <meta http-equiv="refresh" content="0; url={{ location }}">
+    </head>
+    <body>
+        <p>This page has moved to <a href="{{ location }}">{{ absolute_url(location) }}</a>.</p>
+    </body>
+</html>

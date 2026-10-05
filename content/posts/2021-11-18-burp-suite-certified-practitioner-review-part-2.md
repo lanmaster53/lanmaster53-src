@@ -8,7 +8,7 @@ With Portswigger slashing the price of their Burp Suite Certified Practitioner e
 
 <!-- READMORE -->
 
-If you've not already read [part one of my review](/2021/11/15/burp-suite-certified-practitioner-review/), please do so before continuing. This is not only a continuation of that, but I may have new perspectives based on experiencing the actual certification exam, and it could be helpful seeing how my perspectives have changed. Everything here is in addition to part one of my initial review and the information that Portswigger provides about the certification exam specifically.
+If you've not already read [part one of my review](/blog/2021/11/15/burp-suite-certified-practitioner-review/), please do so before continuing. This is not only a continuation of that, but I may have new perspectives based on experiencing the actual certification exam, and it could be helpful seeing how my perspectives have changed. Everything here is in addition to part one of my initial review and the information that Portswigger provides about the certification exam specifically.
 
 ### Targets
 

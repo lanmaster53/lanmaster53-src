@@ -4,7 +4,16 @@
         <meta charset="utf-8">
         <title>{{ site.title }}{% if title %} - {{ title }}{% endif %}</title>
         <meta name="author" content="{{ site.author.name }}">
-        <meta name="description" content="Articles, information, and projects related to development and web application security.">
+        <meta name="description" content="{{ description or site.description }}">
+        <link rel="canonical" href="{{ absolute_url(request.path) }}">
+        <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ url_for('feed') }}">
+        <meta property="og:site_name" content="{{ site.title }}">
+        <meta property="og:title" content="{{ title or site.title }}">
+        <meta property="og:description" content="{{ description or site.description }}">
+        <meta property="og:url" content="{{ absolute_url(request.path) }}">
+        <meta property="og:type" content="{{ og_type or 'website' }}">
+        <meta property="og:image" content="{{ site.author.gravatar }}?s=512">
+        <meta name="twitter:card" content="summary">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" type="text/css">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
@@ -49,12 +58,11 @@
                 <div class="twelve columns">
                     <footer>
                         <p style="float: right;">
-                            &copy; {{ date.year }} {{ site.author.name }}
+                            &copy; {{ now().year }} {{ site.author.name }}
                         </p>
                     </footer>
                 </div>
             </div>
         </div>
-        {% include "analytics.html" %}
     </body>
 </html>

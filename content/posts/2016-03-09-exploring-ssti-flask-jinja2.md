@@ -4,7 +4,7 @@ categories: [application security, hacking, Flask]
 
 ---
 
-This is the first of two articles covering research into SSTI in the Flask/Jinja2 development stack. This article only tells half the story, but an important half that provides context to the final hack. Please consider reading both parts in their entirety. Part 2 can be found [here](/2016/03/11/exploring-ssti-flask-jinja2-part-2/).
+This is the first of two articles covering research into SSTI in the Flask/Jinja2 development stack. This article only tells half the story, but an important half that provides context to the final hack. Please consider reading both parts in their entirety. Part 2 can be found [here](/blog/2016/03/11/exploring-ssti-flask-jinja2-part-2/).
 
 <!-- READMORE -->
 

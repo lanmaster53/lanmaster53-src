@@ -2,18 +2,18 @@
 {% set title = 'Categories' %}
 {% block html %}
 <ul class="tag_box inline">
-{% for category in site.categories|sort() %}
+{% for category in categories|sort() %}
     <li><a href="#{{ category }}-ref">
-        {{ category }} <span>{{ site.categories[category]|length }}</span>
+        {{ category }} <span>{{ categories[category]|length }}</span>
     </a></li>
 {% endfor %}
 </ul>
 <hr>
-{% for category in site.categories|sort() %}
+{% for category in categories|sort() %}
 <h2 id="{{ category }}-ref">{{ category }}</h2>
 <ul>
-{% for post in site.categories[category] %}
-    <li><a href="{{ url_for('post', year=post.date.strftime('%Y'), month=post.date.strftime('%m'), day=post.date.strftime('%d'), name=post.name) }}">{{ post.title }}</a></li>
+{% for post in categories[category] %}
+    <li><a href="{{ post_url(post) }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 {% endfor %}
