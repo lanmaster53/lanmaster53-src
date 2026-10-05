@@ -28,11 +28,11 @@ SITE = {
         'name': 'Tim Tomes',
         'gravatar': 'https://www.gravatar.com/avatar/0a6d9b1ad59ad436bf9d9d16b2a7133e.png',
         'meta': {
-            'bitbucket': {'username': 'lanmaster53', 'url': 'https://bitbucket.org/'},
             'github': {'username': 'lanmaster53', 'url': 'https://github.com/'},
             'twitter': {'username': 'lanmaster53', 'url': 'https://twitter.com/'},
             'linkedin': {'username': 'lanmaster53', 'url': 'https://www.linkedin.com/in/'},
             'youtube': {'username': 'lanmaster53', 'url': 'https://www.youtube.com/user/'},
+            'vimeo': {'username': 'lanmaster53', 'url': 'https://vimeo.com/'},
         },
     },
     'navigation': [

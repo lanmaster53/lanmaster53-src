@@ -8,9 +8,9 @@ Believer, husband, father, veteran, coder, breaker, teacher, entrepreneur, and s
 
 ## Work
 
-- Web Application Security Engineer
-- Founder, [Practical Security Services (PractiSec)](https://www.practisec.com)
-- [Web Application Security Instructor](https://www.practisec.com/training/)
+- Web Application Security Engineer and Instructor
+- Director of Training & Programs, [OnDefend](https://ondefend.com/)
+- Founder, Practical Security Services (PractiSec) (Dissolved)
 - Certified: CISSP, CISA, GWAPT (expired), GPEN (expired), CEH (expired), CCNA Security (expired), MCSA (2003), Comptia A+ and Network+, blah, blah, why are you still reading this?
 
 ## Play
@@ -55,8 +55,3 @@ Believer, husband, father, veteran, coder, breaker, teacher, entrepreneur, and s
 - Web Recon for Penetration Testing and Network Defense – Colorado Springs ISSA Conference 2012 (keynote)
 - Lurking in the Shadows – Augusta ISSA November 2011
 - [Lurking in the Shadows – Hack3rcon 2011](https://youtu.be/ant3ir9cRME)
-
-## Videos
-
-- [YouTube](https://www.youtube.com/user/lanmaster53)
-- [Vimeo](https://vimeo.com/lanmaster53)
