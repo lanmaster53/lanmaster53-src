@@ -1,5 +1,6 @@
 from flask import Flask, render_template, url_for, abort
-from flask_flatpages import FlatPages, pygments_style_defs
+from flask_flatpages import FlatPages
+from pygments.formatters import HtmlFormatter
 from flask_frozen import Freezer
 from datetime import datetime
 from markupsafe import Markup
@@ -18,6 +19,7 @@ FREEZER_REDIRECT_POLICY = 'error'
 # drafts are only served by the dev server, never frozen
 SHOW_DRAFTS = True
 PYGMENTS_STYLE = 'tango'
+PYGMENTS_STYLE_DARK = 'github-dark'
 PAGE_DIR = 'pages'
 POST_DIR = 'posts'
 READMORE = '<!-- READMORE -->'
@@ -29,13 +31,13 @@ SITE = {
     'author': {
         'name': 'Tim Tomes',
         'gravatar': 'https://www.gravatar.com/avatar/0a6d9b1ad59ad436bf9d9d16b2a7133e.png',
-        'meta': {
-            'github': {'username': 'lanmaster53', 'url': 'https://github.com/'},
-            'twitter': {'username': 'lanmaster53', 'url': 'https://twitter.com/'},
-            'linkedin': {'username': 'lanmaster53', 'url': 'https://www.linkedin.com/in/'},
-            'youtube': {'username': 'lanmaster53', 'url': 'https://www.youtube.com/user/'},
-            'vimeo': {'username': 'lanmaster53', 'url': 'https://vimeo.com/'},
-        },
+        'social': [
+            {'name': 'GitHub', 'url': 'https://github.com/lanmaster53'},
+            {'name': 'LinkedIn', 'url': 'https://www.linkedin.com/in/lanmaster53'},
+            {'name': 'YouTube', 'url': 'https://www.youtube.com/user/lanmaster53'},
+            {'name': 'Vimeo', 'url': 'https://vimeo.com/lanmaster53'},
+            {'name': 'X', 'url': 'https://twitter.com/lanmaster53'},
+        ],
     },
     'navigation': [
         'projects',
@@ -175,7 +177,10 @@ def home():
 
 @app.route('/static/css/pygments.css')
 def pygments_css():
-    return pygments_style_defs(PYGMENTS_STYLE), 200, {'Content-Type': 'text/css'}
+    light = HtmlFormatter(style=PYGMENTS_STYLE).get_style_defs('.codehilite')
+    dark = HtmlFormatter(style=PYGMENTS_STYLE_DARK).get_style_defs('.codehilite')
+    css = '{}\n@media (prefers-color-scheme: dark) {{\n{}\n}}\n'.format(light, dark)
+    return css, 200, {'Content-Type': 'text/css'}
 
 @app.route('/blog/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<int(fixed_digits=2):day>/<string:slug>/')
 def post(year, month, day, slug):

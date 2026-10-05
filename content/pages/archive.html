@@ -1,32 +1,12 @@
 {% extends "page.html" %}
 {% set title = 'Archive' %}
 {% block html %}
-{% for post in posts %}
-    {% set this_year = post.date.strftime("%Y") %}
-    {% set this_month = post.date.strftime("%B") %}
-    {% if loop.first %}
-        <h2>{{ this_year }}</h2>
-        <h5>{{ this_month }}</h5>
-        <ul>
-    {% endif %}
-    <li><span>{{ post.date.strftime("%B %e, %Y") }}</span> &raquo; <a href="{{ post_url(post) }}">{{ post.title }}</a></li>
-    {% if loop.last %}
-        </ul>
-    {% else %}
-        {% set next_year = posts[loop.index0+1].date.strftime("%Y") %}
-        {% set next_month = posts[loop.index0+1].date.strftime("%B") %}
-        {% if this_year != next_year %}
-            </ul>
-            <h2>{{ next_year }}</h2>
-            <h5>{{ next_month }}</h5>
-            <ul>
-        {% else %}    
-            {% if this_month != next_month %}
-                </ul>
-                <h5>{{ next_month }}</h5>
-                <ul>
-            {% endif %}
-        {% endif %}
-    {% endif %}
+{% for year, items in posts|groupby('date.year')|reverse %}
+<h2>{{ year }}</h2>
+<ul>
+{% for post in items %}
+    <li><a href="{{ post_url(post) }}">{{ post.title }}</a> <time datetime="{{ post.date.strftime('%Y-%m-%d') }}">{{ post.date.strftime('%b %-d') }}</time></li>
+{% endfor %}
+</ul>
 {% endfor %}
 {% endblock %}

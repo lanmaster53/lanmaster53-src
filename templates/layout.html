@@ -15,54 +15,36 @@
         <meta property="og:image" content="{{ site.author.gravatar }}?s=512">
         <meta name="twitter:card" content="summary">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" type="text/css">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/skeleton.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
         <link rel="stylesheet" href="{{ url_for('pygments_css') }}">
-        <link rel="shortcut icon" href="{{ site.author.gravatar }}?s=16" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" href="{{ site.author.gravatar }}?s=32">
     </head>
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="four columns meta">
-                    <ul>
-                        <li><a href="{{ url_for('home') }}"><img src="{{ site.author.gravatar }}?s=128" class="avatar" /></a></li>
-                    {% for meta in site.author.meta %}
-                        <li><a href="{{ site.author.meta[meta].url }}{{ site.author.meta[meta].username }}" target="_blank"><img src="{{ url_for('static', filename='images/meta/'+meta+'.png') }}" /></a></li>
-                    {% endfor %}
-                    </ul>
-                </div>
-                <div class="eight columns nav">
-                    <ul>
-                    {% for name in site.navigation %}
-                        <li><a href="{{ url_for('page', name=name) }}">{{ name.capitalize() }}</a>{% if not loop.last %} | {% endif %}</li>
-                    {% endfor %}
-                    </ul>
-                </div>
-            </div>
-            <!-- hr style="margin-top: 0;" -->
-            <div class="row">
-                <div class="twelve columns">
-                    {% block banner %}{% endblock %}
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="twelve columns">
-                    {% block content %}{% endblock %}
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="twelve columns">
-                    <footer>
-                        <p style="float: right;">
-                            &copy; {{ now().year }} {{ site.author.name }}
-                        </p>
-                    </footer>
-                </div>
-            </div>
-        </div>
+        <header class="site-header">
+            <a class="site-title" href="{{ url_for('home') }}">
+                <img src="{{ site.author.gravatar }}?s=80" alt="">
+                {{ site.title }}
+            </a>
+            <nav class="site-nav">
+                <ul>
+                {% for name in site.navigation %}
+                    {% set href = url_for('page', name=name) %}
+                    <li><a href="{{ href }}"{% if request.path == href %} aria-current="page"{% endif %}>{{ name.capitalize() }}</a></li>
+                {% endfor %}
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer class="site-footer">
+            <ul>
+            {% for link in site.author.social %}
+                <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+            {% endfor %}
+                <li><a href="{{ url_for('feed') }}">RSS</a></li>
+            </ul>
+            <p>&copy; {{ now().year }} {{ site.author.name }}</p>
+        </footer>
     </body>
 </html>

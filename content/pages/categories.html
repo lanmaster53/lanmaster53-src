@@ -1,15 +1,12 @@
 {% extends "page.html" %}
 {% set title = 'Categories' %}
 {% block html %}
-<ul class="tag_box inline">
-{% for category in categories|sort() %}
-    <li><a href="#{{ category }}-ref">
-        {{ category }} <span>{{ categories[category]|length }}</span>
-    </a></li>
+<ul class="tags">
+{% for category in categories|sort %}
+    <li><a href="#{{ category }}-ref">{{ category }} <span>{{ categories[category]|length }}</span></a></li>
 {% endfor %}
 </ul>
-<hr>
-{% for category in categories|sort() %}
+{% for category in categories|sort %}
 <h2 id="{{ category }}-ref">{{ category }}</h2>
 <ul>
 {% for post in categories[category] %}

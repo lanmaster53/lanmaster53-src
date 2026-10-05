@@ -1,22 +1,23 @@
 {% extends "layout.html" %}
 
-{% block banner %}
-<h1>{{ site.title }}</h1>
-{% if site.tagline %} <h5>{{ site.tagline|safe }}</h5>{% endif %}
-{% endblock %}
-
 {% block content %}
+<ul class="post-list">
 {% for post in posts[:7] %}
-    <h2><a href="{{ post_url(post) }}">{{ post.title }}</a></h2>
-    <h5>{{ post.date.strftime("%A, %B %e, %Y") }}</h5>
-    <div class="content">
-    {% if post.intro %}
-        {{ post.intro|safe }}
-        <p><a href="{{ post_url(post) }}">Read more &raquo;</a></p>
-    {% else %}
-        {{ post.html|safe }}
-    {% endif %}
-    </div>
-    {{ '<hr>'|safe if not loop.last }}
+    <li>
+        <article>
+            <h2><a href="{{ post_url(post) }}">{{ post.title }}</a></h2>
+            <time datetime="{{ post.date.strftime('%Y-%m-%d') }}">{{ post.date.strftime("%B %-d, %Y") }}</time>
+            <div class="intro prose">
+            {% if post.intro %}
+                {{ post.intro|safe }}
+                <p><a href="{{ post_url(post) }}">Read more &raquo;</a></p>
+            {% else %}
+                {{ post.html|safe }}
+            {% endif %}
+            </div>
+        </article>
+    </li>
 {% endfor %}
+</ul>
+<p><a href="{{ url_for('page', name='archive') }}">All posts &raquo;</a></p>
 {% endblock %}
