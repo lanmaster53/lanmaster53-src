@@ -16,7 +16,6 @@ FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_MARKDOWN_EXTENSIONS = ['codehilite', 'fenced_code', 'tables', 'attr_list']
 FLATPAGES_ROOT = 'content'
-FREEZER_DESTINATION_IGNORE = ['.git/', 'CNAME']
 FREEZER_REDIRECT_POLICY = 'error'
 # drafts are only served by the dev server, never frozen
 SHOW_DRAFTS = True
