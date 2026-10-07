@@ -1,6 +1,6 @@
 title: Defending Against Harvesting Attacks on Registration Systems
 publish: True
-categories: [application security]
+tags: [appsec]
 
 ---
 

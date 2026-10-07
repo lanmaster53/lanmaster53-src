@@ -5,7 +5,7 @@
     <p>
         <a href="{{ post_url(draft) }}">{{ draft.title }}</a><br>
         {{ draft.date.strftime("%B %e, %Y") }}<br>
-        Tags: {{ ', '.join(draft.categories) }}
+        Tags: {{ ', '.join(draft.tags) }}
     </p>
 {% endfor %}
 {% endblock %}

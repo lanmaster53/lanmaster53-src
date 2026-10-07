@@ -1,6 +1,6 @@
 title: A Work in Progress
 publish: True
-categories: [miscellaneous]
+tags: [misc]
 
 ---
 

@@ -1,6 +1,6 @@
 title: 'Handling Missed Vulnerabilities'
 publish: True
-categories: [application security, network security, consulting, leadership]
+tags: [appsec, netsec, career]
 
 ---
 

@@ -1,6 +1,6 @@
 title: 'Exploring SSTI in Flask/Jinja2 - Part 2'
 publish: True
-categories: [application security, hacking, Flask]
+tags: [appsec, flask]
 
 ---
 
@@ -13,7 +13,6 @@ I recently wrote [this article](/blog/2016/03/09/exploring-ssti-flask-jinja2/) a
 In response to the initial article, [Nicolas G](https://twitter.com/_qll_) published the following tweet.
 
 <blockquote class="twitter-tweet tw-align-center" data-conversation="none" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/LaNMaSteR53">@LaNMaSteR53</a> <a href="https://twitter.com/albinowax">@albinowax</a> <a href="https://twitter.com/garethheyes">@garethheyes</a> {{&#39;&#39;.__class__.mro()[1].__subclasses__()[46](&#39;touch /tmp/rce&#39;,shell=True)}} (may be version-dependent)</p>&mdash; Nicolas G (@_qll_) <a href="https://twitter.com/_qll_/status/707714873774448640">March 9, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 If you play with this payload a bit, you'll quickly notice that it doesn't work. There are several good reasons for that, which I'll get to shortly. The key takeaway, however, is that this payload uses several very important introspection utilities that we left out in our previous research: the `__mro__` and `__subclasses__` attributes.
 

@@ -1,6 +1,6 @@
 title: Raspberry Pi - Pianobar
 publish: True
-categories: [automation]
+tags: [misc]
 
 ---
 

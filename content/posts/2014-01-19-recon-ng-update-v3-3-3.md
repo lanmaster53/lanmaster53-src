@@ -1,6 +1,6 @@
 title: Recon-ng Update (v3.3.3)
 publish: True
-categories: [projects, tools, Recon-ng]
+tags: [tools, recon-ng]
 
 ---
 
@@ -34,6 +34,6 @@ The HTML reporting module was something thrown together early on in development 
 
 ### Conclusion
 
-If you're interested in contributing to the framework, please see the [issues page](https://bitbucket.org/LaNMaSteR53/recon-ng/issues?status=new&status=open) for module ideas and feature requests. All contributions are welcome from anyone with any level of Python experience, including no experience. I am in this to teach as much as I am to develop, and I thoroughly enjoy helping those new to Python. Thanks again, and enjoy the framework.
+If you're interested in contributing to the framework, please see the [issues page](https://github.com/lanmaster53/recon-ng/issues) for module ideas and feature requests. All contributions are welcome from anyone with any level of Python experience, including no experience. I am in this to teach as much as I am to develop, and I thoroughly enjoy helping those new to Python. Thanks again, and enjoy the framework.
 
 [Recon-ng Home Page](http://www.recon-ng.com)

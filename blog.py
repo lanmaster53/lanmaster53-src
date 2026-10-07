@@ -4,8 +4,10 @@ from pygments.formatters import HtmlFormatter
 from flask_frozen import Freezer
 from datetime import datetime
 from markupsafe import Markup
+from urllib.parse import urlparse
 import os
 import sys
+import yaml
 
 ##### configuration options
 
@@ -22,38 +24,16 @@ PYGMENTS_STYLE = 'tango'
 PYGMENTS_STYLE_DARK = 'github-dark'
 PAGE_DIR = 'pages'
 POST_DIR = 'posts'
+SITE_FILE = os.path.join(FLATPAGES_ROOT, 'site.yaml')
+TALKS_FILE = os.path.join(FLATPAGES_ROOT, 'talks.yaml')
+PROJECTS_FILE = os.path.join(FLATPAGES_ROOT, 'projects.yaml')
 READMORE = '<!-- READMORE -->'
-SITE = {
-    'title': 'lanmaster53.com',
-    'tagline': '',
-    'url': 'https://www.lanmaster53.com',
-    'description': 'Articles, information, and projects related to development and web application security.',
-    'author': {
-        'name': 'Tim Tomes',
-        'gravatar': 'https://www.gravatar.com/avatar/0a6d9b1ad59ad436bf9d9d16b2a7133e.png',
-        'social': [
-            {'name': 'GitHub', 'url': 'https://github.com/lanmaster53'},
-            {'name': 'LinkedIn', 'url': 'https://www.linkedin.com/in/lanmaster53'},
-            {'name': 'YouTube', 'url': 'https://www.youtube.com/user/lanmaster53'},
-            {'name': 'Vimeo', 'url': 'https://vimeo.com/lanmaster53'},
-            {'name': 'X', 'url': 'https://twitter.com/lanmaster53'},
-        ],
-    },
-    'navigation': [
-        'projects',
-        'archive',
-        'categories',
-        'about',
-    ],
-}
 
 ##### app initialization
 
 app = Flask(__name__)
 app.config.from_object(__name__)
 app.jinja_env.trim_blocks = True
-# template-based pages live alongside markdown pages
-app.jinja_loader.searchpath.append(os.path.join(FLATPAGES_ROOT, PAGE_DIR))
 flatpages = FlatPages(app)
 # routes are frozen explicitly via generators so drafts are never included
 freezer = Freezer(app, with_no_argument_rules=False)
@@ -82,16 +62,23 @@ def summarize(html, length=160):
         return text
     return text[:length].rsplit(' ', 1)[0] + '…'
 
-def load_categories(posts):
-    categories = {}
+def load_tags(posts):
+    tags = {}
     for post in posts:
-        for category in post['categories']:
-            categories.setdefault(category, []).append(post)
-    return categories
+        for tag in post['tags']:
+            tags.setdefault(tag, []).append(post)
+    return dict(sorted(tags.items()))
+
+def load_yaml(path):
+    with open(path) as fp:
+        return yaml.safe_load(fp)
 
 with app.app_context():
     POSTS, DRAFTS = load_posts()
-CATEGORIES = load_categories(POSTS)
+TAGS = load_tags(POSTS)
+SITE = load_yaml(SITE_FILE)
+TALKS = load_yaml(TALKS_FILE)
+PROJECTS = load_yaml(PROJECTS_FILE)
 
 def find_post(year, month, day, slug, include_drafts=False):
     posts = POSTS + DRAFTS if include_drafts else POSTS
@@ -101,17 +88,17 @@ def find_post(year, month, day, slug, include_drafts=False):
             return post
     abort(404)
 
-# markdown and template-based pages
 def page_names():
-    names = [p.path.split('/', 1)[1] for p in flatpages if p.path.startswith(PAGE_DIR + '/')]
-    names += [f[:-5] for f in os.listdir(os.path.join(FLATPAGES_ROOT, PAGE_DIR)) if f.endswith('.html')]
-    return sorted(names)
+    return sorted(p.path.split('/', 1)[1] for p in flatpages if p.path.startswith(PAGE_DIR + '/'))
 
 ##### template helpers
 
 def post_url(post):
     d = post['date']
     return url_for('post', year=d.year, month=d.month, day=d.day, slug=post['slug'])
+
+def hostname(url):
+    return urlparse(url).hostname
 
 def absolute_url(path):
     return SITE['url'] + path
@@ -120,9 +107,10 @@ app.jinja_env.globals.update(
     site=SITE,
     posts=POSTS,
     drafts=DRAFTS,
-    categories=CATEGORIES,
+    tags=TAGS,
     post_url=post_url,
     absolute_url=absolute_url,
+    hostname=hostname,
     now=datetime.now,
 )
 
@@ -144,13 +132,18 @@ def legacy_post_no_day():
         yield {'year': p['date'].year, 'month': p['date'].month, 'slug': p['slug']}
 
 @freezer.register_generator
+def tag():
+    for name in TAGS:
+        yield {'name': name}
+
+@freezer.register_generator
 def page():
     for name in page_names():
         yield {'name': name}
 
 @freezer.register_generator
 def static_routes():
-    for endpoint in ('home', 'not_found_page', 'pygments_css', 'feed', 'sitemap', 'robots'):
+    for endpoint in ('home', 'blog', 'talks', 'projects', 'legacy_archive', 'legacy_categories', 'not_found_page', 'pygments_css', 'feed', 'sitemap', 'robots'):
         yield endpoint, {}
 
 ##### legacy support controllers
@@ -169,6 +162,15 @@ def legacy_post(year, month, day, slug):
 def legacy_post_no_day(year, month, slug):
     return redirect_stub(post_url(find_post(year, month, None, slug)))
 
+# archive and categories were merged into the blog index
+@app.route('/archive/')
+def legacy_archive():
+    return redirect_stub(url_for('blog'))
+
+@app.route('/categories/')
+def legacy_categories():
+    return redirect_stub(url_for('blog'))
+
 ##### controllers
 
 @app.route('/')
@@ -182,6 +184,16 @@ def pygments_css():
     css = '{}\n@media (prefers-color-scheme: dark) {{\n{}\n}}\n'.format(light, dark)
     return css, 200, {'Content-Type': 'text/css'}
 
+@app.route('/blog/')
+def blog():
+    return render_template('blog.html')
+
+@app.route('/blog/tags/<string:name>/')
+def tag(name):
+    if name not in TAGS:
+        abort(404)
+    return render_template('blog.html', tag=name)
+
 @app.route('/blog/<int(fixed_digits=4):year>/<int(fixed_digits=2):month>/<int(fixed_digits=2):day>/<string:slug>/')
 def post(year, month, day, slug):
     post = find_post(year, month, day, slug, include_drafts=app.config['SHOW_DRAFTS'])
@@ -192,6 +204,14 @@ def drafts():
     if not app.config['SHOW_DRAFTS']:
         abort(404)
     return render_template('drafts.html')
+
+@app.route('/talks/')
+def talks():
+    return render_template('talks.html', talks=TALKS)
+
+@app.route('/projects/')
+def projects():
+    return render_template('projects.html', projects=PROJECTS)
 
 @app.route('/feed.xml')
 def feed():
@@ -209,14 +229,10 @@ def robots():
 def not_found_page():
     return render_template('404.html')
 
-# page rendering view
+# markdown page rendering view
 # this does not work if flask serves static files from the web root
 @app.route('/<path:name>/')
 def page(name):
-    # detect and render a template
-    if os.path.isfile(os.path.join(FLATPAGES_ROOT, PAGE_DIR, '{}.html'.format(name))):
-        return render_template('{}.html'.format(name))
-    # detect and render markdown
     page = flatpages.get_or_404(os.path.join(PAGE_DIR, name))
     return render_template('page.html', page=page)
 

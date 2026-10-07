@@ -1,6 +1,6 @@
 title: Creating Complex Password Lists with John the Ripper
 publish: True
-categories: [cracking]
+tags: [netsec]
 
 ---
 

@@ -1,6 +1,6 @@
 title: Local File Inclusion to Remote Command Execution using SSH
 publish: True
-categories: [application security]
+tags: [appsec]
 
 ---
 

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% set title = 'Talks' %}
+
+{% block content %}
+<header class="page-header">
+    <h1>{{ title }}</h1>
+</header>
+<ul class="talks">
+{% for talk in talks %}
+    <li>
+        <h2>{{ talk.title }}</h2>
+        <ul>
+        {% for event in talk.events %}
+            <li>
+                {{ event.event }} {{ event.year }}{% if event.keynote %} <span class="badge">keynote</span>{% endif %}
+                {% if event.video %}&middot; <a href="{{ event.video }}">video</a>{% endif %}
+                {% if event.slides %}&middot; <a href="{{ event.slides }}">slides</a>{% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}

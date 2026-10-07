@@ -1,6 +1,6 @@
 title: 'Email is Dead. Long Live Email.'
 publish: True
-categories: [miscellaneous]
+tags: [misc]
 
 ---
 

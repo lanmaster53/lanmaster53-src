@@ -1,6 +1,6 @@
 title: 'Proxying thru Virtual Client VPNs'
 publish: True
-categories: [application security, network security]
+tags: [appsec, netsec]
 
 ---
 

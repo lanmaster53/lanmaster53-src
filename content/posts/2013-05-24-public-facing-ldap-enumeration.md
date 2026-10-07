@@ -1,6 +1,6 @@
 title: Public Facing LDAP Enumeration
 publish: True
-categories: [network security]
+tags: [netsec]
 
 ---
 

@@ -1,6 +1,6 @@
 title: Getting Shell in Modern Restricted User Environments
 publish: True
-categories: [network security]
+tags: [netsec]
 
 ---
 

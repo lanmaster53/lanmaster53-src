@@ -1,6 +1,6 @@
 title: Recon-ng Update (v3.0.3)
 publish: True
-categories: [projects, tools, Recon-ng]
+tags: [tools, recon-ng]
 
 ---
 

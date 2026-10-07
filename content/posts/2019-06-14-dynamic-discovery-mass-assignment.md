@@ -1,6 +1,6 @@
 title: 'Dynamic Discovery of Mass Assignment Vulnerabilities'
 publish: True
-categories: [application security, training, development, Flask, hacking]
+tags: [appsec, api, flask]
 
 ---
 

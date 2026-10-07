@@ -1,6 +1,6 @@
 title: ESPN Fantasy Football - The Complete Attack
 publish: True
-categories: [hacking]
+tags: [appsec]
 
 ---
 

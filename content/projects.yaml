@@ -1,0 +1,30 @@
+- name: Recon-ng
+  description: Full-featured Web Reconnaissance framework for conducting open source reconnaissance.
+  url: https://github.com/lanmaster53/recon-ng
+- name: PyScripter-er
+  description: Framework built on top of the Python Scripter Burp Suite extension.
+  url: https://github.com/lanmaster53/pyscripter-er
+- name: HoneyBadger v2
+  description: Framework for targeted geolocation and tracking.
+  url: https://github.com/lanmaster53/honeybadger
+- name: SQLi Exploiter
+  description: Tool for exploiting SQL injection vulnerabilities that sqlmap just can't find.
+  url: https://github.com/lanmaster53/sqli-exploiter
+- name: Wi-Fi User Detection System (WUDS)
+  description: Proximity alert system based on Wi-Fi probe requests.
+  url: https://bitbucket.org/LaNMaSteR53/wuds/
+- name: PeepingTom
+  description: Tool for quickly analyzing large quantities of web interfaces.
+  url: https://bitbucket.org/LaNMaSteR53/peepingtom/
+- name: SharePass
+  description: Safe(r) way to quickly share passwords when traditional encryption methods are unavailable.
+  url: https://github.com/lanmaster53/sharepass
+- name: AdobePW
+  description: Python library for analyzing and manipulating the 2013 Adobe breach data.
+  url: https://bitbucket.org/LaNMaSteR53/adobepw
+- name: VSSOwn
+  description: Script for leveraging Volume Shadow Copies to conduct various security related activities.
+  url: https://github.com/lanmaster53/ptscripts/blob/master/windows/vssown.vbs
+- name: eapmd5crack
+  description: Script for cracking EAP-MD5 hashes.
+  url: https://github.com/lanmaster53/ptscripts/blob/master/eapmd5crack.py

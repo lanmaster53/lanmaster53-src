@@ -5,8 +5,8 @@
     --muted: #656d76;
     --border: #d8dee4;
     --surface: #f6f8fa;
-    --accent: #c4302b;
-    --accent-hover: #8f1d19;
+    --accent: #0969da;
+    --accent-hover: #0550ae;
     --measure: 44rem;
     --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
@@ -19,8 +19,8 @@
         --muted: #8d96a0;
         --border: #30363d;
         --surface: #161b22;
-        --accent: #ff7b72;
-        --accent-hover: #ffa198;
+        --accent: #4493f8;
+        --accent-hover: #79b8ff;
     }
 }
 
@@ -146,28 +146,46 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 0.5rem 1.5rem;
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
+    /* inset instead of padded so the border matches the content width */
+    width: calc(100% - 2rem);
+    max-width: calc(var(--measure) - 2rem);
+    padding: 1.5rem 0 2rem;
     border-top: 1px solid var(--border);
     color: var(--muted);
     font-size: 0.875rem;
 }
 
+.site-footer {
+    align-items: center;
+}
+
 .site-footer ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.25rem;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .site-footer a {
+    display: block;
     color: var(--muted);
 }
 
 .site-footer a:hover {
-    color: var(--fg);
+    color: var(--accent);
+}
+
+.site-footer svg {
+    display: block;
+    width: 1.125rem;
+    height: 1.125rem;
+    fill: currentColor;
+}
+
+.site-footer p {
+    margin: 0;
 }
 
 /* page and post headings */
@@ -308,12 +326,123 @@ pre {
     text-decoration: none;
 }
 
-.tags a:hover {
+.tags a:hover, .tags a[aria-current] {
     border-color: var(--accent);
     color: var(--accent);
 }
 
+.page-header .tags {
+    margin: 0.75rem 0 0;
+}
+
 .tags span {
+    color: var(--muted);
+}
+
+/* embedded tweets, styled for when the widget hasn't rendered */
+
+.prose blockquote.twitter-tweet {
+    max-width: 550px;
+    margin: 1.5em auto;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--fg);
+}
+
+.prose .twitter-tweet-rendered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* blog index */
+
+.archive-year h2 {
+    margin-top: 2.5rem;
+}
+
+.archive {
+    list-style: none;
+    padding: 0;
+}
+
+.archive li {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr;
+    gap: 1rem;
+    padding: 0.2rem 0;
+}
+
+.archive time {
+    color: var(--muted);
+    font-size: 0.9375rem;
+    font-variant-numeric: tabular-nums;
+}
+
+/* talks */
+
+.talks {
+    list-style: none;
+    padding: 0;
+}
+
+.talks > li + li {
+    margin-top: 2rem;
+}
+
+.talks h2 {
+    margin: 0 0 0.25rem;
+    font-size: 1.125rem;
+}
+
+.talks ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    color: var(--muted);
+}
+
+.badge {
+    display: inline-block;
+    vertical-align: 0.15em;
+    padding: 0.2em 0.6em;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--bg);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* projects */
+
+.projects {
+    list-style: none;
+    padding: 0;
+}
+
+.projects > li + li {
+    margin-top: 1.25rem;
+}
+
+.projects a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.projects a:hover {
+    text-decoration: underline;
+}
+
+.projects .host {
+    margin-left: 0.5rem;
+    color: var(--muted);
+    font-size: 0.8125rem;
+}
+
+.projects p {
+    margin: 0.15rem 0 0;
     color: var(--muted);
 }
 

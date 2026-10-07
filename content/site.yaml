@@ -1,0 +1,31 @@
+title: Lanmaster53.com
+url: https://www.lanmaster53.com
+description: Articles, information, and projects related to development and web application security.
+author:
+  name: Tim Tomes
+  gravatar: https://www.gravatar.com/avatar/0a6d9b1ad59ad436bf9d9d16b2a7133e.png
+  social:
+    - name: GitHub
+      icon: github
+      url: https://github.com/lanmaster53
+    - name: LinkedIn
+      icon: linkedin
+      url: https://www.linkedin.com/in/lanmaster53
+    - name: YouTube
+      icon: youtube
+      url: https://www.youtube.com/user/lanmaster53
+    - name: Vimeo
+      icon: vimeo-v
+      url: https://vimeo.com/lanmaster53
+    - name: X
+      icon: x-twitter
+      url: https://x.com/lanmaster53
+navigation:
+  - name: Blog
+    url: /blog/
+  - name: Talks
+    url: /talks/
+  - name: Projects
+    url: /projects/
+  - name: About
+    url: /about/

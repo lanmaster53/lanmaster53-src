@@ -1,0 +1,146 @@
+- title: "Web Application Authorization: Taming the Perfect Storm"
+  events:
+    - event: Upstate SC ISSA
+      year: 2025
+    - event: BSides Augusta
+      year: 2025
+      video: https://www.youtube.com/watch?v=Yj7tvufc1O8
+    - event: Wild West Hackin' Fest
+      year: 2025
+    - event: BSides Greenville
+      year: 2025
+
+- title: "{JWT}.{Misuse}.&Abuse"
+  events:
+    - event: Wild West Hackin' Fest
+      year: 2024
+      video: https://www.youtube.com/watch?v=L4W7CmeNtAI
+    - event: Carolina Code Conference
+      year: 2024
+      keynote: true
+      video: https://www.youtube.com/watch?v=yLfhoQ-lyIc
+    - event: BSides Augusta
+      year: 2023
+      video: https://www.youtube.com/watch?v=3_7hv3cvdTg
+
+- title: "Sucking @Capitalism"
+  events:
+    - event: BSides Greenville
+      year: 2020
+      keynote: true
+      video: https://www.youtube.com/watch?v=l9JUP6fkenY
+
+- title: "Rapid Recon for Red Teams"
+  events:
+    - event: Upstate SC ISSA
+      year: 2020
+      slides: https://speakerdeck.com/lanmaster53/rapid-recon-for-red-teams
+    - event: Clemson University Cyber Meetup
+      year: 2019
+
+- title: "To CORS! The Cause of and Solution to All of your SPA Problems"
+  events:
+    - event: DerbyCon 9.0
+      year: 2019
+      video: https://youtu.be/tH-HG4b4GYQ
+    - event: BSides Greenville
+      year: 2019
+
+- title: "InfoSec Proverbs: The Tim Tomes Top 10"
+  events:
+    - event: BSides Greenville
+      year: 2018
+      keynote: true
+
+- title: "Burping for Joy and Financial Gain"
+  events:
+    - event: DerbyCon 7.0
+      year: 2017
+      video: https://youtu.be/U41D_d4JQLs
+    - event: BSides Augusta
+      year: 2017
+      video: https://youtu.be/nJ5Zw5LyqV0
+
+- title: "Edge Cases in Web"
+  events:
+    - event: DEF CON 25
+      year: 2017
+
+- title: "Ermahgerd Werb Verlns"
+  events:
+    - event: Upstate SC ISSA
+      year: 2016
+      slides: https://speakerdeck.com/lanmaster53/ermahgerd-werb-verlns
+    - event: Church IT Network Conference
+      year: 2016
+      slides: https://speakerdeck.com/lanmaster53/ermahgerd-werb-verlns
+
+- title: "OSINT for AppSec: Recon-ng and Beyond"
+  events:
+    - event: Upstate SC ISSA
+      year: 2015
+    - event: DerbyCon 5.0
+      year: 2015
+      video: https://youtu.be/zgz6QYpdzT8
+      slides: https://speakerdeck.com/lanmaster53/osint-for-appsec-recon-ng-and-beyond
+    - event: BSides Augusta
+      year: 2015
+      video: https://youtu.be/hWgxvb2Se78
+
+- title: "Ball and Chain: A New Paradigm in Stored Password Security"
+  events:
+    - event: DerbyCon 4.0
+      year: 2014
+      video: https://youtu.be/GfyM8lFkjo8
+
+- title: "Stored Password Security: The Adobe Guide to Keyless Decryption"
+  events:
+    - event: BSides Augusta
+      year: 2014
+      video: https://youtu.be/C1UqwC0SZ7c
+
+- title: "Look Ma, No Exploits! - The Recon-ng Framework"
+  events:
+    - event: Upstate SC ISSA
+      year: 2013
+      slides: https://speakerdeck.com/lanmaster53/look-ma-no-exploits-the-recon-ng-framework
+    - event: DerbyCon 3.0
+      year: 2013
+      video: https://youtu.be/vkmNTNl6urw
+    - event: BSides Augusta
+      year: 2013
+      video: https://youtu.be/DtaucOTXfZY
+
+- title: "Look Ma, No Exploits! The Next Generation of Open Source Reconnaissance"
+  events:
+    - event: Boise ISSA Conference
+      year: 2013
+
+- title: "Hide and Seek, Post-Exploitation Style"
+  events:
+    - event: ShmooCon
+      year: 2013
+      video: https://youtu.be/VJTrRMqHU5U
+
+- title: "Next Generation Reconnaissance"
+  events:
+    - event: Hack3rcon
+      year: 2012
+      video: https://youtu.be/jsmiJQ2dbw4
+    - event: DerbyCon 2.0
+      year: 2012
+      video: https://youtu.be/RCWZcEztNT8
+
+- title: "Web Recon for Penetration Testing and Network Defense"
+  events:
+    - event: Colorado Springs ISSA Conference
+      year: 2012
+      keynote: true
+
+- title: "Lurking in the Shadows"
+  events:
+    - event: Augusta ISSA
+      year: 2011
+    - event: Hack3rcon
+      year: 2011
+      video: https://youtu.be/ant3ir9cRME

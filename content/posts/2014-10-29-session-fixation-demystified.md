@@ -1,6 +1,6 @@
 title: Session Fixation Demystified
 publish: True
-categories: [application security]
+tags: [appsec]
 
 ---
 

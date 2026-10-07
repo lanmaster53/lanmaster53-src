@@ -1,6 +1,6 @@
 title: Catching and Cleaning a Phish
 publish: True
-categories: [network security]
+tags: [netsec]
 
 ---
 

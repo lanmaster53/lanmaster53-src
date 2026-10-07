@@ -1,6 +1,6 @@
 title: 'Review: Burp Suite Certified Practitioner (Part 2)'
 publish: True
-categories: [API, application security, consulting, hacking, leadership, tools, training]
+tags: [appsec, burp, training]
 
 ---
 

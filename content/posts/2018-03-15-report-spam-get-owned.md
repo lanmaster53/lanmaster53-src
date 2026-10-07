@@ -1,6 +1,6 @@
 title: 'Report Spam. Get Owned.'
 publish: True
-categories: [application security, hacking]
+tags: [appsec]
 
 ---
 

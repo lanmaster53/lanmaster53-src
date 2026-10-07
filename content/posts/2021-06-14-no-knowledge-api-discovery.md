@@ -1,6 +1,6 @@
 title: 'No-Knowledge API Discovery'
 publish: True
-categories: [hacking, application security, API, discovery]
+tags: [appsec, api]
 
 ---
 

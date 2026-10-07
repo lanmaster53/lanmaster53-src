@@ -1,6 +1,6 @@
 title: 7 Linux Shells Using Built-in Tools
 publish: True
-categories: [network security]
+tags: [netsec]
 
 ---
 

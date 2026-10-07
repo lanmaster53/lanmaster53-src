@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% set title = 'Blog' if not tag else 'Posts tagged "{}"'.format(tag) %}
+{% set items = tags[tag] if tag else posts %}
+
+{% block content %}
+<header class="page-header">
+    <h1>{{ title }}</h1>
+</header>
+<ul class="tags">
+    <li><a href="{{ url_for('blog') }}"{% if not tag %} aria-current="page"{% endif %}>all <span>{{ posts|length }}</span></a></li>
+{% for name in tags %}
+    <li><a href="{{ url_for('tag', name=name) }}"{% if name == tag %} aria-current="page"{% endif %}>{{ name }} <span>{{ tags[name]|length }}</span></a></li>
+{% endfor %}
+</ul>
+{% for year, group in items|groupby('date.year')|reverse %}
+<section class="archive-year">
+    <h2>{{ year }}</h2>
+    <ul class="archive">
+    {% for post in group %}
+        <li>
+            <time datetime="{{ post.date.strftime('%Y-%m-%d') }}">{{ post.date.strftime('%b %-d') }}</time>
+            <a href="{{ post_url(post) }}">{{ post.title }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</section>
+{% endfor %}
+{% endblock %}

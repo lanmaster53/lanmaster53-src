@@ -1,6 +1,6 @@
 title: "Official Release: eapmd5crack.py"
 publish: True
-categories: [cracking, projects, tools]
+tags: [netsec, tools]
 
 ---
 

@@ -1,6 +1,6 @@
 title: 'XSS Active Defense'
 publish: True
-categories: [application security, hacking]
+tags: [appsec]
 
 ---
 

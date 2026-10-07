@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% set title = 'Projects' %}
+
+{% block content %}
+<header class="page-header">
+    <h1>{{ title }}</h1>
+</header>
+<ul class="projects">
+{% for project in projects %}
+    <li>
+        <a href="{{ project.url }}">{{ project.name }}</a>
+        <span class="host">{{ hostname(project.url) }}</span>
+        <p>{{ project.description }}</p>
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,6 +1,6 @@
 title: DOM-based Cross-Site Scripting, Revisited
 publish: True
-categories: [application security]
+tags: [appsec]
 
 ---
 

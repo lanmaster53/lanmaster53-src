@@ -1,6 +1,6 @@
 title: Stealth Cookie Stealing (XSS technique)
 publish: True
-categories: [application security]
+tags: [appsec]
 
 ---
 

@@ -1,6 +1,6 @@
 title: Manual Local Hash Extraction
 publish: True
-categories: [network security]
+tags: [netsec]
 
 ---
 

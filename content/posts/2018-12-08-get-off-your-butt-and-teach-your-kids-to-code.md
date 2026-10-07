@@ -1,6 +1,6 @@
 title: 'Get Off Your Butt and Teach Your Kids to Code'
 publish: True
-categories: [automation, development, leadership]
+tags: [career, misc]
 
 ---
 

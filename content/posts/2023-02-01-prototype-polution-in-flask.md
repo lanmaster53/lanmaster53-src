@@ -1,6 +1,6 @@
 title: Prototype Pollution in Flask
 publish: True
-categories: [API, application security, consulting, Flask, hacking]
+tags: [appsec, flask]
 
 ---
 

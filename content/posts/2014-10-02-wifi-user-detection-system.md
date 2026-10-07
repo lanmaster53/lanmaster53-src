@@ -1,6 +1,6 @@
 title: 'WUDS: Wi-Fi User Detection System'
 publish: True
-categories: [automation, projects, tools]
+tags: [tools]
 
 ---
 

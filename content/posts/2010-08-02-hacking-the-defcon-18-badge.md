@@ -1,6 +1,6 @@
 title: Hacking the DEFCON 18 Badge
 publish: True
-categories: [hacking]
+tags: [misc]
 
 ---
 

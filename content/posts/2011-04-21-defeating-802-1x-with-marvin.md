@@ -1,6 +1,6 @@
 title: Defeating 802.1x with Marvin
 publish: True
-categories: [network security]
+tags: [netsec]
 
 ---
 

@@ -1,6 +1,6 @@
 title: 'Validating Redirects with Hyperlinks'
 publish: True
-categories: [application security]
+tags: [appsec]
 
 ---
 

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url><loc>{{ absolute_url(url_for('home')) }}</loc></url>
+    <url><loc>{{ absolute_url(url_for('blog')) }}</loc></url>
+    <url><loc>{{ absolute_url(url_for('talks')) }}</loc></url>
+    <url><loc>{{ absolute_url(url_for('projects')) }}</loc></url>
+{% for name in tags %}
+    <url><loc>{{ absolute_url(url_for('tag', name=name)) }}</loc></url>
+{% endfor %}
 {% for name in pages %}
     <url><loc>{{ absolute_url(url_for('page', name=name)) }}</loc></url>
 {% endfor %}

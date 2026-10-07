@@ -1,6 +1,6 @@
 title: 'Cooling Down the Hottest Ticket in Town'
 publish: True
-categories: [miscellaneous, hacking]
+tags: [misc]
 
 ---
 

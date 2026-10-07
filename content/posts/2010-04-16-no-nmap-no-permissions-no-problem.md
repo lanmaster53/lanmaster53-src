@@ -1,6 +1,6 @@
 title: No Nmap, No Permissions, No Problem
 publish: True
-categories: [network security]
+tags: [netsec]
 
 ---
 

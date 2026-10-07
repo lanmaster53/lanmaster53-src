@@ -27,9 +27,8 @@
             </a>
             <nav class="site-nav">
                 <ul>
-                {% for name in site.navigation %}
-                    {% set href = url_for('page', name=name) %}
-                    <li><a href="{{ href }}"{% if request.path == href %} aria-current="page"{% endif %}>{{ name.capitalize() }}</a></li>
+                {% for link in site.navigation %}
+                    <li><a href="{{ link.url }}"{% if request.path.startswith(link.url) %} aria-current="page"{% endif %}>{{ link.name }}</a></li>
                 {% endfor %}
                 </ul>
             </nav>
@@ -40,9 +39,9 @@
         <footer class="site-footer">
             <ul>
             {% for link in site.author.social %}
-                <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+                <li><a href="{{ link.url }}" title="{{ link.name }}" aria-label="{{ link.name }}">{% include 'icons/' + link.icon + '.svg' %}</a></li>
             {% endfor %}
-                <li><a href="{{ url_for('feed') }}">RSS</a></li>
+                <li><a href="{{ url_for('feed') }}" title="RSS" aria-label="RSS">{% include 'icons/rss.svg' %}</a></li>
             </ul>
             <p>&copy; {{ now().year }} {{ site.author.name }}</p>
         </footer>

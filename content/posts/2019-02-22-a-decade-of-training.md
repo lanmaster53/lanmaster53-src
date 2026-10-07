@@ -1,6 +1,6 @@
 title: 'A Decade of Training'
 publish: True
-categories: [application security, training, development]
+tags: [appsec, training]
 
 ---
 

@@ -1,6 +1,6 @@
 title: About
 
-### Tim (lanmaster53) Tomes
+### Tim (Lanmaster53) Tomes
 
 Believer, husband, father, veteran, coder, breaker, teacher, entrepreneur, and sharer.
 
@@ -22,36 +22,4 @@ Believer, husband, father, veteran, coder, breaker, teacher, entrepreneur, and s
 
 ## Public Speaking
 
-- Web Application Authorization: Taming the Perfect Storm - Upstate SC ISSA 2025
-- [Web Application Authorization: Taming the Perfect Storm - BSides Augusta 2025](https://www.youtube.com/watch?v=Yj7tvufc1O8)
-- Web Application Authorization: Taming the Perfect Storm - Wild West Hackin' Fest 2025
-- Web Application Authorization: Taming the Perfect Storm - BSides Greenville 2025
-- [{JWT}.{Misuse}.&Abuse - Wild West Hackin' Fest 2024](https://www.youtube.com/watch?v=L4W7CmeNtAI)
-- [{JWT}.{Misuse}.&Abuse - Carolina Code Conference 2024](https://www.youtube.com/watch?v=yLfhoQ-lyIc)
-- [{JWT}.{Misuse}.&Abuse - BSides Augusta 2023](https://www.youtube.com/watch?v=3_7hv3cvdTg)
-- [Sucking @Capitalism - BSides Greenville 2020 (keynote)](https://www.youtube.com/watch?v=l9JUP6fkenY)
-- [Rapid Recon for Red Teams - Upstate SC ISSA 2020](https://speakerdeck.com/lanmaster53/rapid-recon-for-red-teams)
-- Rapid Recon for Red Teams - Clemson University Cyber Meetup (10/17/2019)
-- [To CORS! The Cause of and Solution to All of your SPA Problems - DerbyCon 9.0 (2019)](https://youtu.be/tH-HG4b4GYQ)
-- To CORS! The Cause of and Solution to All of your SPA Problems - BSides Greenville 2019
-- InfoSec Proverbs: The Tim Tomes Top 10 - BSides Greenville 2018 (keynote)
-- [Burping for Joy and Financial Gain - DerbyCon 7.0 (2017)](https://youtu.be/U41D_d4JQLs)
-- [Burping for Joy and Financial Gain - BSides Augusta 2017](https://youtu.be/nJ5Zw5LyqV0)
-- Edge Cases in Web - DEF CON 25 (2017)
-- [Ermahgerd Werb Verlns - Upstate SC ISSA 2016](https://speakerdeck.com/lanmaster53/ermahgerd-werb-verlns)
-- [Ermahgerd Werb Verlns - Church IT Network Conference 2016](https://speakerdeck.com/lanmaster53/ermahgerd-werb-verlns)
-- OSINT for AppSec: Recon-ng and Beyond - Upstate SC ISSA 2015
-- [OSINT for AppSec: Recon-ng and Beyond - DerbyCon 5.0 (2015)](https://youtu.be/zgz6QYpdzT8) ([slides](https://speakerdeck.com/lanmaster53/osint-for-appsec-recon-ng-and-beyond))
-- [OSINT for AppSec: Recon-ng and Beyond - BSides Augusta 2015](https://youtu.be/hWgxvb2Se78)
-- [Ball and Chain: A New Paradigm in Stored Password Security - DerbyCon 4.0 (2014)](https://youtu.be/GfyM8lFkjo8)
-- [Stored Password Security: The Adobe Guide to Keyless Decryption - BSides Augusta 2014](https://youtu.be/C1UqwC0SZ7c)
-- [Look Ma, No Exploits! - The Recon-ng Framework - Upstate SC ISSA 2013](https://speakerdeck.com/lanmaster53/look-ma-no-exploits-the-recon-ng-framework)
-- [Look Ma, No Exploits! - The Recon-ng Framework - DerbyCon 3.0 (2013)](https://youtu.be/vkmNTNl6urw)
-- [Look Ma, No Exploits! - The Recon-ng Framework - BSides Augusta 2013](https://youtu.be/DtaucOTXfZY)
-- Look Ma, No Exploits! The Next Generation of Open Source Reconnaissance – Boise ISSA Conference 2013
-- [Hide and Seek, Post-Exploitation Style – ShmooCon 2013](https://youtu.be/VJTrRMqHU5U)
-- [Next Generation Reconnaissance – Hack3rcon 2012](https://youtu.be/jsmiJQ2dbw4)
-- [Next Generation Reconnaissance – DerbyCon 2.0 (2012)](https://youtu.be/RCWZcEztNT8)
-- Web Recon for Penetration Testing and Network Defense – Colorado Springs ISSA Conference 2012 (keynote)
-- Lurking in the Shadows – Augusta ISSA November 2011
-- [Lurking in the Shadows – Hack3rcon 2011](https://youtu.be/ant3ir9cRME)
+I speak regularly at security conferences and local chapter meetings. See [Talks](/talks/) for the full list, with videos and slides where available.

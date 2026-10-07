@@ -1,6 +1,6 @@
 title: 'Burp BChecks: First Impressions'
 publish: True
-categories: [application security, Burp Suite, consulting, development, tools, training]
+tags: [appsec, burp, tools]
 
 ---
 

@@ -1,6 +1,6 @@
 title: Multi-POST Cross-Site Request Forgery
 publish: True
-categories: [application security, hacking]
+tags: [appsec]
 
 ---
 

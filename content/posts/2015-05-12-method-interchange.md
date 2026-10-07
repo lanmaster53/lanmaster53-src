@@ -1,6 +1,6 @@
 title: 'Method Interchange: The Forgotten Vulnerability'
 publish: True
-categories: [application security]
+tags: [appsec]
 
 ---
 

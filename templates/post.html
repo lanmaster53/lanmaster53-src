@@ -8,9 +8,26 @@
     <header class="page-header">
         <h1>{{ post.title }}</h1>
         <time datetime="{{ post.date.strftime('%Y-%m-%d') }}">{{ post.date.strftime("%B %-d, %Y") }}</time>
+        <ul class="tags">
+        {% for name in post.tags %}
+            <li><a href="{{ url_for('tag', name=name) }}">{{ name }}</a></li>
+        {% endfor %}
+        </ul>
     </header>
     <div class="prose">
         {{ post.html|safe }}
     </div>
 </article>
+{% if 'twitter-tweet' in post.html %}
+<script>
+    // render embedded tweets in the active color scheme without tracking
+    document.querySelectorAll('.twitter-tweet').forEach(function (tweet) {
+        tweet.dataset.dnt = 'true';
+        if (matchMedia('(prefers-color-scheme: dark)').matches) {
+            tweet.dataset.theme = 'dark';
+        }
+    });
+</script>
+<script async src="https://platform.twitter.com/widgets.js"></script>
+{% endif %}
 {% endblock %}

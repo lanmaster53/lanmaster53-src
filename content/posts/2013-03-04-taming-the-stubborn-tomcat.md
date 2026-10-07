@@ -1,6 +1,6 @@
 title: Taming the Stubborn Tomcat
 publish: True
-categories: [network security]
+tags: [netsec]
 
 ---
 

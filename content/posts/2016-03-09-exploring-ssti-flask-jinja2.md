@@ -1,6 +1,6 @@
 title: 'Exploring SSTI in Flask/Jinja2'
 publish: True
-categories: [application security, hacking, Flask]
+tags: [appsec, flask]
 
 ---
 

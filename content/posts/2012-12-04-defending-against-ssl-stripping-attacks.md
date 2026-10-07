@@ -1,6 +1,6 @@
 title: Defending Against SSL Stripping Attacks
 publish: True
-categories: [application security]
+tags: [appsec]
 
 ---
 
