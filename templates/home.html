@@ -8,13 +8,11 @@
             <h2><a href="{{ post_url(post) }}">{{ post.title }}</a></h2>
             <time datetime="{{ post.date.strftime('%Y-%m-%d') }}">{{ post.date.strftime("%B %-d, %Y") }}</time>
             <div class="intro prose">
-            {% if post.intro %}
-                {{ post.intro|safe }}
-                <p class="read-more"><a href="{{ post_url(post) }}">Read more &raquo;</a></p>
-            {% else %}
-                {{ post.html|safe }}
-            {% endif %}
+                {{ (post.intro or post.html)|safe }}
             </div>
+            {% if post.intro %}
+            <p class="read-more"><a href="{{ post_url(post) }}">Read more &raquo;</a></p>
+            {% endif %}
         </article>
     </li>
 {% endfor %}
