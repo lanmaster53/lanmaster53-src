@@ -355,6 +355,11 @@ pre {
     margin-right: auto;
 }
 
+/* a scheme mismatch with the embed makes browsers paint the iframe white */
+.prose .twitter-tweet-rendered iframe {
+    color-scheme: normal;
+}
+
 /* blog index */
 
 .archive-year h2 {
