@@ -231,6 +231,20 @@ main {
     margin-top: 1rem;
 }
 
+.read-more {
+    font-size: 0.9375rem;
+    text-align: right;
+}
+
+.read-more a {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.read-more a:hover {
+    color: var(--accent);
+}
+
 /* rendered markdown */
 
 .prose > :first-child {

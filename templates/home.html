@@ -10,7 +10,7 @@
             <div class="intro prose">
             {% if post.intro %}
                 {{ post.intro|safe }}
-                <p><a href="{{ post_url(post) }}">Read more &raquo;</a></p>
+                <p class="read-more"><a href="{{ post_url(post) }}">Read more &raquo;</a></p>
             {% else %}
                 {{ post.html|safe }}
             {% endif %}
